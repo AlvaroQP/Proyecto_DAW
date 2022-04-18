@@ -1,0 +1,19 @@
+Titulo:Flight Simulator		
+Fecha de lanzamiento:18-08-2020
+Clasificacion edad:3
+Numero de jugadores:1
+Precio:55,99€
+Estudio:Xbox
+Novedad:Microsoft Game Studios
+Genero/s:Simulacion
+Consola/s:Series X/S
+Puntuacion:90
+Descripcion:La edición Game of the Year (GOTY) Estándar de Microsoft Flight Simulator hace honor 
+a todos los comentarios positivos, las críticas y los premios obtenidos, pero también es un "Gracias" 
+a nuestros seguidores (tanto a los más recientes como a los más veteranos) que han hecho que este título 
+se convierta en un fenómeno. La edición Game of the Year Estándar de Microsoft Flight Simulator incluye 
+25 aeronaves de gran detalle con modelos de vuelo exclusivos y 38 aeropuertos creados a mano.
+
+Esta edición mejorada ofrece a los usuarios cinco aeronaves totalmente nuevas, 
+ocho nuevos aeropuertos creados a mano, seis nuevos vuelos introductorios, nuevos tutoriales 
+y actualizaciones del sistema meteorológico.

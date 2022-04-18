@@ -1,0 +1,14 @@
+Titulo:Sea of thieves		
+Fecha de lanzamiento:20-03-2018
+Clasificacion edad:16
+Numero de jugadores:1
+Precio:19,99€
+Estudio:Microsoft Game Studios
+Novedad:n
+Genero/s:Rol, Accion, Aventura, Mundo 
+Consola/s:Series X/S
+Puntuacion:69
+Descripcion:Sea of Thieves te ofrece la verdadera vida pirata: te permite navegar, 
+luchar, explorar y saquear a mansalva; todo lo necesario para convertirte en un verdadero 
+pirata legendario. No hay roles marcados, por lo que eres libre de afrontar el mundo y 
+a los jugadores como plazcas.
