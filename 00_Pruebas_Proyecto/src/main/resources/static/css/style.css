@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+:root {
+    --color-principal-rojo: #C51C10;
+    --color-principal-blanco: #ffffff;
+    --color-principal-negro: #262626;
+    --color-fondo-blanco: #f0f0f0;
+    --color-rojo-oscuro: #a30a0a;
+    --color-rojo-hover: #ee0808;
+    --color-texto-negro: #424141;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--color-fondo-blanco);
+	width: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: var(--color-principal-rojo);
+    font-size: 1.6rem;
+    padding: 0;
+}
+
+.navbar form {
+	display: flex;
+	flex-direction: row;
+    font-size: 1.4rem;
+}
+
+.navbar form input {
+    margin: 0 .3rem;
+    font-size: 1.4rem;
+}
+
+.navbar .logo_jas {
+    height: 5rem;
+    padding: .2rem;
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+.navbar .boton_buscar {
+    border: none;
+    border-width: .5rem;
+    border-radius: .2rem;
+    padding: 0 .5rem;
+    margin-right: .5rem;
+}
+
+.navbar a.nav-link {
+    color: var(--color-texto-negro);
+}
+
+.navbar-toggler-icon {
+    font-size: 2rem;
+}
+ 
+.drop-menu .dropbtn { 
+    min-width: 13.5rem;
+    border: none;
+    outline: none;
+    color: var(--color-principal-blanco);
+    padding: 1.6rem;
+    background-color: inherit;
+    font-family: inherit;
+}
+  
+.navbar a.nav-link:hover, .drop-menu:hover .dropbtn {
+    background-color: var(--color-rojo-hover);
+    color: var(--color-principal-blanco);
+}
+  
+.drop-content {
+    font-size: 1.4rem;
+    display: none;
+    position: absolute;
+    background-color: var(--color-principal-blanco);
+    min-width: 13.5rem;
+    box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.drop-content a.nav-link {
+    float: none;
+    padding: 1.2rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    
+.drop-menu:hover .drop-content {
+    display: block;
+}
+/* ==================================================================== 
+   ==================================================================== */
+
+
+/* CONTENEDOR VIDEOJUEGOS */
+.seccion_detalle_videojuego {
+    height: fit-content;
+    padding: 5rem 0;
+    background-color: var(--color-principal-negro);
+}
+
+.contenedor_videojuego {
+    margin: 0 auto;
+    height: 90%;
+    width: 90%;
+    max-width: 120rem;
+    background-color: #e0dede;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.contenedor_grid_videojuego {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: repeat(2, 2fr) 10rem auto auto auto;
+    grid-template-areas: "uno uno dos"
+                         "uno uno tres"
+                         "cua cua cin"
+                         "seis sie ocho"
+                         "nue nue nue"
+                         "diez diez diez";  
+    background-color: var(--color-fondo-blanco);
+    border-radius: 1rem;
+}
+
+.contenedor_imagen_videojuego {
+    grid-area: uno;
+}
+
+.contenedor_imagen_videojuego img {
+    width: 100%;
+    border-top-left-radius: 1rem 
+}
+
+.contenedor_info_videojuego_1, .contenedor_info_videojuego_2 {
+    width: 100%;
+    font-size: 1.6rem;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contenedor_info_videojuego_1 {
+    grid-area: seis;
+}
+
+.contenedor_info_videojuego_2 {
+    grid-area: sie;
+}
+
+.titulo_videojuego {
+    grid-area: cua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-texto-negro);
+    color: var(--color-principal-blanco);
+    border-top: .5px solid white;  
+}
+
+.titulo_videojuego h3 {
+    padding: 2rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.contenedor_info_videojuego_1 li, .contenedor_info_videojuego_2 li {
+    padding: 1rem 2rem;
+}
+
+.contenedor_compra {
+    height: 100%;
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo-blanco);
+    border-top-right-radius: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.contenedor_compra h3 {
+    color: #54ad44;
+    margin-bottom: 1rem;
+}
+
+.btn-comprar {
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: var(--color-principal-blanco);
+    background-color: var(--color-principal-rojo);
+    border-radius: 3rem;
+    box-shadow: 2px 2px 6px 1px #414040;
+} 
+
+.btn-comprar img {
+    height: 2.5rem;
+}
+
+.contenedor_precio_videojuego {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-texto-negro);
+}
+
+
+.contenedor_caja_videojuego {
+    grid-area: tres;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-fondo-blanco);
+}
+
+.contenedor_caja_videojuego img {
+	padding: .5rem;
+    height: auto;
+    width: 60%;
+} 
+
+.contenedor_puntuacion {
+    grid-area: ocho;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo-blanco);
+    border-bottom: 1px solid lightgrey;
+}
+
+.figura_puntuacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    max-width: 10rem;
+    max-height: 10rem;
+    padding: 1.5rem;
+    background-color: #42b93e;
+    border-radius: 20%;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-principal-blanco);
+}
+
+.puntuacion_texto {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-texto-negro);
+}
+
+.contenedor_descripcion_videojuego {
+    grid-area: nue;
+    font-size: 1.6rem;
+    text-align: justify;
+    height: 100%;
+    background-color: var(--color-principal-blanco);
+    padding: 2rem;
+}
+
+.contenedor_logos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: cin;
+    background-color: var(--color-texto-negro);
+}
+
+.contenedor_logo_consola {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_logo_pegi {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_logo_consola .imagen_logo_consola {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor_logo_pegi .imagen_logo_pegi {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+/* CARRUSEL / SLIDER */
+.contenedor_slides {
+    position: relative;
+    grid-area: diez;
+}
+
+/* Las imágenes comenzarán ocultas (solo mostramos la imagen activa) */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    user-select: none;           /* Para que al pulsar el usuario sobre la flecha, ésta no quede seleccionada */
+    -webkit-user-select: none;   /* Igual, adaptado a diversos navegadores */
+    padding: 2rem;
+    margin-top: -5rem;
+    color: white;
+    font-weight: 900;
+    font-size: 5rem;
+    text-decoration: none;
+}
+
+.siguiente {
+    right: 0;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background-color: rgba(0, 0, 0, 0.404);
+    color: lightgrey;
+}
+  
+.contenedor_imagenes_mini {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor_imagen_mini {
+    width: 20%;
+    padding: 0 .1rem;
+    cursor: pointer;
+}
+  
+.imagen_mini { 
+    opacity: .6;
+    width: 100%;
+}
+  
+.activa, .imagen_mini:hover {
+    opacity: 1;
+}
+
+
+/* TARJETAS VIDEOJUEGOS (Previas al detalle) */
+.contenedor_tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.contenedor_tarjetas a {
+	text-decoration: none;	
+	color: inherit;
+}
+
+ .tarjeta_wrapper {
+     margin: 2rem;    
+}
+
+ .tarjeta_juego {
+     height: min-content;
+     width: 24rem;
+     border-radius: 1rem;
+     text-align: left;
+     box-shadow: 3px 3px 7px 3px rgba(110, 110, 110, 0.89);
+     z-index: 99;
+     background-color: var(--color-fondo-blanco);
+     border: 5px solid var(--color-fondo-blanco);
+}
+
+.tarjeta_juego:hover {
+	cursor: pointer;
+}
+
+ .imagen_juego {
+     height: 19rem;
+}
+ .imagen_juego img {
+     height: 100%;
+     width: 100%;
+     border-top-left-radius: 1rem;
+     border-top-right-radius: 1rem;
+}
+ 
+.titulo_plataforma {
+     font-size: 1rem;
+     font-weight: 500;
+	 margin-top: .3rem;
+}
+
+.titulo_juego {
+     font-size: 1.1rem;
+     color: white;
+	 background-color: #555454;
+     font-weight: 700;
+	 padding: .7rem;
+	 border-top: 1px solid lightgrey;
+	 border-bottom: 1px solid lightgrey;
+}
+
+.flex_texto_logo {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-color: var(--color-principal-blanco);
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.item_flex_tarjeta_1 {
+	width: 80%;
+	height: 100%;
+}
+
+.item_flex_tarjeta_2 {
+	width: 20%;
+	height: 4rem;
+}
+
+.contenedor_texto_tarjeta {
+	margin-left: .7rem;
+}
+
+.logo_consola {
+	height: 4rem;
+	width: 100%;
+	border-bottom-right-radius: 1rem;
+}
+
+.logo_consola img {
+	height: 100%;
+}
+
+.contenedor_precio {
+	margin-top: .1rem;
+	font-size: 1.4rem;
+	font-weight: 700;
+}
+
+

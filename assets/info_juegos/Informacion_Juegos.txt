@@ -105,7 +105,7 @@ Número de jugadores: 1-2
 Precio: 59,99€
 Estudio: Game Freak
 Novedad: s
-Género/s: Aventura, RPG
+Género/s: Acción, Aventura, RPG
 Consola/s: Switch
 Puntuación: 83
 Descripción: Explora parajes salvajes inmensos donde te aguardan un sinfín de descubrimientos en Leyendas Pokémon: Arceus para Nintendo Switch. Observa, atrapa e investiga a los Pokémon salvajes en este juego de acción y rol que se desarrolla en el pasado, cuando no era habitual que los humanos y los Pokémon convivieran en armonía.

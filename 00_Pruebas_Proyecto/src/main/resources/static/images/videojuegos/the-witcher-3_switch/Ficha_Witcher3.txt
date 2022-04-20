@@ -1,0 +1,15 @@
+Titulo:The Witcher3		
+Fecha de lanzamiento:18-05-2015 / 28-01-2021(Switch)
+Clasificacion edad:18
+Numero de jugadores:1
+Precio:39,99€
+Estudio:CD Projekt Red Studio
+Novedad:n
+Genero/s:Rol, RPG, Accion
+Consola/s: Switch 
+Puntuacion:93
+Descripcion:Eres Geralt de Rivia, cazador de monstruos a sueldo. Tienes a tu disposición 
+todas las herramientas de tu oficio: espadas afiladas, brebajes letales, ballestas sigilosas 
+y una poderosa magia de combate. Ante ti se extiende un continente devastado por la guerra e infestado 
+de monstruos que puedes explorar a tu antojo. ¿Cuál es tu contrato actual? Encontrar a la niña de la profecía, 
+un arma viviente que puede alterar el mundo tal y como lo conocemos.
