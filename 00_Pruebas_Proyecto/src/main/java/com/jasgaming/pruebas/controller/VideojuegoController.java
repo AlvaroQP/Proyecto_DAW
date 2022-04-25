@@ -42,6 +42,12 @@ public class VideojuegoController {
 		return "videojuegosSwitch";
 	}
 	
+	@GetMapping("/xbox")
+	public String mostrarVideojuegosXbox(Model model) {
+		model.addAttribute("videojuegosXbox", vecService.findVideojuegosXbox());
+		return "videojuegosXbox";
+	}
+	
 	@GetMapping("/detalle/{idVec}")
 	public String verDetalle(@PathVariable("idVec") int idVec, Model model) {
 		int idVideojuego = vecService.findById(idVec).getVideojuego().getIdVideojuego();
@@ -50,8 +56,5 @@ public class VideojuegoController {
 		model.addAttribute("listaVyg", vygService.findGenerosIdVideojuego(idVideojuego));
 		return "detalleVideojuego";
 	}
-	
-	
-	
 	
 }

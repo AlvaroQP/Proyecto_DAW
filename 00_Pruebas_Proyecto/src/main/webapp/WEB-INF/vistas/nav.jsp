@@ -32,7 +32,7 @@
                         <div class="drop-content">
                             <a class="nav-link" href="#">PlayStation 5</a>
                             <a class="nav-link" href="/videojuego/switch">Nintendo Switch</a>
-                            <a class="nav-link" href="#">Xbox Series X/S</a>
+                            <a class="nav-link" href="/videojuego/xbox">Xbox Series X/S</a>
                           </div>
                     </div>
                     <div class=" drop-menu">
