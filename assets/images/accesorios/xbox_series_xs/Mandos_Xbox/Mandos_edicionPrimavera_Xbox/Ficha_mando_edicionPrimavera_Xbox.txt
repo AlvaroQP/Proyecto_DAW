@@ -1,7 +1,7 @@
 Titulo: PowerA Enhanced Wired Controllers for Xbox Series X|S		
 Fecha de lanzamiento:20-03-2022
 Precio:41,99€  
-Conectividad: inalambrico / USB cableado
+Conectividad: USB cableado
 Novedad:s
 Consola/s:Series X/S
 Descripcion:
