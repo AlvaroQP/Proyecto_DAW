@@ -416,10 +416,11 @@ body {
 	 cursor: pointer;
 }
 
-.imagen_juego {
+.imagen_juego, .imagen_consola {
      height: 19rem;
 }
- .imagen_juego img {
+ .imagen_juego img,
+ .imagen_consola img {
      height: 100%;
      width: 100%;
      border-top-left-radius: 1rem;
@@ -432,7 +433,8 @@ body {
 	 margin-top: .3rem;
 }
 
-.titulo_juego {
+.titulo_juego,
+.titulo_consola {
      font-size: 1.1rem;
      color: var(--color-texto-negro);
 	 background-color: var(--color-fondo-blanco);

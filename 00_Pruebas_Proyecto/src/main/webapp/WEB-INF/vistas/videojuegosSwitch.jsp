@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Videojuegos Switch</title>
+<title>Videojuegos Nintendo Switch</title>
 </head>
 <body>
 

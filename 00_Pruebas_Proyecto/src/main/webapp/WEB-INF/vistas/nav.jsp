@@ -36,12 +36,12 @@
                           </div>
                     </div>
                     <div class=" drop-menu">
-                        <button class="dropbtn">Plataformas 
+                        <button class="dropbtn">Consolas 
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
                             <a class="nav-link" href="#">PlayStation 5</a>
-                            <a class="nav-link" href="#">Nintendo Switch</a>
+                            <a class="nav-link" href="/consola/switch">Nintendo Switch</a>
                             <a class="nav-link" href="#">Xbox Series X/S</a>
                           </div>
                     </div>

@@ -5,18 +5,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.jasgaming.pruebas.model.entities.Videojuego;
 import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
-import com.jasgaming.pruebas.model.service.VideojuegoService;
 import com.jasgaming.pruebas.model.service.VideojuegoYGeneroService;
 
 @Controller
 @RequestMapping("/videojuego")
 public class VideojuegoController {
-
-	@Autowired
-	private VideojuegoService videojuegoService;
 	
 	@Autowired
 	private VideojuegoEnConsolaService vecService;
