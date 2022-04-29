@@ -5,6 +5,7 @@ import com.jasgaming.pruebas.model.entities.ModelosConsola;
 
 public interface ModelosConsolaService {
 
+	ModelosConsola findById(String idModeloConsola);
 	List<ModelosConsola> findConsolasSwitch();
 	
 }

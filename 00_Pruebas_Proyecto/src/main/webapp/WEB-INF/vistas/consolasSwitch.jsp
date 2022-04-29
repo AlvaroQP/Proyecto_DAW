@@ -14,7 +14,7 @@
 	    <div class="contenedor_tarjetas">
   			<c:forEach var="modConsola" items="${consolasSwitch}">
   				<div class="tarjeta_wrapper">
-  				 	<a href="/consola/detalle/${modConsola.consola.idConsola}">
+  				 	<a href="/consola/detalle/${modConsola.idModeloConsola}">
 			            <div class="tarjeta_juego tarjeta_consola">
 			                <div class="imagen_juego imagen_consola">
 			                    <img src="/images/consolas/${modConsola.imagenCuadrada}" alt="imagen consola">

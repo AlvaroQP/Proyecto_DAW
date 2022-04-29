@@ -2,6 +2,7 @@ package com.jasgaming.pruebas.model.entities;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.Objects;
 
 import javax.persistence.*;
@@ -22,6 +23,16 @@ public class ModelosConsola implements Serializable {
 	
 	private BigDecimal precio;
 	
+	@Column(name="fecha_lanzamiento")
+	private Date fechaLanzamiento;
+	
+	private String tamano;
+	
+	private String peso;
+	
+	@Column(name="memoria_consola")
+	private String memoriaConsola;
+	
 	@Column(name="imagen_1")
 	private String imagen1;
 
@@ -30,12 +41,6 @@ public class ModelosConsola implements Serializable {
 
 	@Column(name="imagen_3")
 	private String imagen3;
-
-	@Column(name="imagen_4")
-	private String imagen4;
-
-	@Column(name="imagen_5")
-	private String imagen5;
 
 	@Column(name="imagen_cuadrada")
 	private String imagenCuadrada;
@@ -51,101 +56,175 @@ public class ModelosConsola implements Serializable {
 		
 	}
 
+
+
 	public String getIdModeloConsola() {
 		return idModeloConsola;
 	}
+
+
 
 	public void setIdModeloConsola(String idModeloConsola) {
 		this.idModeloConsola = idModeloConsola;
 	}
 
+
+
 	public String getNombre() {
 		return nombre;
 	}
+
+
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
+
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
+
+
 	public BigDecimal getPrecio() {
 		return precio;
 	}
+
+
 
 	public void setPrecio(BigDecimal precio) {
 		this.precio = precio;
 	}
 
+
+
+	public Date getFechaLanzamiento() {
+		return fechaLanzamiento;
+	}
+
+
+
+	public void setFechaLanzamiento(Date fechaLanzamiento) {
+		this.fechaLanzamiento = fechaLanzamiento;
+	}
+
+
+
+	public String getTamano() {
+		return tamano;
+	}
+
+
+
+	public void setTamano(String tamano) {
+		this.tamano = tamano;
+	}
+
+
+
+	public String getPeso() {
+		return peso;
+	}
+
+
+
+	public void setPeso(String peso) {
+		this.peso = peso;
+	}
+
+
+
+	public String getMemoriaConsola() {
+		return memoriaConsola;
+	}
+
+
+
+	public void setMemoriaConsola(String memoriaConsola) {
+		this.memoriaConsola = memoriaConsola;
+	}
+
+
+
 	public String getImagen1() {
 		return imagen1;
 	}
+
+
 
 	public void setImagen1(String imagen1) {
 		this.imagen1 = imagen1;
 	}
 
+
+
 	public String getImagen2() {
 		return imagen2;
 	}
+
+
 
 	public void setImagen2(String imagen2) {
 		this.imagen2 = imagen2;
 	}
 
+
+
 	public String getImagen3() {
 		return imagen3;
 	}
+
+
 
 	public void setImagen3(String imagen3) {
 		this.imagen3 = imagen3;
 	}
 
-	public String getImagen4() {
-		return imagen4;
-	}
 
-	public void setImagen4(String imagen4) {
-		this.imagen4 = imagen4;
-	}
-
-	public String getImagen5() {
-		return imagen5;
-	}
-
-	public void setImagen5(String imagen5) {
-		this.imagen5 = imagen5;
-	}
 
 	public String getImagenCuadrada() {
 		return imagenCuadrada;
 	}
 
+
+
 	public void setImagenCuadrada(String imagenCuadrada) {
 		this.imagenCuadrada = imagenCuadrada;
 	}
+
+
 
 	public String getImagenRectangular() {
 		return imagenRectangular;
 	}
 
+
+
 	public void setImagenRectangular(String imagenRectangular) {
 		this.imagenRectangular = imagenRectangular;
 	}
+
+
 
 	public Consola getConsola() {
 		return consola;
 	}
 
+
+
 	public void setConsola(Consola consola) {
 		this.consola = consola;
 	}
+
+
 
 	@Override
 	public int hashCode() {
