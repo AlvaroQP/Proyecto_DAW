@@ -866,7 +866,7 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (17, 'xbox_s_xs', 'Gears_of_war5_Xbox/Gears5_caratula.jpg', 27.99),
       (18, 'xbox_s_xs', 'Grounded_Xbox/Grounded_caratula.jpg', 29.99),
       (19, 'xbox_s_xs', 'halo-infinite_Xbox/halo_caratula.jpeg', 69.99),
-      (20, 'xbox_s_xs', 'Sable_Xbox/Sable_caratula.jpg', 24.99),
+      (20, 'xbox_s_xs', 'Sable_Xbox/Sable_caratula.png', 24.99),
       (21, 'xbox_s_xs', 'Sea_of_thieves_Xbox/Sea_of_thieves_caratula.jpg', 19.99),
       (22, 'xbox_s_xs', 'Tunic_Xbox/Tunic_caratula.jpg', 29.99),
 
