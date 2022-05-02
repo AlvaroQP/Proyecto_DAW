@@ -11,15 +11,19 @@
 	
 	<jsp:include page="nav.jsp"></jsp:include>
 	
-	    <div class="contenedor_tarjetas">
+		<header>
+			<img src="/images/banners/banner_switch.jpg" alt="banner switch" class="banner_switch">
+		</header>
+	
+	    <div class="contenedor_tarjetas contenedor_tarjetas_consolas">
   			<c:forEach var="modConsola" items="${consolasSwitch}">
   				<div class="tarjeta_wrapper">
-  				 	<a href="/consola/detalle/${modConsola.consola.idConsola}">
-			            <div class="tarjeta_juego tarjeta_consola">
-			                <div class="imagen_juego imagen_consola">
+  				 	<a href="/consola/detalle/${modConsola.idModeloConsola}">
+			            <div class="tarjeta_consola">
+			                <div class="imagen_consola">
 			                    <img src="/images/consolas/${modConsola.imagenCuadrada}" alt="imagen consola">
 			                </div>
-			                <div class="titulo_juego titulo_consola">${modConsola.nombre}</div>
+			                <div class="titulo_consola">${modConsola.nombre}</div>
 			                
 			                <div class="flex_texto_logo">
 			                    <div class="contenedor_texto_tarjeta item_flex_tarjeta_1">
@@ -30,7 +34,6 @@
 			                    	<div>
 			                        	<img src="/images/logos/consolas/${modConsola.consola.logoConsola}" alt="logo consola" class="logo_consola">			                    	
 			                    	</div>
-  
 			                    </div>
 			                </div>
 		            	</div> 
@@ -38,5 +41,7 @@
 	        	</div> 	
   			</c:forEach>
        </div>
+       
+    <jsp:include page="footer.jsp"></jsp:include>   
 </body>
 </html>

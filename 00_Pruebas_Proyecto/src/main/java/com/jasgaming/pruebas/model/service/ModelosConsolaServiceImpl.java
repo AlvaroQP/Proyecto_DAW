@@ -15,8 +15,13 @@ public class ModelosConsolaServiceImpl implements ModelosConsolaService {
 	private ModelosConsolaRepository mcRepository;
 
 	@Override
+	public ModelosConsola findById(String idModeloConsola) {
+		return mcRepository.findById(idModeloConsola).orElse(null);
+	}
+	
+	@Override
 	public List<ModelosConsola> findConsolasSwitch() {
 		return mcRepository.findConsolasSwitch();
 	}
-	
+
 }

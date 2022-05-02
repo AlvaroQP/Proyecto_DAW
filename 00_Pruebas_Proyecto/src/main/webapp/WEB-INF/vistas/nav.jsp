@@ -30,9 +30,18 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
-                            <a class="nav-link" href="#">PlayStation 5</a>
-                            <a class="nav-link" href="/videojuego/switch">Nintendo Switch</a>
-                            <a class="nav-link" href="/videojuego/xbox">Xbox Series X/S</a>
+                            <a class="nav-link" href="/videojuego/ps5">
+	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            PlayStation 5
+                            </a>
+	                            <a class="nav-link" href="/videojuego/switch">
+	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
+                            Nintendo Switch
+                            </a>
+                            <a class="nav-link" href="/videojuego/xbox">
+	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            Xbox Series X/S
+                            </a>
                           </div>
                     </div>
                     <div class=" drop-menu">
@@ -40,9 +49,18 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
-                            <a class="nav-link" href="#">PlayStation 5</a>
-                            <a class="nav-link" href="/consola/switch">Nintendo Switch</a>
-                            <a class="nav-link" href="#">Xbox Series X/S</a>
+                            <a class="nav-link" href="#">
+	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            PlayStation 5
+                            </a>
+                            <a class="nav-link" href="/consola/switch">
+	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
+	                            Nintendo Switch
+                            </a>
+                            <a class="nav-link" href="#">
+	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            Xbox Series X/S
+                            </a>
                           </div>
                     </div>
                     <div class=" drop-menu">
@@ -50,9 +68,18 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
-                            <a class="nav-link" href="#">PlayStation 5</a>
-                            <a class="nav-link" href="#">Nintendo Switch</a>
-                            <a class="nav-link" href="#">Xbox Series X/S</a>
+                            <a class="nav-link" href="#">
+	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            PlayStation 5
+                            </a>
+                            <a class="nav-link" href="/consola/switch">
+	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
+	                            Nintendo Switch
+                            </a>
+                            <a class="nav-link" href="#">
+	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            Xbox Series X/S
+                            </a>
                           </div>
                     </div>   
                 </ul>

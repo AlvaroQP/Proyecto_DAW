@@ -61,6 +61,7 @@ body {
 
 .navbar a.nav-link {
     color: var(--color-texto-negro);
+
 }
 
 .navbar-toggler-icon {
@@ -68,7 +69,7 @@ body {
 }
  
 .drop-menu .dropbtn { 
-    min-width: 13.5rem;
+    min-width: 14rem;
     border: none;
     outline: none;
     color: var(--color-principal-blanco);
@@ -78,6 +79,11 @@ body {
 }
   
 .navbar a.nav-link:hover, .drop-menu:hover .dropbtn {
+    background-color: var(--color-texto-negro);
+    color: var(--color-principal-blanco);
+}
+
+.drop-menu:hover .dropbtn {
     background-color: var(--color-rojo-hover);
     color: var(--color-principal-blanco);
 }
@@ -103,6 +109,13 @@ body {
 .drop-menu:hover .drop-content {
     display: block;
 }
+
+.nav_logo_consola {
+	height: 2.5rem;
+	width: 2.4rem;
+}
+
+
 /* ==================================================================== 
    ==================================================================== */
 
@@ -114,7 +127,8 @@ body {
     background-color: var(--color-principal-negro);
 }
 
-.contenedor_videojuego {
+.contenedor_videojuego,
+.contenedor_consola {
     margin: 0 auto;
     height: 90%;
     width: 90%;
@@ -139,11 +153,32 @@ body {
     border-radius: 1rem;
 }
 
+.contenedor_grid_consola {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 2fr) 10rem 35rem auto auto;
+    grid-template-areas: "uno uno"
+    					 "uno uno"
+                         "dos dos"
+                         "tres cuatro"
+                         "cinco seis"
+                         "siete siete"
+                         "ocho ocho";
+    background-color: var(--color-fondo-blanco);
+    border-radius: 1rem;
+}
+
 .contenedor_imagen_videojuego {
     grid-area: uno;
 }
 
-.contenedor_imagen_videojuego img {
+.contenedor_imagen_consola {
+	grid-area: uno;
+}
+
+.contenedor_imagen_videojuego img,
+.contenedor_imagen_consola img {
     width: 100%;
     border-top-left-radius: 1rem 
 }
@@ -163,6 +198,16 @@ body {
     grid-area: sie;
 }
 
+.contenedor_info_consola_1 {
+	border-top: 1px solid lightgrey;
+	grid-area: cinco;
+}
+
+.contenedor_info_consola_2 {
+    border-top: 1px solid lightgrey;
+	grid-area: seis;
+}
+
 .titulo_videojuego {
     grid-area: cua;
     display: flex;
@@ -173,7 +218,18 @@ body {
     border-top: .5px solid white;  
 }
 
-.titulo_videojuego h3 {
+.nombre_consola {
+	grid-area: dos;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	background-color: var(--color-texto-negro);
+    color: var(--color-principal-blanco);
+    border-top: .5px solid white;  
+}
+
+.titulo_videojuego h3,
+.nombre_consola h3 {
     padding: 2rem;
     font-size: 3rem;
     margin: 0;
@@ -183,16 +239,25 @@ body {
     padding: 1rem 2rem;
 }
 
-.contenedor_compra {
-    height: 100%;
-    grid-area: dos;
+.contenedor_videojuego .contenedor_compra,
+.contenedor_consola .contenedor_compra {
+	height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-fondo-blanco);
     border-top-right-radius: 1rem;
-    border-bottom: 1px solid lightgrey;
+}
+
+.contenedor_videojuego .contenedor_compra {
+    grid-area: dos;
+	background-color: var(--color-fondo-blanco);	
+	border-bottom: 1px solid lightgrey;
+}
+
+.contenedor_consola .contenedor_compra {
+    grid-area: cuatro;
+	background-color: white;
 }
 
 .contenedor_compra h3 {
@@ -221,7 +286,7 @@ body {
 }
 
 
-.contenedor_caja_videojuego {
+.contenedor_videojuego .contenedor_caja_videojuego {
     grid-area: tres;
     display: flex;
     flex-direction: row;
@@ -232,11 +297,25 @@ body {
     background-color: var(--color-fondo-blanco);
 }
 
-.contenedor_caja_videojuego img {
+.contenedor_videojuego .contenedor_caja_videojuego img {
 	padding: .5rem;
     height: auto;
     width: 60%;
 } 
+
+.contenedor_consola .contenedor_caja_consola {
+	grid-area: tres;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contenedor_consola .contenedor_caja_consola img {
+	height: 80%;
+	width: 40rem;
+}
 
 .contenedor_puntuacion {
     grid-area: ocho;
@@ -276,13 +355,22 @@ body {
     color: var(--color-texto-negro);
 }
 
-.contenedor_descripcion_videojuego {
-    grid-area: nue;
+.contenedor_descripcion_videojuego,
+.contenedor_descripcion_consola {
     font-size: 1.6rem;
     text-align: justify;
     height: 100%;
     background-color: var(--color-principal-blanco);
     padding: 2rem;
+}
+
+.contenedor_descripcion_videojuego {
+	grid-area: nue;
+}
+
+.contenedor_descripcion_consola {
+	grid-area: siete;
+	border-bottom: 1px solid lightgrey;
 }
 
 .contenedor_logos {
@@ -296,7 +384,8 @@ body {
     background-color: var(--color-texto-negro);
 }
 
-.contenedor_logo_consola {
+
+.contenedor_videojuego .contenedor_logo_consola {
     height: 100%;
     width: 100%;
 }
@@ -320,9 +409,14 @@ body {
 
 
 /* CARRUSEL / SLIDER */
-.contenedor_slides {
+.contenedor_videojuego .contenedor_slides {
     position: relative;
     grid-area: diez;
+}
+
+.contenedor_consola .contenedor_slides {
+	position: relative;
+	grid-area: ocho;
 }
 
 /* Las imágenes comenzarán ocultas (solo mostramos la imagen activa) */
@@ -349,6 +443,12 @@ body {
     text-decoration: none;
 }
 
+.contenedor_consola .anterior,
+.contenedor_consola .siguiente {
+	top: 30%;
+	color: black;
+}
+
 .siguiente {
     right: 0;
 }
@@ -358,6 +458,8 @@ body {
     background-color: rgba(0, 0, 0, 0.404);
     color: lightgrey;
 }
+
+
   
 .contenedor_imagenes_mini {
     display: flex;
@@ -371,6 +473,10 @@ body {
     padding: 0 .1rem;
     cursor: pointer;
 }
+
+.contenedor_consola .contenedor_imagen_mini {
+	width: 33.3%;
+}
   
 .imagen_mini { 
     opacity: .6;
@@ -382,13 +488,14 @@ body {
 }
 
 
-/* TARJETAS VIDEOJUEGOS (Previas al detalle) */
+/* TARJETAS VIDEOJUEGOS/CONSOLAS/ACCESORIOS */
 .contenedor_tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem;
+    margin: 3rem auto;
+    max-width: 120rem;
 }
 
 .contenedor_tarjetas a {
@@ -397,14 +504,13 @@ body {
 }
 
  .tarjeta_wrapper {
-     margin: 2rem;    
-     
+     margin: 2rem;        
 }
 
- .tarjeta_juego {
-     height: min-content;
-     width: 24rem;
-     border-radius: 1rem;
+.tarjeta_juego,
+.tarjeta_consola {
+	 height: min-content;
+	 border-radius: 1rem;
      text-align: left;
      box-shadow: 3px 3px 7px 3px rgba(110, 110, 110, 0.89);
      z-index: 99;
@@ -412,13 +518,27 @@ body {
      border: 5px solid #e2e2e2;
 }
 
-.tarjeta_juego:hover {
+ .tarjeta_juego {
+     width: 24rem;
+}
+
+.tarjeta_consola {
+	 width: 28rem;
+}
+
+.tarjeta_juego:hover,
+.tarjeta_consola:hover {
 	 cursor: pointer;
 }
 
-.imagen_juego, .imagen_consola {
+.imagen_juego {
      height: 19rem;
 }
+
+.imagen_consola {
+     height: 20rem;
+}
+
  .imagen_juego img,
  .imagen_consola img {
      height: 100%;
@@ -433,15 +553,22 @@ body {
 	 margin-top: .3rem;
 }
 
-.titulo_juego,
-.titulo_consola {
-     font-size: 1.1rem;
+.contenedor_tarjetas .titulo_juego,
+.contenedor_tarjetas_consolas .titulo_consola {
      color: var(--color-texto-negro);
 	 background-color: var(--color-fondo-blanco);
      font-weight: 600;
 	 padding: .7rem;
 	 border-top: 1px solid lightgrey;
 	 border-bottom: 1px solid black;
+}
+
+.titulo_juego {
+     font-size: 1.1rem;
+}
+
+.contenedor_tarjetas_consolas .titulo_consola {
+	 font-size: 1.3rem;
 }
 
 .flex_texto_logo {
@@ -455,8 +582,11 @@ body {
 }
 
 .item_flex_tarjeta_1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 70%;
-	height: 100%;
+
 }
 
 .item_flex_tarjeta_2 {
@@ -464,6 +594,16 @@ body {
 	height: 4rem;
 	display: flex;
 	flex-direction: row;
+}
+
+.contenedor_tarjetas_consolas .item_flex_tarjeta_1 {
+	width: 80%;
+}
+
+.contenedor_tarjetas_consolas .item_flex_tarjeta_2 {
+	display: block;
+	height: 5rem;
+	width: 20%;
 }
 
 .contenedor_texto_tarjeta {
@@ -476,6 +616,10 @@ body {
 	width: 100%;
 }
 
+.contenedor_tarjetas_consolas .logo_consola {
+	height: 5rem;
+}
+
 .logo_pegi {
 	height: 4rem;
 	width: 100%;
@@ -485,6 +629,7 @@ body {
 	height: 100%;
 	width: 50%;
 }
+
 .logo_pegi img {
 	height: 100%;
 	width: 50%;
@@ -496,4 +641,98 @@ body {
 	font-weight: 700;
 }
 
+.contenedor_tarjetas_consolas .contenedor_precio {
+	font-size: 1.7rem;
+}
 
+
+/* HEADERS / BANNERS */
+.banner_nintendo {
+	width: 100%;
+}
+
+.banner_switch {
+	width: 100%;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25rem;
+    background-color: #161616;
+    color: white;
+    height: 40rem;
+    width: 100%;
+}
+
+
+.footer_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-left: 15rem;
+    font-size: 1.6rem;
+}
+
+.footer_1 img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.enlaces_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces_footer div {
+    margin: .5rem 0;
+}
+
+.enlaces_footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    border-bottom: .2px solid white;
+}
+
+.copyright {
+    font-size: 1.4rem;
+}
+
+.footer_2 {
+    width: 80rem;
+}
+
+.footer_2 img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 75rem) {
+    .footer_1 {
+        margin-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 65rem) {
+    .footer_1 {
+        margin-left: 10rem;
+    }
+    .footer_2 {
+        display: none;
+    }
+    footer {
+        background-image: url('/images/footer/footer2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}
