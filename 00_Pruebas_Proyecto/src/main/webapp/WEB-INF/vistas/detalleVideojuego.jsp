@@ -60,7 +60,7 @@
                         <li class="list-group-item">
                             <strong>Género</strong><br>
                       		<c:forEach var="vyg" items="${listaVyg}">
-                      			${vyg.genero.nombre}
+                      			${vyg.genero.nombre} /
                       		</c:forEach>
                         </li>
                     </ul>
