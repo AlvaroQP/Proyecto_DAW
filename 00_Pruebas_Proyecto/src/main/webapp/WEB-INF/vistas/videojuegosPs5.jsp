@@ -11,6 +11,10 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	
+		<header>
+			<img src="/images/banners/banner_PS.jpg" alt="banner PS" class="banner_PS">
+		</header>
+	
     <div class="contenedor_tarjetas">
  			<c:forEach var="vec" items="${videojuegosPs5}">
  				<div class="tarjeta_wrapper">
@@ -40,6 +44,8 @@
         	</div> 	
  			</c:forEach>
       </div>
+      
+      <jsp:include page="footer.jsp"></jsp:include>   
 
 </body>
 </html>
