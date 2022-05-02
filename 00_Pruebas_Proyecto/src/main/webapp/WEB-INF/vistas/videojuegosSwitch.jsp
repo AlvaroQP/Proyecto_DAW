@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Videojuegos Nintendo Switch</title>
 </head>
-<body>
+<body class="body_juegos_switch">
 
 	<jsp:include page="nav.jsp"></jsp:include>
 		
@@ -15,7 +15,7 @@
 			<img src="/images/banners/banner_nintendo.jpg" alt="banner nintendo" class="banner_nintendo">
 		</header>
 		
-	    <div class="contenedor_tarjetas">
+	    <div class="contenedor_tarjetas contenedor_tarjetas_switch">
   			<c:forEach var="vec" items="${videojuegosSwitch}">
   				<div class="tarjeta_wrapper">
   				 	<a href="/videojuego/detalle/${vec.videojuego.idVideojuego}">

@@ -115,6 +115,20 @@ body {
 	width: 2.4rem;
 }
 
+.contenedor_login_registro a {
+	background-color: #ff5541;
+	padding: .7rem 1rem;
+	margin: 0 .5rem;
+	text-decoration: none;
+	color: white;
+	border-radius: 1rem;
+	border: 1px solid white;
+}
+
+.nav_estrella, .nav_one_up {
+	height: 2rem;
+	margin-right: .3rem;
+}
 
 /* ==================================================================== 
    ==================================================================== */
@@ -662,6 +676,18 @@ body {
 .banner_PS {
 	width: 100%;
 }
+
+
+/* ESTILOS ESPECÍFICOS SECCIÓN VIDEOJUEGOS SWITCH */
+.body_juegos_switch {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,249,249,1) 0%, rgba(223,223,223,1) 43%, rgba(205,205,205,1) 100%);
+	/* background: #dee1e3;
+	background-image: url('/images/fondos/fondo5.jpg');
+	background-blend-mode: overlay; */
+}
+
+
 
 /* FOOTER */
 footer {
