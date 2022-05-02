@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
+<link rel="shortcut icon" type="imagen/x-icon" href="/images/logos/jas_gaming/favicon.png">
 </head>
 <body>
 
@@ -83,10 +84,22 @@
                           </div>
                     </div>   
                 </ul>
-                <form action="" method="POST">
+                
+                <div class="contenedor_login_registro">
+                	<a href="">
+                		<img src="/images/nav/star.png" class="nav_estrella">
+                		Login
+                	</a>
+                	<a href="">
+                		<img src="/images/nav/one_up.png" class="nav_one_up">
+                		Registro
+                	</a>
+                </div>
+                
+                <!-- <form action="" method="POST">
                     <input class="form-control" type="text" name="cadena" placeholder="Buscar por título" required>
                     <input type="submit" value="Buscar" class="boton_buscar">
-                </form>
+                </form> -->
           </div>
         </div>
     </nav>
