@@ -11,6 +11,10 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 		
+		<header>
+			<img src="/images/banners/banner_nintendo.jpg" alt="banner nintendo" class="banner_nintendo">
+		</header>
+		
 	    <div class="contenedor_tarjetas">
   			<c:forEach var="vec" items="${videojuegosSwitch}">
   				<div class="tarjeta_wrapper">
@@ -32,9 +36,7 @@
 			                        </div>			                    
 			                    	<div>
 			                        	<img src="/images/logos/consolas/${vec.consola.logoConsola}" alt="logo consola" class="logo_consola">			                    	
-			                    	</div>
-
-			                        
+			                    	</div>              
 			                    </div>
 			                </div>
 		            	</div> 
@@ -42,5 +44,7 @@
 	        	</div> 	
   			</c:forEach>
        </div>
+       
+    <jsp:include page="footer.jsp"></jsp:include>   
 </body>
 </html>

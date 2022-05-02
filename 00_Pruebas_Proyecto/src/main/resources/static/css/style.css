@@ -61,6 +61,7 @@ body {
 
 .navbar a.nav-link {
     color: var(--color-texto-negro);
+
 }
 
 .navbar-toggler-icon {
@@ -68,7 +69,7 @@ body {
 }
  
 .drop-menu .dropbtn { 
-    min-width: 13.5rem;
+    min-width: 14rem;
     border: none;
     outline: none;
     color: var(--color-principal-blanco);
@@ -78,6 +79,11 @@ body {
 }
   
 .navbar a.nav-link:hover, .drop-menu:hover .dropbtn {
+    background-color: var(--color-texto-negro);
+    color: var(--color-principal-blanco);
+}
+
+.drop-menu:hover .dropbtn {
     background-color: var(--color-rojo-hover);
     color: var(--color-principal-blanco);
 }
@@ -103,6 +109,13 @@ body {
 .drop-menu:hover .drop-content {
     display: block;
 }
+
+.nav_logo_consola {
+	height: 2.5rem;
+	width: 2.4rem;
+}
+
+
 /* ==================================================================== 
    ==================================================================== */
 
@@ -475,13 +488,14 @@ body {
 }
 
 
-/* TARJETAS VIDEOJUEGOS (Previas al detalle) */
+/* TARJETAS VIDEOJUEGOS/CONSOLAS/ACCESORIOS */
 .contenedor_tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem;
+    margin: 3rem auto;
+    max-width: 120rem;
 }
 
 .contenedor_tarjetas a {
@@ -490,14 +504,13 @@ body {
 }
 
  .tarjeta_wrapper {
-     margin: 2rem;    
-     
+     margin: 2rem;        
 }
 
- .tarjeta_juego {
-     height: min-content;
-     width: 24rem;
-     border-radius: 1rem;
+.tarjeta_juego,
+.tarjeta_consola {
+	 height: min-content;
+	 border-radius: 1rem;
      text-align: left;
      box-shadow: 3px 3px 7px 3px rgba(110, 110, 110, 0.89);
      z-index: 99;
@@ -505,13 +518,27 @@ body {
      border: 5px solid #e2e2e2;
 }
 
-.tarjeta_juego:hover {
+ .tarjeta_juego {
+     width: 24rem;
+}
+
+.tarjeta_consola {
+	 width: 28rem;
+}
+
+.tarjeta_juego:hover,
+.tarjeta_consola:hover {
 	 cursor: pointer;
 }
 
-.imagen_juego, .imagen_consola {
+.imagen_juego {
      height: 19rem;
 }
+
+.imagen_consola {
+     height: 20rem;
+}
+
  .imagen_juego img,
  .imagen_consola img {
      height: 100%;
@@ -526,15 +553,22 @@ body {
 	 margin-top: .3rem;
 }
 
-.titulo_juego,
-.titulo_consola {
-     font-size: 1.1rem;
+.contenedor_tarjetas .titulo_juego,
+.contenedor_tarjetas_consolas .titulo_consola {
      color: var(--color-texto-negro);
 	 background-color: var(--color-fondo-blanco);
      font-weight: 600;
 	 padding: .7rem;
 	 border-top: 1px solid lightgrey;
 	 border-bottom: 1px solid black;
+}
+
+.titulo_juego {
+     font-size: 1.1rem;
+}
+
+.contenedor_tarjetas_consolas .titulo_consola {
+	 font-size: 1.3rem;
 }
 
 .flex_texto_logo {
@@ -548,8 +582,11 @@ body {
 }
 
 .item_flex_tarjeta_1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 70%;
-	height: 100%;
+
 }
 
 .item_flex_tarjeta_2 {
@@ -557,6 +594,16 @@ body {
 	height: 4rem;
 	display: flex;
 	flex-direction: row;
+}
+
+.contenedor_tarjetas_consolas .item_flex_tarjeta_1 {
+	width: 80%;
+}
+
+.contenedor_tarjetas_consolas .item_flex_tarjeta_2 {
+	display: block;
+	height: 5rem;
+	width: 20%;
 }
 
 .contenedor_texto_tarjeta {
@@ -569,6 +616,10 @@ body {
 	width: 100%;
 }
 
+.contenedor_tarjetas_consolas .logo_consola {
+	height: 5rem;
+}
+
 .logo_pegi {
 	height: 4rem;
 	width: 100%;
@@ -578,6 +629,7 @@ body {
 	height: 100%;
 	width: 50%;
 }
+
 .logo_pegi img {
 	height: 100%;
 	width: 50%;
@@ -589,4 +641,98 @@ body {
 	font-weight: 700;
 }
 
+.contenedor_tarjetas_consolas .contenedor_precio {
+	font-size: 1.7rem;
+}
 
+
+/* HEADERS / BANNERS */
+.banner_nintendo {
+	width: 100%;
+}
+
+.banner_switch {
+	width: 100%;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25rem;
+    background-color: #161616;
+    color: white;
+    height: 40rem;
+    width: 100%;
+}
+
+
+.footer_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    margin-left: 15rem;
+    font-size: 1.6rem;
+}
+
+.footer_1 img {
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.enlaces_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlaces_footer div {
+    margin: .5rem 0;
+}
+
+.enlaces_footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    border-bottom: .2px solid white;
+}
+
+.copyright {
+    font-size: 1.4rem;
+}
+
+.footer_2 {
+    width: 80rem;
+}
+
+.footer_2 img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 75rem) {
+    .footer_1 {
+        margin-left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 65rem) {
+    .footer_1 {
+        margin-left: 10rem;
+    }
+    .footer_2 {
+        display: none;
+    }
+    footer {
+        background-image: url('/images/footer/footer2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}
