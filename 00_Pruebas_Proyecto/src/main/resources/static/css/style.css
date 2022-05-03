@@ -79,8 +79,8 @@ body {
 }
   
 .navbar a.nav-link:hover, .drop-menu:hover .dropbtn {
-    background-color: var(--color-texto-negro);
-    color: var(--color-principal-blanco);
+    background-color: #ff4147;
+    color: white;
 }
 
 .drop-menu:hover .dropbtn {
@@ -115,9 +115,16 @@ body {
 	width: 2.4rem;
 }
 
+.contenedor_login_registro {
+	display: flex;
+	flex-direction: row;
+	transform: translateY(-.3rem);
+}
+
+
 .contenedor_login_registro a {
 	background-color: #ff5541;
-	padding: .7rem 1rem;
+	padding: .5rem 1rem;
 	margin: 0 .5rem;
 	text-decoration: none;
 	color: white;
@@ -125,28 +132,44 @@ body {
 	border: 1px solid white;
 }
 
-.nav_estrella, .nav_one_up {
-	height: 2rem;
-	margin-right: .3rem;
+.contenedor_login_registro a:hover {
+	background-color: white;
+	color: var(--color-principal-rojo);
+}
+
+.icono_login, .icono_registro {
+	transform: translateY(.75rem);
+	margin-right: .2rem;
 }
 
 /* ==================================================================== 
    ==================================================================== */
 
 
-/* CONTENEDOR VIDEOJUEGOS */
-.seccion_detalle_videojuego {
+/* CONTENEDORES VIDEOJUEGOS/CONSOLAS/ACCESORIOS */
+.seccion_detalle_videojuego,
+.seccion_detalle_consola,
+.seccion_detalle_accesorio {
     height: fit-content;
     padding: 5rem 0;
     background-color: var(--color-principal-negro);
 }
 
+.contenedor_videojuego {
+	max-width: 120rem;
+}
+
+.contenedor_consola,
+.contenedor_accesorio {
+	max-width: 100rem;
+}
+
 .contenedor_videojuego,
-.contenedor_consola {
+.contenedor_consola,
+.contenedor_accesorio {
     margin: 0 auto;
     height: 90%;
     width: 90%;
-    max-width: 120rem;
     background-color: #e0dede;
     border-radius: 1rem;
     padding: .5rem;
@@ -167,7 +190,8 @@ body {
     border-radius: 1rem;
 }
 
-.contenedor_grid_consola {
+.contenedor_grid_consola,
+.contenedor_grid_accesorio {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -187,17 +211,21 @@ body {
     grid-area: uno;
 }
 
-.contenedor_imagen_consola {
+.contenedor_imagen_consola,
+.contenedor_imagen_accesorio {
 	grid-area: uno;
 }
 
 .contenedor_imagen_videojuego img,
-.contenedor_imagen_consola img {
+.contenedor_imagen_consola img,
+.contenedor_imagen_accesorio img {
     width: 100%;
     border-top-left-radius: 1rem 
 }
 
-.contenedor_info_videojuego_1, .contenedor_info_videojuego_2 {
+.contenedor_info_videojuego_1, .contenedor_info_videojuego_2,
+.contenedor_info_consola_1, .contenedor_info_consola_2,
+.contenedor_info_accesorio_1, .contenedor_info_accesorio_2 {
     width: 100%;
     font-size: 1.6rem;
     border-right: 1px solid lightgrey;
@@ -212,12 +240,14 @@ body {
     grid-area: sie;
 }
 
-.contenedor_info_consola_1 {
+.contenedor_info_consola_1,
+.contenedor_info_accesorio_1 {
 	border-top: 1px solid lightgrey;
 	grid-area: cinco;
 }
 
-.contenedor_info_consola_2 {
+.contenedor_info_consola_2,
+.contenedor_info_accesorio_2 {
     border-top: 1px solid lightgrey;
 	grid-area: seis;
 }
@@ -232,7 +262,8 @@ body {
     border-top: .5px solid white;  
 }
 
-.nombre_consola {
+.nombre_consola,
+.nombre_accesorio {
 	grid-area: dos;
 	display: flex;
     flex-direction: row;
@@ -243,18 +274,21 @@ body {
 }
 
 .titulo_videojuego h3,
-.nombre_consola h3 {
+.nombre_consola h3,
+.nombre_accesorio h3 {
     padding: 2rem;
     font-size: 3rem;
     margin: 0;
 }
 
-.contenedor_info_videojuego_1 li, .contenedor_info_videojuego_2 li {
+.contenedor_info_videojuego_1 li, .contenedor_info_videojuego_2 li,
+.contenedor_info_accesorio_1 li, .contenedor_info_accesorio_2 li {
     padding: 1rem 2rem;
 }
 
 .contenedor_videojuego .contenedor_compra,
-.contenedor_consola .contenedor_compra {
+.contenedor_consola .contenedor_compra,
+.contenedor_accesorio .contenedor_compra {
 	height: 100%;
     display: flex;
     flex-direction: column;
@@ -269,7 +303,8 @@ body {
 	border-bottom: 1px solid lightgrey;
 }
 
-.contenedor_consola .contenedor_compra {
+.contenedor_consola .contenedor_compra,
+.contenedor_accesorio .contenedor_compra {
     grid-area: cuatro;
 	background-color: white;
 }
@@ -293,7 +328,9 @@ body {
     height: 2.5rem;
 }
 
-.contenedor_precio_videojuego {
+.contenedor_precio_videojuego,
+.contenedor_precio_consola,
+.contenedor_precio_accesorio {
     font-size: 3.5rem;
     font-weight: 900;
     color: var(--color-texto-negro);
@@ -317,7 +354,8 @@ body {
     width: 60%;
 } 
 
-.contenedor_consola .contenedor_caja_consola {
+.contenedor_consola .contenedor_caja_consola,
+.contenedor_accesorio .contenedor_caja_accesorio {
 	grid-area: tres;
 	background-color: white;
 	display: flex;
@@ -326,7 +364,8 @@ body {
 	align-items: center;
 }
 
-.contenedor_consola .contenedor_caja_consola img {
+.contenedor_consola .contenedor_caja_consola img,
+.contenedor_accesorio .contenedor_caja_accesorio img {
 	height: 80%;
 	width: 40rem;
 }
@@ -370,7 +409,8 @@ body {
 }
 
 .contenedor_descripcion_videojuego,
-.contenedor_descripcion_consola {
+.contenedor_descripcion_consola,
+.contenedor_descripcion_accesorio {
     font-size: 1.6rem;
     text-align: justify;
     height: 100%;
@@ -382,7 +422,8 @@ body {
 	grid-area: nue;
 }
 
-.contenedor_descripcion_consola {
+.contenedor_descripcion_consola,
+.contenedor_descripcion_accesorio {
 	grid-area: siete;
 	border-bottom: 1px solid lightgrey;
 }
@@ -428,7 +469,8 @@ body {
     grid-area: diez;
 }
 
-.contenedor_consola .contenedor_slides {
+.contenedor_consola .contenedor_slides,
+.contenedor_accesorio .contenedor_slides {
 	position: relative;
 	grid-area: ocho;
 }
@@ -458,7 +500,9 @@ body {
 }
 
 .contenedor_consola .anterior,
-.contenedor_consola .siguiente {
+.contenedor_consola .siguiente,
+.contenedor_accesorio .anterior,
+.contenedor_accesorio .siguiente {
 	top: 30%;
 	color: black;
 }
@@ -488,7 +532,8 @@ body {
     cursor: pointer;
 }
 
-.contenedor_consola .contenedor_imagen_mini {
+.contenedor_consola .contenedor_imagen_mini,
+.contenedor_accesorio .contenedor_imagen_mini {
 	width: 33.3%;
 }
   
@@ -522,7 +567,8 @@ body {
 }
 
 .tarjeta_juego,
-.tarjeta_consola {
+.tarjeta_consola,
+.tarjeta_accesorio {
 	 height: min-content;
 	 border-radius: 1rem;
      text-align: left;
@@ -536,12 +582,14 @@ body {
      width: 24rem;
 }
 
-.tarjeta_consola {
+.tarjeta_consola,
+.tarjeta_accesorio {
 	 width: 28rem;
 }
 
 .tarjeta_juego:hover,
-.tarjeta_consola:hover {
+.tarjeta_consola:hover,
+.tarjeta_accesorio:hover {
 	 cursor: pointer;
 }
 
@@ -549,12 +597,15 @@ body {
      height: 19rem;
 }
 
-.imagen_consola {
+.imagen_consola,
+.imagen_accesorio {
      height: 20rem;
 }
 
+
  .imagen_juego img,
- .imagen_consola img {
+ .imagen_consola img,
+ .imagen_accesorio img {
      height: 100%;
      width: 100%;
      border-top-left-radius: 1rem;
@@ -568,7 +619,8 @@ body {
 }
 
 .contenedor_tarjetas .titulo_juego,
-.contenedor_tarjetas_consolas .titulo_consola {
+.contenedor_tarjetas_consolas .titulo_consola,
+.contenedor_tarjetas_accesorios .titulo_accesorio {
      color: var(--color-texto-negro);
 	 background-color: var(--color-fondo-blanco);
      font-weight: 600;
@@ -581,7 +633,8 @@ body {
      font-size: 1.1rem;
 }
 
-.contenedor_tarjetas_consolas .titulo_consola {
+.contenedor_tarjetas_consolas .titulo_consola,
+.contenedor_tarjetas_accesorios .titulo_accesorio {
 	 font-size: 1.3rem;
 }
 
@@ -610,11 +663,13 @@ body {
 	flex-direction: row;
 }
 
-.contenedor_tarjetas_consolas .item_flex_tarjeta_1 {
+.contenedor_tarjetas_consolas .item_flex_tarjeta_1,
+.contenedor_tarjetas_accesorios .item_flex_tarjeta_1 {
 	width: 80%;
 }
 
-.contenedor_tarjetas_consolas .item_flex_tarjeta_2 {
+.contenedor_tarjetas_consolas .item_flex_tarjeta_2,
+.contenedor_tarjetas_accesorios .item_flex_tarjeta_2 {
 	display: block;
 	height: 5rem;
 	width: 20%;
@@ -630,7 +685,8 @@ body {
 	width: 100%;
 }
 
-.contenedor_tarjetas_consolas .logo_consola {
+.contenedor_tarjetas_consolas .logo_consola,
+.contenedor_tarjetas_accesorios .logo_consola {
 	height: 5rem;
 }
 
@@ -655,7 +711,8 @@ body {
 	font-weight: 700;
 }
 
-.contenedor_tarjetas_consolas .contenedor_precio {
+.contenedor_tarjetas_consolas .contenedor_precio,
+.contenedor_tarjetas_accesorios .contenedor_precio {
 	font-size: 1.7rem;
 }
 

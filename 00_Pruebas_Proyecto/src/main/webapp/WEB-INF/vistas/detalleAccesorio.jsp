@@ -6,25 +6,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>${modeloConsola.nombre}</title>
+<title>${accesorio.nombre}</title>
 <script defer src="/js/slider.js"></script>
 </head>
 <body>
 
 	<jsp:include page="nav.jsp"></jsp:include>
 
-
-	<section class="seccion_detalle_consola">
-        <div class="contenedor_consola">
-            <div class="contenedor_grid_consola">
-                <div class="contenedor_imagen_consola">
-                    <img src="/images/consolas/${modeloConsola.imagenRectangular}" alt="imagen consola">
+	<section class="seccion_detalle_accesorio">
+        <div class="contenedor_accesorio">
+            <div class="contenedor_grid_accesorio">
+                <div class="contenedor_imagen_accesorio">
+                    <img src="/images/accesorios/${accesorio.imagenRectangular}" alt="imagen accesorio">
                 </div>
 
                 <div class="contenedor_compra">
                     <h3>¡En stock!</h3>
-                    <div class="contenedor_precio_consola">
-                        ${modeloConsola.precio} €
+                    <div class="contenedor_precio_accesorio">
+                        ${accesorio.precio} €
                     </div>
                     <button type="button" class="btn btn-lg btn-comprar">
                         <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
@@ -32,57 +31,57 @@
                     </button>
                 </div>
 
-                <div class="contenedor_caja_consola">
-                    <img src="/images/consolas/${modeloConsola.imagenCuadrada}" alt="caja consola">
+                <div class="contenedor_caja_accesorio">
+                    <img src="/images/accesorios/${accesorio.imagenCuadrada}" alt="caja accesorio">
                 </div>
 
-				<div class="nombre_consola">
-                    <h3>${modeloConsola.nombre}</h3>
+				<div class="nombre_accesorio">
+                    <h3>${accesorio.nombre}</h3>
                 </div>
 
-                <div class="contenedor_info_consola_1">
+                <div class="contenedor_info_accesorio_1">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <strong>Fecha de lanzamiento</strong><br>
-                            <fmt:formatDate pattern = "dd-MM-yyyy" value = "${modeloConsola.fechaLanzamiento}"/>
+                            <fmt:formatDate pattern = "dd-MM-yyyy" value = "${accesorio.fechaLanzamiento}"/>
                         </li>
                         <li class="list-group-item">
-                            <strong>Memoria consola</strong><br>
-                            ${modeloConsola.memoriaConsola}
+                            <strong>Conectividad</strong><br>
+                            ${accesorio.conectividad}
                         </li>
 
                     </ul>
                 </div>
 
-                <div class="contenedor_info_consola_2">
+                <div class="contenedor_info_accesorio_2">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <strong>Tamaño</strong><br>
-                            ${modeloConsola.tamano}
+                            ${accesorio.tamano}
                         </li>
                         <li class="list-group-item">
                             <strong>Peso</strong><br>
-                            ${modeloConsola.peso}
+                            ${accesorio.peso}
                         </li>
                     </ul>
                 </div>
 
-                <div class="contenedor_descripcion_videojuego contenedor_descripcion_consola">
+                <div class="contenedor_descripcion_accesorio">
                     <strong>Descripción</strong><br>
-                    ${modeloConsola.descripcion}
+                    ${accesorio.descripcion}
                 </div>
 
                 <div class="contenedor_slides">
                     <div class="slide">
-                        <img src="/images/consolas/${modeloConsola.imagen1}">
+                        <img src="/images/accesorios/${accesorio.imagen1}" alt="imagen accesorio">
                     </div>
 
                     <div class="slide">
-                        <img src="/images/consolas/${modeloConsola.imagen2}">
+                        <img src="/images/accesorios/${accesorio.imagen2}" alt="imagen accesorio">
                     </div>
                 
                     <div class="slide">
-                        <img src="/images/consolas/${modeloConsola.imagen3}">
+                        <img src="/images/accesorios/${accesorio.imagen3}" alt="imagen accesorio">
                     </div>
                 
 
@@ -93,20 +92,20 @@
 
                     <div class="contenedor_imagenes_mini">
                         <div class="contenedor_imagen_mini">
-                            <img class="imagen_mini" src="/images/consolas/${modeloConsola.imagen1}" alt="imagen videojuego" data-tab="1">
+                            <img class="imagen_mini" src="/images/accesorios/${accesorio.imagen1}" alt="imagen accesorio" data-tab="1">
                         </div>
                         <div class="contenedor_imagen_mini">
-                            <img class="imagen_mini" src="/images/consolas/${modeloConsola.imagen2}" alt="imagen videojuego" data-tab="2">
+                            <img class="imagen_mini" src="/images/accesorios/${accesorio.imagen2}" alt="imagen accesorio" data-tab="2">
                         </div>
                         <div class="contenedor_imagen_mini">
-                            <img class="imagen_mini" src="/images/consolas/${modeloConsola.imagen3}" alt="imagen videojuego" data-tab="3">
+                            <img class="imagen_mini" src="/images/accesorios/${accesorio.imagen3}" alt="imagen accesorio" data-tab="3">
                         </div>
                     </div>
                 </div> 
             </div>
         </div>
     </section>
-
+	
 
 </body>
 </html>

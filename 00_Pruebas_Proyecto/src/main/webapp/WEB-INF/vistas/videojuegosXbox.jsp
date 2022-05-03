@@ -32,10 +32,10 @@
 			                    </div>
 			                    <div class="contenedor_logo_consola item_flex_tarjeta_2">
 			                    <div>
-			                        	<img src="/images/logos/pegi/${vec.videojuego.imagenPegi}" alt="logo pegi" class="logo_pegi">			                  	
+			                        <img src="/images/logos/pegi/${vec.videojuego.imagenPegi}" alt="logo pegi" class="logo_pegi">			                  	
 			                    </div>			                    
 			                   	<div>
-			                        	<img src="/images/logos/consolas/${vec.consola.logoConsola}" alt="logo consola" class="logo_consola">			                    	
+			                        <img src="/images/logos/consolas/${vec.consola.logoConsola}" alt="logo consola" class="logo_consola">			                    	
 			                    </div>
 			                    </div>
 			                </div>

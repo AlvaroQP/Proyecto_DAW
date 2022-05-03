@@ -1,8 +1,6 @@
 package com.jasgaming.pruebas.model.entities;
-
 import java.io.Serializable;
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 
 @Entity

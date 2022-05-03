@@ -13,6 +13,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
 <link rel="shortcut icon" type="imagen/x-icon" href="/images/logos/jas_gaming/favicon.png">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
 <body>
 
@@ -50,7 +51,7 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/consola/ps5">
 	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
 	                            PlayStation 5
                             </a>
@@ -58,7 +59,7 @@
 	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
 	                            Nintendo Switch
                             </a>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/consola/xbox">
 	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
 	                            Xbox Series X/S
                             </a>
@@ -69,15 +70,15 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/accesorio/ps5">
 	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
 	                            PlayStation 5
                             </a>
-                            <a class="nav-link" href="/consola/switch">
+                            <a class="nav-link" href="/accesorio/switch">
 	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
 	                            Nintendo Switch
                             </a>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/accesorio/xbox">
 	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
 	                            Xbox Series X/S
                             </a>
@@ -86,14 +87,18 @@
                 </ul>
                 
                 <div class="contenedor_login_registro">
-                	<a href="">
-                		<img src="/images/nav/star.png" class="nav_estrella">
-                		Login
-                	</a>
-                	<a href="">
-                		<img src="/images/nav/one_up.png" class="nav_one_up">
-                		Registro
-                	</a>
+                	<div>
+	                	<a href="">
+	                		<span class="material-symbols-outlined icono_login">account_circle</span>
+	                		Login
+	                	</a>
+                	</div>
+                	<div>
+	                	<a href="">
+	                		<span class="material-symbols-outlined icono_registro">person_add</span>
+	                		Registro
+	                	</a>
+                	</div>                	
                 </div>
                 
                 <!-- <form action="" method="POST">
