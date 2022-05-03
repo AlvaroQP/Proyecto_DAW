@@ -1,0 +1,32 @@
+nombre:Xbox series S	
+Descripcion:
+Solo digital, todo de nueva generacion
+Pásate a lo digital con la Xbox Series S y crea una biblioteca de juegos digitales. Tus juegos, partidas guardadas 
+y copias de seguridad están a salvo en la nube. Además, disfruta de la capacidad de reservar y preinstalar 
+los juegos disponibles próximamente para que puedas jugar a ellos en el momento de su lanzamiento.
+
+Velocidad redefinida
+Xbox Velocity Architecture, impulsada por un SSD personalizado, funciona junto con la innovadora tecnología de 
+sistema en un chip (SOC) para ofrecer una jugabilidad de hasta 120 FPS en nuestra consola más pequeña.
+Tiempos de carga más rápidos. Ultrarrápido. Los juegos se cargan significativamente más rápido con el SSD 
+personalizado en la Xbox Series S.
+Más tiempo jugando, menos tiempo esperando. Con Reanudación rápida, puedes cambiar sin problemas entre varios 
+títulos diferentes y reanudar instantáneamente desde donde lo dejaste.
+
+Mejor aspecto.Mejor juego.
+Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, sombras 
+y reflejos precisos para crear mundos dinámicos y vivos.
+
+Escucha... estas rodeado.
+El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
+para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
+Las Xbox Series X|S son las primeras videoconsolas compatibles con Dolby Vision y Dolby Atmos, que mejoran 
+el juego con imágenes de espectro completo y audio envolvente.
+
+
+Precio:299€
+Fecha de lanzamiento:10-11-2020
+tamaño:6,5 cm x 15,1 cm y 27,5 cm.
+peso:1.92kg
+memoria:512GB
+

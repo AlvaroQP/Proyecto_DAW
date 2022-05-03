@@ -1,0 +1,35 @@
+nombre:Xbox series X	
+Descripcion:
+La XBOX mas rapida y ma potente de la historia
+
+12 teraflops de potencia
+Los 12 teraflops de potencia de procesamiento alojados en el sistema en un chip (SOC) 
+funcionan con las arquitecturas Zen 2 y RDNA 2 de AMD para dar como resultado mundos que 
+exigen una mirada más cercana.
+
+Mejor aspecto. Mejor juego.
+Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, 
+sombras y reflejos precisos para crear mundos dinámicos y vivos.
+
+Escucha...estas rodeado
+El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
+para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
+Las Xbox Series X|S son las primeras videoconsolas compatibles con Dolby Vision y Dolby Atmos, que mejoran el 
+juego con imágenes de espectro completo y audio envolvente.
+
+Juegos en autentico 4K
+La Xbox Series X ofrece velocidades de cuadro sensacionalmente suaves de hasta 120 FPS con la explosión 
+visual que ofrece HDR. Sumérgete con personajes más nítidos, mundos más brillantes y detalles 
+imposibles con auténtico 4K.
+
+Diseñado para la velocidad
+En conjunto, el nuevo sistema en un chip (SOC) y la solución Xbox Velocity Architecture ponen la velocidad 
+al alcance de la mano, y el SSD personalizado de 1TB y la CPU ponen el volante en las manos, para que 
+puedas ir de 0 a 60 en hasta 120 FPS.
+
+Precio:499€
+Fecha de lanzamiento:10-11-2020
+tamaño:15.1cm x 15.1cm x 30.1cm
+peso:4.45kg
+memoria:1TB
+
