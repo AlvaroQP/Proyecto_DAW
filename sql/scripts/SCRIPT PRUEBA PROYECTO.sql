@@ -1024,6 +1024,88 @@ VALUES('nsoled',
              '/nin_switch/ns_lite_amarilla/ns_lite_amarilla_2.jpg',
              '/nin_switch/ns_lite_amarilla/ns_lite_amarilla_3.jpg',
              'switch'
+          ),
+          
+-- Consolas Xbox 
+          
+          (
+			'XSerieS',
+            'Xbox series S',
+			"Solo digital, todo de nueva generacion
+			Pásate a lo digital con la Xbox Series S y crea una biblioteca de juegos digitales. Tus juegos, partidas guardadas 
+			y copias de seguridad están a salvo en la nube. Además, disfruta de la capacidad de reservar y preinstalar 
+			los juegos disponibles próximamente para que puedas jugar a ellos en el momento de su lanzamiento.
+
+			Velocidad redefinida
+			Xbox Velocity Architecture, impulsada por un SSD personalizado, funciona junto con la innovadora tecnología de 
+			sistema en un chip (SOC) para ofrecer una jugabilidad de hasta 120 FPS en nuestra consola más pequeña.
+			Tiempos de carga más rápidos. Ultrarrápido. Los juegos se cargan significativamente más rápido con el SSD 
+			personalizado en la Xbox Series S.
+			Más tiempo jugando, menos tiempo esperando. Con Reanudación rápida, puedes cambiar sin problemas entre varios 
+			títulos diferentes y reanudar instantáneamente desde donde lo dejaste.
+
+			Mejor aspecto.Mejor juego.
+			Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, sombras 
+			y reflejos precisos para crear mundos dinámicos y vivos.
+
+			Escucha... estas rodeado.
+			El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
+			para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
+			Las Xbox Series X|S son las primeras videoconsolas compatibles con Dolby Vision y Dolby Atmos, que mejoran 
+			el juego con imágenes de espectro completo y audio envolvente.",
+             299.99,
+             '2020-11-10',
+             '6,5 cm x 15,1 cm y 27,5 cm',
+             '1.92kg',
+             '512 GB',
+             '/Xbox/Xbox_seriesS/Xbox_seriesS_cuadrada.jpg',
+             '/Xbox/Xbox_seriesS/Xbox_seriesS_rectangular.jpg',
+             '/Xbox/Xbox_seriesS/Xbox_seriesS_1.jpg',
+             '/Xbox/Xbox_seriesS/Xbox_seriesS_2.jpg',
+             '/Xbox/Xbox_seriesS/Xbox_seriesS_3.jpg',
+             'xbox_s_xs'
+          ),
+		  (
+			'XSerieX',
+            'Xbox series X',
+			"La XBOX mas rapida y ma potente de la historia
+
+			12 teraflops de potencia
+			Los 12 teraflops de potencia de procesamiento alojados en el sistema en un chip (SOC) 
+			funcionan con las arquitecturas Zen 2 y RDNA 2 de AMD para dar como resultado mundos que 
+			exigen una mirada más cercana.
+
+			Mejor aspecto. Mejor juego.
+			Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, 
+			sombras y reflejos precisos para crear mundos dinámicos y vivos.
+
+			Escucha...estas rodeado
+			El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
+			para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
+			Las Xbox Series X|S son las primeras videoconsolas compatibles con Dolby Vision y Dolby Atmos, que mejoran el 
+			juego con imágenes de espectro completo y audio envolvente.
+
+			Juegos en autentico 4K
+			La Xbox Series X ofrece velocidades de cuadro sensacionalmente suaves de hasta 120 FPS con la explosión 
+			visual que ofrece HDR. Sumérgete con personajes más nítidos, mundos más brillantes y detalles 
+			imposibles con auténtico 4K.
+
+			Diseñado para la velocidad
+			En conjunto, el nuevo sistema en un chip (SOC) y la solución Xbox Velocity Architecture ponen la velocidad 
+			al alcance de la mano, y el SSD personalizado de 1TB y la CPU ponen el volante en las manos, para que 
+			puedas ir de 0 a 60 en hasta 120 FPS.
+			",
+             499,
+             '2020-11-10',
+             '15.1cm x 15.1cm x 30.1cm',
+             '4.45kg',
+             '1 TB',
+             '/Xbox/Xbox_seriesX/Xbox_seriesX_cuadrada.jpg',
+             '/Xbox/Xbox_seriesX/Xbox_seriesX_rectangular.jpg',
+             '/Xbox/Xbox_seriesX/Xbox_seriesX_1.jpg',
+             '/Xbox/Xbox_seriesX/Xbox_seriesX_2.jpg',
+             '/Xbox/Xbox_seriesX/Xbox_seriesX_3.jpg',
+             'xbox_s_xs'
           );
 
 
