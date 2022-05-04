@@ -24,4 +24,14 @@ public class ModelosConsolaServiceImpl implements ModelosConsolaService {
 		return mcRepository.findConsolasSwitch();
 	}
 
+	@Override
+	public List<ModelosConsola> findConsolasPs5() {
+		return mcRepository.findConsolasPs5();
+	}
+
+	@Override
+	public List<ModelosConsola> findConsolasXbox() {
+		return mcRepository.findConsolasXbox();
+	}
+
 }

@@ -7,5 +7,7 @@ public interface ModelosConsolaService {
 
 	ModelosConsola findById(String idModeloConsola);
 	List<ModelosConsola> findConsolasSwitch();
+	List<ModelosConsola> findConsolasPs5();
+	List<ModelosConsola> findConsolasXbox();
 	
 }

@@ -75,7 +75,7 @@ CREATE TABLE videojuego_y_genero (
 
 CREATE TABLE accesorios (
 	id_accesorio INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    nombre VARCHAR(45) NOT NULL,
+    nombre VARCHAR(70) NOT NULL,
     fecha_lanzamiento DATE NOT NULL,
     descripcion VARCHAR(3000) NOT NULL,
     precio DECIMAL(9,2) NOT NULL,
@@ -945,8 +945,8 @@ VALUES(1, 1),
       (30, 1),
       (31, 1),
       (31, 2);
-
-
+	
+    
 -- Consolas Switch
 INSERT INTO modelos_consolas
 VALUES('nsoled',
@@ -1103,9 +1103,7 @@ VALUES('nsoled',
              '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_3.jpg',
              'switch'
           ),
-
 -- Consolas Xbox
-
           (
 			'XSerieS',
             'Xbox series S',
@@ -1113,7 +1111,6 @@ VALUES('nsoled',
 			Pásate a lo digital con la Xbox Series S y crea una biblioteca de juegos digitales. Tus juegos, partidas guardadas 
 			y copias de seguridad están a salvo en la nube. Además, disfruta de la capacidad de reservar y preinstalar 
 			los juegos disponibles próximamente para que puedas jugar a ellos en el momento de su lanzamiento.
-
 			Velocidad redefinida
 			Xbox Velocity Architecture, impulsada por un SSD personalizado, funciona junto con la innovadora tecnología de 
 			sistema en un chip (SOC) para ofrecer una jugabilidad de hasta 120 FPS en nuestra consola más pequeña.
@@ -1121,11 +1118,9 @@ VALUES('nsoled',
 			personalizado en la Xbox Series S.
 			Más tiempo jugando, menos tiempo esperando. Con Reanudación rápida, puedes cambiar sin problemas entre varios 
 			títulos diferentes y reanudar instantáneamente desde donde lo dejaste.
-
 			Mejor aspecto.Mejor juego.
 			Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, sombras 
 			y reflejos precisos para crear mundos dinámicos y vivos.
-
 			Escucha... estas rodeado.
 			El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
 			para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
@@ -1147,27 +1142,22 @@ VALUES('nsoled',
 			'XSerieX',
             'Xbox series X',
 			"La XBOX mas rapida y ma potente de la historia
-
 			12 teraflops de potencia
 			Los 12 teraflops de potencia de procesamiento alojados en el sistema en un chip (SOC) 
 			funcionan con las arquitecturas Zen 2 y RDNA 2 de AMD para dar como resultado mundos que 
 			exigen una mirada más cercana.
-
 			Mejor aspecto. Mejor juego.
 			Equipado con las arquitecturas Zen 2 y RDNA 2 de AMD, DirectX Raytracing ofrece iluminación realista, 
 			sombras y reflejos precisos para crear mundos dinámicos y vivos.
-
 			Escucha...estas rodeado
 			El sonido espacial 3D es la siguiente evolución de la tecnología de audio, que utiliza algoritmos avanzados 
 			para crear mundos envolventes realistas que te sitúan en el centro de la experiencia.
 			Las Xbox Series X|S son las primeras videoconsolas compatibles con Dolby Vision y Dolby Atmos, que mejoran el 
 			juego con imágenes de espectro completo y audio envolvente.
-
 			Juegos en autentico 4K
 			La Xbox Series X ofrece velocidades de cuadro sensacionalmente suaves de hasta 120 FPS con la explosión 
 			visual que ofrece HDR. Sumérgete con personajes más nítidos, mundos más brillantes y detalles 
 			imposibles con auténtico 4K.
-
 			Diseñado para la velocidad
 			En conjunto, el nuevo sistema en un chip (SOC) y la solución Xbox Velocity Architecture ponen la velocidad 
 			al alcance de la mano, y el SSD personalizado de 1TB y la CPU ponen el volante en las manos, para que 
@@ -1185,9 +1175,7 @@ VALUES('nsoled',
              '/Xbox/Xbox_seriesX/Xbox_seriesX_3.jpg',
              'xbox_s_xs'
           ),
-
 -- Consolas Ps5
-
           (
 			'Ps5digital',
             'Play Station 5 Digital Edition',
@@ -1204,9 +1192,9 @@ VALUES('nsoled',
              '/consolas-ps5/ps5-digital/ps5-digital-rectangular.jpg',
              '/consolas-ps5/ps5-digital/ps5-digital.jpg',
              '/consolas-ps5/ps5-digital/ps5-digital2.jpg',
+             '/consolas-ps5/ps5-digital/ps5-digital3.jpg',
              'ps5'
           ),
-
           (
 			'Ps5disco',
             'Play Station 5 Standard Edition',
@@ -1223,6 +1211,7 @@ VALUES('nsoled',
              '/consolas-ps5/ps5-disco/ps5-disco-rectangular.jpg',
              '/consolas-ps5/ps5-disco/ps5-disco.jpg',
              '/consolas-ps5/ps5-disco/ps5-disco2.jpg',
+             '/consolas-ps5/ps5-disco/ps5-disco3.jpg',
              'ps5'
           );
 
@@ -1233,23 +1222,146 @@ VALUES(1,
 	   'Nintendo Switch Pro Controller',
        '2017-03-03',
        'Juega en los ambientes más competitivos o supera las situaciones más difíciles con el mando Nintendo Switch ProController, el mando para la nueva generación de Nintendo con el que conseguirás el control más profesional. El Nintendo Switch Pro Controller incluye cable USB de carga y cuenta con la nueva tecnología de vibración HD, punto NFC para compatibilidad con figuras amiibo y sensores de movimiento.',
-       '69.95',
+        69.95,
        '106 × 152 × 60 mm',
        '246 g',
        'Bluetooth 3.0, NFC',
-       '/nin_switch/nin_switch_pro_controller_cuadrada.jpg',
-       '/nin_switch/nin_switch_pro_controller_rectangular.jpg',
-       '/nin_switch/nin_switch_pro_controller_1.jpg',
-       '/nin_switch/nin_switch_pro_controller_2.jpg',
-       '/nin_switch/nin_switch_pro_controller_3.jpg',
+       '/nin_switch/ns_pro_controller/ns_pro_controller_cuadrada.jpg',
+       '/nin_switch/ns_pro_controller/ns_pro_controller_rectangular.jpg',
+       '/nin_switch/ns_pro_controller/ns_pro_controller_1.jpg',
+       '/nin_switch/ns_pro_controller/ns_pro_controller_2.jpg',
+       '/nin_switch/ns_pro_controller/ns_pro_controller_3.jpg',
        'switch'
        ),
-
-       (1,
+       (2,
+	   'Adventure Pack Pokemon Legends: Arceus',
+       '2021-11-10',
+       'Diseñada para guardar todos los accesorios y Poké Balls que necesitas para llevar tu experiencia de Nintendo a cualquier parte. El cargador, la base, transformador y otros accesorios encajarán de forma normal e irán perfectamente protegidas y seguras en esta mochila de transporte.
+		Con ilustraciones de Pokémon. Con licencia oficial de Nintendo y The Pokémon Company International.',
+        26.99,
+       '10 x 20 x 2.5 cm',
+       '226 g',
+       'N/A',
+       '/nin_switch/adventure_pack_arceus/adventure_pack_arceus_cuadrada.jpg',
+       '/nin_switch/adventure_pack_arceus/adventure_pack_arceus_rectangular.jpg',
+       '/nin_switch/adventure_pack_arceus/adventure_pack_arceus_1.jpg',
+       '/nin_switch/adventure_pack_arceus/adventure_pack_arceus_2.jpg',
+       '/nin_switch/adventure_pack_arceus/adventure_pack_arceus_3.jpg',
+       'switch'
+       ),
+	   (3,
+	   'Funda Switch Animal Crossing',
+       '2021-09-08',
+       'Almacena y protege tu Nintendo Switch o Nintendo Switch Lite en la elegante funda de viaje de Animal Crossing Tom Nook Slim Deluxe. Mantén tu consola en su lugar de forma segura hasta que la necesites, a continuación, utiliza la correa de elevación de la consola para una fácil extracción con una sola mano. Haz que tu funda de viaje Slim Deluxe sea compatible con la bandeja incluida que almacena cómodamente tu Nintendo Switch Lite o se puede quitar para almacenar tu Nintendo Switch. Con un soporte integrado, puedes apoyar tu consola para jugar cómodamente sobre la marcha durante horas. Para los jugadores a los que les gusta el minimalismo, te encantará el diseño elegante y elegante de la funda de viaje Slim Deluxe de Animal Crossing Tom Nook. Lleva esta funda con licencia oficial contigo dondequiera que vayas para las mejores sesiones de juego.',
+        19.99,
+       '1.02 x 0.24 x 0.59 pulgadas',
+       '249 g',
+       'N/A',
+       '/nin_switch/case_animal_crossing/case_animal_crossing_cuadrada.jpg',
+       '/nin_switch/case_animal_crossing/case_animal_crossing_rectangular.jpg',
+       '/nin_switch/case_animal_crossing/case_animal_crossing_1.jpg',
+       '/nin_switch/case_animal_crossing/case_animal_crossing_2.jpg',
+       '/nin_switch/case_animal_crossing/case_animal_crossing_3.jpg',
+       'switch'
+       ),
+	   (4,
+	   'Funda Switch Pokémon Arceus',
+       '2021-12-10',
+       'Fabricada con materiales premium, esta robusta funda para los auténticos entrenadores Pokémon resguardará tu consola en todas las situaciones. Además, cuenta con diseño exclusivo Leyendas Pokémon: Arceus. El interior afelpado se adapta perfectamente a la consola y la protege de arañazos y roces, al tiempo que ofrece espacio para guardar cartuchos de juego y pequeños accesorios.',
+        24.99,
+       '14 x 33 x 4.8 cm',
+       '181 g',
+       'N/A',
+       '/nin_switch/case_arceus/case_arceus_cuadrada.jpg',
+       '/nin_switch/case_arceus/case_arceus_rectangular.jpg',
+       '/nin_switch/case_arceus/case_arceus_1.jpg',
+       '/nin_switch/case_arceus/case_arceus_2.jpg',
+       '/nin_switch/case_arceus/case_arceus_3.jpg',
+       'switch'
+       ),
+	   (5,
+	   'Funda Switch Pokémon Pikachu',
+       '2021-12-10',
+       'Lleva tus juegos allá a donde vayas con esta exclusiva funda para consola redonda diseñada especialmente para Nintendo Switch o Nintendo Switch Lite con licencia oficial de The Pokémon Company International. El interior de esta funda para Nintendo Switch está hecho con un forro suave, tiene una etiqueta Pikachu 025, una solapa protectora de pantalla con almacenamiento para seis tarjetas de juego, así como bolsillos de rejilla para tus joy-con. Esta funda para juegos portátil con Pikachu 025 te da la libertad de divertirte en cualquier lado con tu Nintendo Switch. Donde quieras. Cuando quieras.',
+        29.99,
+       '26,3 x 12,7 x 5 cm ',
+       '190 g',
+       'N/A',
+       '/nin_switch/case_pikachu/case_pikachu_cuadrada.jpg',
+       '/nin_switch/case_pikachu/case_pikachu_rectangular.jpg',
+       '/nin_switch/case_pikachu/case_pikachu_1.jpg',
+       '/nin_switch/case_pikachu/case_pikachu_2.jpg',
+       '/nin_switch/case_pikachu/case_pikachu_3.jpg',
+       'switch'
+       ),
+	   (6,
+	   'Mando HORIPAD Mini Super Mario',
+       '2020-09-16',
+       '¡HORI acerca la diversión a toda la familia! El HORIPAD Mini es ligero y compacto. Diseñado con los jugadores más alevines en mente, su diseño y ergonomía lo hacen ideal también para aquellos con manos pequeñas y los fans más devotos de Mario.
+		Equipado con todos los botones esenciales y función Turbo de propina, el HORIPAD Mini no requiere instalación de ningún tipo. Simplemente conéctalo a la consola y ¡listo! Para que te centres solo en lo que realmente importa: ¡hacer correr a Mario!',
+        24.99,
+       '130 x 70 x 30 mm',
+       '160 g',
+       'Cable',
+       '/nin_switch/horipad_mini_mario/horipad_mini_mario_cuadrada.jpg',
+       '/nin_switch/horipad_mini_mario/horipad_mini_mario_rectangular.jpg',
+       '/nin_switch/horipad_mini_mario/horipad_mini_mario_1.jpg',
+       '/nin_switch/horipad_mini_mario/horipad_mini_mario_2.jpg',
+       '/nin_switch/horipad_mini_mario/horipad_mini_mario_3.jpg',
+       'switch'
+       ),
+	   (7,
+	   'Mario Kart Live Home Circuit',
+       '2020-10-16',
+       '¡Disputa carreras en tu propia casa! Descubre tu salón, dormitorio, cocina y demás habitaciones desde una nueva perspectiva con carreras de Mario Kart que transcurren en tu hogar... ¡y en la pantalla!
+        Usa la consola Nintendo Switch para controlar el kart y mira cómo reproduce las acciones del juego mientras aceleras y derrapas para hacerte con la victoria. La cámara integrada del kart transmite a la pantalla de Nintendo Switch o del televisor las imágenes desde detrás del asiento del piloto.',
+        99.99,
+       'N/A',
+       'N/A',
+       'N/A',
+       '/nin_switch/mklive_home_circuit/mklive_home_circuit_cuadrada.jpg',
+       '/nin_switch/mklive_home_circuit/mklive_home_circuit_rectangular.jpg',
+       '/nin_switch/mklive_home_circuit/mklive_home_circuit_1.jpg',
+       '/nin_switch/mklive_home_circuit/mklive_home_circuit_2.jpg',
+       '/nin_switch/mklive_home_circuit/mklive_home_circuit_3.jpg',
+       'switch'
+       ),
+	   (8,
+	   'Mando Switch Super Mario',
+       '2018-11-08',
+       'Juega tus juegos favoritos de Nintendo Switch como un profesional con este controlador inalámbrico mejorado PowerA con licencia oficial. Diseñado para mayor comodidad durante las sesiones de juego prolongadas, este controlador inalámbrico Bluetooth cuenta con controles de movimiento, botones avanzados para juegos mapeables y diseño ergonómico estándar. Disfruta de hasta 30 horas de juego con nuevas baterías alcalinas o añade tus propias baterías recargables. ',
+        34.99,
+       '3.94 x 3.94 x 1.18 pulgadas',
+       '267 g',
+       'Bluetooth 5.0',
+       '/nin_switch/ns_ew_mario/ns_ew_mario_cuadrada.jpg',
+       '/nin_switch/ns_ew_mario/ns_ew_mario_rectangular.jpg',
+       '/nin_switch/ns_ew_mario/ns_ew_mario_1.jpg',
+       '/nin_switch/ns_ew_mario/ns_ew_mario_2.jpg',
+       '/nin_switch/ns_ew_mario/ns_ew_mario_3.jpg',
+       'switch'
+       ),
+	   (9,
+	   'Mando Switch Pokémon Pikachu',
+       '2018-11-08',
+       'Juega tus juegos favoritos de Nintendo Switch como un profesional con este controlador inalámbrico mejorado PowerA con licencia oficial. Diseñado para mayor comodidad durante las sesiones de juego prolongadas, este controlador inalámbrico Bluetooth cuenta con controles de movimiento, botones avanzados para juegos mapeables y diseño ergonómico estándar. Disfruta de hasta 30 horas de juego con nuevas baterías alcalinas o añade tus propias baterías recargables. ',
+        34.99,
+       '3.94 x 3.94 x 1.18 pulgadas',
+       '267 g',
+       'Bluetooth 5.0',
+       '/nin_switch/ns_ew_pik/ns_ew_pik_cuadrada.jpg',
+       '/nin_switch/ns_ew_pik/ns_ew_pik_rectangular.jpg',
+       '/nin_switch/ns_ew_pik/ns_ew_pik_1.jpg',
+       '/nin_switch/ns_ew_pik/ns_ew_pik_2.jpg',
+       '/nin_switch/ns_ew_pik/ns_ew_pik_3.jpg',
+       'switch'
+       ),
+-- Accesorios PS5
+	   (10,
 	   'Ps5 Controller Dualsense Cosmic Red',
        '2021-06-18',
        'Compra el nuevo mando de Playstation 5 DualSense Cosmic Red, el nuevo diseño del mando que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '74.95',
+        74.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1260,12 +1372,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic3.jpeg',
        'ps5'
        ),
-       
-       (2,
+       (11,
 	   'Ps5 Controller Dualsense Galactic Purple',
        '2021-06-18',
        'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Galactic Purple que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '74.95',
+        74.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1276,12 +1387,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple3.jpeg',
        'ps5'
        ),
-       
-       (3,
+       (12,
 	   'Ps5 Controller Dualsense Midnight Black',
        '2021-06-18',
        'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Midnight Black que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '69.95',
+        69.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1292,12 +1402,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-midnight/dualsense-midnightBlack3.jpeg',
        'ps5'
        ),
-       
-       (4,
+       (13,
 	   'Ps5 Controller Dualsense Nova Pink',
        '2021-06-18',
        'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Nova Pink que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '74.95',
+        74.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1308,12 +1417,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink3.jpeg',
        'ps5'
        ),
-       
-       (5,
+       (14,
 	   'Ps5 Controller Dualsense Starlight Blue',
        '2021-06-18',
        'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Starlight Blue que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '74.95',
+        74.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1324,12 +1432,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-starlight/dualsense-starlightBlue3.jpeg',
        'ps5'
        ),
-       
-       (6,
+       (15,
 	   'Ps5 Controller Dualsense Blanco',
        '2021-06-18',
        'Compra el nuevo mando inalámbrico de Playstation 5 DualSense que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
-       '69.95',
+        69.95,
        '160 × 66 × 106 mm',
        '280 g',
        'Communication Wireless: Bluetooth® Ver5.1',
@@ -1340,12 +1447,11 @@ VALUES(1,
        '/accesorios-ps5/dualsense-white/dualsense-white3.jpeg',
        'ps5'
        ),
-       
-       (7,
-	   'Auriculares Inalambricos Blancos Pulse 3d Ps5',
+       (16,
+	   'Auriculares Inalámbricos Blancos Pulse 3d Ps5',
        '2020-09-20',
        'Auriculares inalámbricos PULSE 3D Los auriculares inalámbricos PULSE 3D para PS5 ofrecen una nueva generación de sonido para juegos. Los juegos suenan Disfruta de audio 3D en consolas PS5 con un auricular especialmente optimizado. Los auriculares inalámbricos Pulse 3D cuentan con un diseño mejorado con dos micrófonos con cancelación de ruido, un puerto USB Type-C para cargar y una serie de controles de fácil acceso',
-       '99.95',
+        99.95,
        '22 x 13 x 22.5 cm',
        '500 g',
        'Interfaz de receptor inalámbrico: USB',
@@ -1354,14 +1460,13 @@ VALUES(1,
        '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos-rectangular2.jpeg',
        '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos2.jpg',
        '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos3.jpg',
-       'switch'
+       'ps5'
        ),
-       
-       (8,
-	   'Auriculares Inalambricos Negros Pulse 3d Ps5',
+       (17,
+	   'Auriculares Inalámbricos Negros Pulse 3d Ps5',
        '2020-09-20',
        'Auriculares inalámbricos PULSE 3D Los auriculares inalámbricos PULSE 3D para PS5 ofrecen una nueva generación de sonido para juegos. Los juegos suenan Disfruta de audio 3D en consolas PS5 con un auricular especialmente optimizado. Los auriculares inalámbricos Pulse 3D cuentan con un diseño mejorado con dos micrófonos con cancelación de ruido, un puerto USB Type-C para cargar y una serie de controles de fácil acceso',
-       '99.95',
+        99.95,
        '22 x 13 x 22.5 cm',
        '500 g',
        'Interfaz de receptor inalámbrico: USB',
@@ -1372,46 +1477,48 @@ VALUES(1,
        '/auriculares-pulse3d-negros/auriculares-pulse3d-negros3.jpg',
        'ps5'
        ),
-       
-       (9,
+       (18,
 	   'Cubierta Ps5 Estándar Midnight Black',
        '2022-01-21',
        'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
-       '54.99',
+        54.99,
        '18.9 x 7 x 19.2 cm',
        '427 g',
-       ' ',
+       'N/A',
+       '',
+       '',
        '/carcasa-midnightBlack/carcasa-midnightBlack.jpg',
        '/carcasa-midnightBlack/carcasa-midnightBlack2.jpg',
+       '',
        'ps5'
        ),
-       
-       (10,
+       (19,
 	   'Cubierta Ps5 Estándar Cosmic Red',
        '2022-01-21',
        'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
-       '54.99',
+        54.99,
        '18.9 x 7 x 19.2 cm',
        '427 g',
-       ' ',
+       'N/A',
+       '',
+       '',
        '/carcasa-cosmicRed/carcasa-cosmicRed.jpg',
        '/carcasa-cosmicRed/carcasa-cosmicRed2.jpg',
+       '',
        'ps5'
        ),
-
 -- Accesorios Xbox
-
-       (11,
-	   'Auriculares estéreo edición especial del 20 aniversario',
+       (20,
+	   'Auriculares edición 20 aniversario',
        '2021-10-07',
        'Ergonomía cómoda | Ajuste universal | Ligero y flexible
         Juega alto y claro con los auriculares estéreo Xbox – 20th Anniversary Special Edition en negro 
         clásico con toques verdes que se remontan al principio, y mucho más. Viaja a través del tiempo 
         con el micrófono de pluma verde, las marcas verdes "L" y "R" dentro de los auriculares y los diales 
         de oreja negro translúcido que honran la consola Xbox verde translúcida original.',
-       '64.99',
-       'NA',
-       'NA',
+        64.99,
+       'N/A',
+       'N/A',
        'jack 3.5mm',
        '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_cuadrada.jpg',
        '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_rectangular.jpg',
@@ -1420,8 +1527,7 @@ VALUES(1,
        '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_3.jpg',
        'xbox_s_xs'
        ),
-        
-        (12,
+        (21,
 	   'Cascos estéreo de Xbox',
        '2021-09-21',
        'Ergonomía cómoda | Ajuste universal | Ligeros y flexibles
@@ -1429,9 +1535,9 @@ VALUES(1,
         Juega alto y claro con los Cascos estéreo Xbox, que ofrecen un chat ultranítido y son compatibles 
         con el sonido espacial de alta fidelidad de Windows Sonic. Gracias a su diseño flexible y ligero, 
         ofrecen una experiencia cómoda durante sesiones de juego prolongadas.',
-       '45',
-       'NA',
-       'NA',
+        45,
+       'N/A',
+       'N/A',
        'jack 3.5mm',
        '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo_Xbox_cuadrada.jpg',
        '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo_Xbox_rectangular.jpg',
@@ -1440,6 +1546,7 @@ VALUES(1,
        '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo3_Xbox.jpg',
        'xbox_s_xs'
        );
+
 
 
 INSERT INTO perfiles(nombre)

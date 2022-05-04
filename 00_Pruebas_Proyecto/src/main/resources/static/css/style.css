@@ -195,7 +195,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 2fr) 10rem 35rem auto auto;
+    grid-template-rows: repeat(2, 2fr) 10rem 30rem auto auto auto;
     grid-template-areas: "uno uno"
     					 "uno uno"
                          "dos dos"
@@ -217,10 +217,22 @@ body {
 }
 
 .contenedor_imagen_videojuego img,
-.contenedor_imagen_consola img,
-.contenedor_imagen_accesorio img {
+.contenedor_imagen_consola img {
     width: 100%;
-    border-top-left-radius: 1rem 
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.contenedor_imagen_accesorio,
+.contenedor_imagen_consola {
+	background-color: white;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+}
+
+.contenedor_imagen_accesorio img {
+	width: 70%;
+	transform: translateX(20%);
 }
 
 .contenedor_info_videojuego_1, .contenedor_info_videojuego_2,
@@ -307,6 +319,8 @@ body {
 .contenedor_accesorio .contenedor_compra {
     grid-area: cuatro;
 	background-color: white;
+	border-radius: 0;
+
 }
 
 .contenedor_compra h3 {
@@ -320,7 +334,7 @@ body {
     padding: 1rem 2rem;
     color: var(--color-principal-blanco);
     background-color: var(--color-principal-rojo);
-    border-radius: 3rem;
+    border-radius: 1rem;
     box-shadow: 2px 2px 6px 1px #414040;
 } 
 
@@ -484,6 +498,16 @@ body {
     width: 100%;
 }
 
+.contenedor_accesorio .slide {
+	margin: 0 auto;
+	background-color: white;
+} 
+
+.contenedor_accesorio .slide img {
+	width: 70%;
+	transform: translateX(20%);
+}
+
 .anterior, .siguiente {
     cursor: pointer;
     position: absolute;
@@ -584,7 +608,7 @@ body {
 
 .tarjeta_consola,
 .tarjeta_accesorio {
-	 width: 28rem;
+	 width: 30rem;
 }
 
 .tarjeta_juego:hover,
@@ -739,9 +763,6 @@ body {
 .body_juegos_switch {
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,249,249,1) 0%, rgba(223,223,223,1) 43%, rgba(205,205,205,1) 100%);
-	/* background: #dee1e3;
-	background-image: url('/images/fondos/fondo5.jpg');
-	background-blend-mode: overlay; */
 }
 
 

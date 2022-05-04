@@ -22,6 +22,18 @@ public class ConsolaController {
 		return "consolasSwitch";
 	}
 	
+	@GetMapping("/ps5")
+	public String mostrarConsolasPs5(Model model) {
+		model.addAttribute("consolasPs5", mcService.findConsolasPs5());
+		return "consolasPs5";
+	}
+	
+	@GetMapping("/xbox")
+	public String mostrarConsolasXbox(Model model) {
+		model.addAttribute("consolasXbox", mcService.findConsolasXbox());
+		return "consolasXbox";
+	}
+	
 	@GetMapping("/detalle/{idModeloConsola}")
 	public String detalleConsola(@PathVariable("idModeloConsola") String idModeloConsola, Model model) {
 		model.addAttribute("modeloConsola", mcService.findById(idModeloConsola));
