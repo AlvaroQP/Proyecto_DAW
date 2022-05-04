@@ -76,15 +76,17 @@ CREATE TABLE videojuego_y_genero (
 CREATE TABLE accesorios (
 	id_accesorio INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     nombre VARCHAR(45) NOT NULL,
-    descripcion VARCHAR(100),
-    precio DECIMAL(9,2),
+    fecha_lanzamiento DATE NOT NULL,
+    descripcion VARCHAR(3000) NOT NULL,
+    precio DECIMAL(9,2) NOT NULL,
+    tamano VARCHAR(50) NOT NULL,
+    peso VARCHAR(15) NOT NULL,
+    conectividad VARCHAR(50) NOT NULL,
 	imagen_cuadrada VARCHAR(100),
     imagen_rectangular VARCHAR(100),
     imagen_1 VARCHAR(100),
     imagen_2 VARCHAR(100),
     imagen_3 VARCHAR(100),
-    imagen_4 VARCHAR(100),
-    imagen_5 VARCHAR(100),
     id_consola VARCHAR(15) NOT NULL,
     FOREIGN KEY(id_consola) REFERENCES consolas(id_consola)
 );
@@ -739,7 +741,7 @@ VALUES(1,
         "ghost-of-tsushima_ps5/ghost-of-tsushima_2.jpg",
         "ghost-of-tsushima_ps5/ghost-of-tsushima_3.jpg",
         "ghost-of-tsushima_ps5/ghost-of-tsushima_4.jpg",
-        "ghost-of-tsushima_ps5/ghost-of-tsushima_1.jpg",
+        "ghost-of-tsushima_ps5/ghost-of-tsushima_5.jpg",
         "pegi-18.png"
 ),
 (       27, 
@@ -823,7 +825,7 @@ VALUES(1,
         "pegi-16.png"
 ),
 (       31, 
-	  "Uncharted Colección Legado de los Ladrones", 
+	  "Uncharted Col. Legado de los Ladrones", 
         '2022-01-28', 
         "Estás en disposición de buscar fortuna? Busca tu legado y deja huella en el mundo con UNCHARTED: Colección Legado de los Ladrones. Disfruta de la increíble narrativa cinematográfica y de las mayores secuencias de acción de la emblemática franquicia de Naughty Dog.
         UNCHARTED: Colección Legado de los Ladrones incluye las laureadas aventuras para un jugador que ofrecen UNCHARTED 4: El Desenlace del Ladrón y UNCHARTED: El Legado Perdido, remasterizadas con gráficos mejorados, mayor velocidad de fotogramas y un increíble nivel de detalle para la consola PS5™.",
@@ -943,8 +945,8 @@ VALUES(1, 1),
       (30, 1),
       (31, 1),
       (31, 2);
-	
-    
+
+
 -- Consolas Switch
 INSERT INTO modelos_consolas
 VALUES('nsoled',
@@ -1025,9 +1027,85 @@ VALUES('nsoled',
              '/nin_switch/ns_lite_amarilla/ns_lite_amarilla_3.jpg',
              'switch'
           ),
-          
--- Consolas Xbox 
-          
+          (
+			'nsliteazul',
+            'Nintendo Switch Lite Azul',
+			"Una consola enfocada al juego portátil. Ideal para los jugadores que no se están quietos.
+			 Nintendo Switch Lite, la nueva incorporación a la familia Nintendo Switch, es una consola compacta, ligera y fácil de transportar, que cuenta con controles integrados.
+			 Con Nintendo Switch Lite se puede jugar a todos los programas de Nintendo Switch que son compatibles con el modo portátil. Es ideal para los usuarios que prefieran jugar fuera o para aquellos que quieran jugar en línea o de manera local en el modo multijugador con familiares o amigos que tengan una consola Nintendo Switch insignia.
+			 Como se trata de una consola enfocada al juego portátil, Nintendo Switch Lite no puede conectarse al televisor.",
+             219.95,
+             '2019-09-20',
+             '91.1 mm x 208 mm x 13.9 mm',
+             '275g',
+             '32 GB',
+             '/nin_switch/ns_lite_azul/ns_lite_azul_cuadrada.jpg',
+             '/nin_switch/ns_lite_azul/ns_lite_azul_rectangular.jpg',
+             '/nin_switch/ns_lite_azul/ns_lite_azul_1.jpg',
+             '/nin_switch/ns_lite_azul/ns_lite_azul_2.jpg',
+             '/nin_switch/ns_lite_azul/ns_lite_azul_3.jpg',
+             'switch'
+          ),
+          (
+			'nslitecoral',
+            'Nintendo Switch Lite Coral',
+			"Una consola enfocada al juego portátil. Ideal para los jugadores que no se están quietos.
+			 Nintendo Switch Lite, la nueva incorporación a la familia Nintendo Switch, es una consola compacta, ligera y fácil de transportar, que cuenta con controles integrados.
+			 Con Nintendo Switch Lite se puede jugar a todos los programas de Nintendo Switch que son compatibles con el modo portátil. Es ideal para los usuarios que prefieran jugar fuera o para aquellos que quieran jugar en línea o de manera local en el modo multijugador con familiares o amigos que tengan una consola Nintendo Switch insignia.
+			 Como se trata de una consola enfocada al juego portátil, Nintendo Switch Lite no puede conectarse al televisor.",
+             219.95,
+             '2019-09-20',
+             '91.1 mm x 208 mm x 13.9 mm',
+             '275g',
+             '32 GB',
+             '/nin_switch/ns_lite_coral/ns_lite_coral_cuadrada.jpg',
+             '/nin_switch/ns_lite_coral/ns_lite_coral_rectangular.jpg',
+             '/nin_switch/ns_lite_coral/ns_lite_coral_1.jpg',
+             '/nin_switch/ns_lite_coral/ns_lite_coral_2.jpg',
+             '/nin_switch/ns_lite_coral/ns_lite_coral_3.jpg',
+             'switch'
+          ),
+          (
+			'nslitegris',
+            'Nintendo Switch Lite Gris',
+			"Una consola enfocada al juego portátil. Ideal para los jugadores que no se están quietos.
+			 Nintendo Switch Lite, la nueva incorporación a la familia Nintendo Switch, es una consola compacta, ligera y fácil de transportar, que cuenta con controles integrados.
+			 Con Nintendo Switch Lite se puede jugar a todos los programas de Nintendo Switch que son compatibles con el modo portátil. Es ideal para los usuarios que prefieran jugar fuera o para aquellos que quieran jugar en línea o de manera local en el modo multijugador con familiares o amigos que tengan una consola Nintendo Switch insignia.
+			 Como se trata de una consola enfocada al juego portátil, Nintendo Switch Lite no puede conectarse al televisor.",
+             219.95,
+             '2019-09-20',
+             '91.1 mm x 208 mm x 13.9 mm',
+             '275g',
+             '32 GB',
+             '/nin_switch/ns_lite_gris/ns_lite_gris_cuadrada.jpg',
+             '/nin_switch/ns_lite_gris/ns_lite_gris_rectangular.jpg',
+             '/nin_switch/ns_lite_gris/ns_lite_gris_1.jpg',
+             '/nin_switch/ns_lite_gris/ns_lite_gris_2.jpg',
+             '/nin_switch/ns_lite_gris/ns_lite_gris_3.jpg',
+             'switch'
+          ),
+          (
+			'nsliteturq',
+            'Nintendo Switch Lite Turquesa',
+			"Una consola enfocada al juego portátil. Ideal para los jugadores que no se están quietos.
+			 Nintendo Switch Lite, la nueva incorporación a la familia Nintendo Switch, es una consola compacta, ligera y fácil de transportar, que cuenta con controles integrados.
+			 Con Nintendo Switch Lite se puede jugar a todos los programas de Nintendo Switch que son compatibles con el modo portátil. Es ideal para los usuarios que prefieran jugar fuera o para aquellos que quieran jugar en línea o de manera local en el modo multijugador con familiares o amigos que tengan una consola Nintendo Switch insignia.
+			 Como se trata de una consola enfocada al juego portátil, Nintendo Switch Lite no puede conectarse al televisor.",
+             219.95,
+             '2019-09-20',
+             '91.1 mm x 208 mm x 13.9 mm',
+             '275g',
+             '32 GB',
+             '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_cuadrada.jpg',
+             '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_rectangular.jpg',
+             '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_1.jpg',
+             '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_2.jpg',
+             '/nin_switch/ns_lite_turquesa/ns_lite_turquesa_3.jpg',
+             'switch'
+          ),
+
+-- Consolas Xbox
+
           (
 			'XSerieS',
             'Xbox series S',
@@ -1106,7 +1184,262 @@ VALUES('nsoled',
              '/Xbox/Xbox_seriesX/Xbox_seriesX_2.jpg',
              '/Xbox/Xbox_seriesX/Xbox_seriesX_3.jpg',
              'xbox_s_xs'
+          ),
+
+-- Consolas Ps5
+
+          (
+			'Ps5digital',
+            'Play Station 5 Digital Edition',
+			"La consola PS5 hace posibles otras formas de juego que jamás habías imaginado.
+            Experimenta cargas rápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de juegos de PlayStation
+            Descubre una experiencia de juego más intensa mediante tecnología háptica, gatillos adaptables y audio 3D y una inmersión que te dejará sin aliento.
+            Déjate sorprender por unos gráficos adecuados y experimenta nuevas funciones de PS5.",
+             399.95,
+             '2020-11-19',
+             '47.7 cm x 18.2 cm x 43.3 cm',
+             '5.79Kg',
+             '500 GB',
+             '/consolas-ps5/ps5-digital/ps5-digital-cuadrada.jpg',
+             '/consolas-ps5/ps5-digital/ps5-digital-rectangular.jpg',
+             '/consolas-ps5/ps5-digital/ps5-digital.jpg',
+             '/consolas-ps5/ps5-digital/ps5-digital2.jpg',
+             'ps5'
+          ),
+
+          (
+			'Ps5disco',
+            'Play Station 5 Standard Edition',
+			"La consola PS5 hace posibles otras formas de juego que jamás habías imaginado.
+            Experimenta cargas rápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de juegos de PlayStation
+            Descubre una experiencia de juego más intensa mediante tecnología háptica, gatillos adaptables y audio 3D y una inmersión que te dejará sin aliento.
+            Déjate sorprender por unos gráficos adecuados y experimenta nuevas funciones de PS5.",
+             499.95,
+             '2020-11-19',
+             '47.7 cm x 42.2 cm x 43.3 cm',
+             '6.72Kg',
+             '500 GB',
+             '/consolas-ps5/ps5-disco/ps5-disco-cuadrada.jpg',
+             '/consolas-ps5/ps5-disco/ps5-disco-rectangular.jpg',
+             '/consolas-ps5/ps5-disco/ps5-disco.jpg',
+             '/consolas-ps5/ps5-disco/ps5-disco2.jpg',
+             'ps5'
           );
+
+
+-- Accesorios Switch
+INSERT INTO accesorios
+VALUES(1,
+	   'Nintendo Switch Pro Controller',
+       '2017-03-03',
+       'Juega en los ambientes más competitivos o supera las situaciones más difíciles con el mando Nintendo Switch ProController, el mando para la nueva generación de Nintendo con el que conseguirás el control más profesional. El Nintendo Switch Pro Controller incluye cable USB de carga y cuenta con la nueva tecnología de vibración HD, punto NFC para compatibilidad con figuras amiibo y sensores de movimiento.',
+       '69.95',
+       '106 × 152 × 60 mm',
+       '246 g',
+       'Bluetooth 3.0, NFC',
+       '/nin_switch/nin_switch_pro_controller_cuadrada.jpg',
+       '/nin_switch/nin_switch_pro_controller_rectangular.jpg',
+       '/nin_switch/nin_switch_pro_controller_1.jpg',
+       '/nin_switch/nin_switch_pro_controller_2.jpg',
+       '/nin_switch/nin_switch_pro_controller_3.jpg',
+       'switch'
+       ),
+
+       (1,
+	   'Ps5 Controller Dualsense Cosmic Red',
+       '2021-06-18',
+       'Compra el nuevo mando de Playstation 5 DualSense Cosmic Red, el nuevo diseño del mando que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '74.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic-cuadrada.jpeg',
+       '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic-rectangular.jpg',
+       '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic.jpeg',
+       '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic2.jpeg',
+       '/accesorios-ps5/dualsense-cosmic/dualsense-cosmic3.jpeg',
+       'ps5'
+       ),
+       
+       (2,
+	   'Ps5 Controller Dualsense Galactic Purple',
+       '2021-06-18',
+       'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Galactic Purple que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '74.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple-cuadrada.png',
+       '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple-rectangular.jpeg',
+       '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple.jpeg',
+       '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple2.jpeg',
+       '/accesorios-ps5/dualsense-galacticPurple/dualsense-galacticPurple3.jpeg',
+       'ps5'
+       ),
+       
+       (3,
+	   'Ps5 Controller Dualsense Midnight Black',
+       '2021-06-18',
+       'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Midnight Black que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '69.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-midnight/dualsense-midnight-cuadrada.jpg',
+       '/accesorios-ps5/dualsense-midnight/dualsense-midnight-rectangular.jpg',
+       '/accesorios-ps5/dualsense-midnight/dualsense-midnightBlack.jpeg',
+       '/accesorios-ps5/dualsense-midnight/dualsense-midnightBlack2.jpeg',
+       '/accesorios-ps5/dualsense-midnight/dualsense-midnightBlack3.jpeg',
+       'ps5'
+       ),
+       
+       (4,
+	   'Ps5 Controller Dualsense Nova Pink',
+       '2021-06-18',
+       'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Nova Pink que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '74.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink-cuadrada.jpg',
+       '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink-rectangular.jpeg',
+       '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink.jpeg',
+       '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink2.jpeg',
+       '/accesorios-ps5/dualsense-novaPink/dualsense-novaPink3.jpeg',
+       'ps5'
+       ),
+       
+       (5,
+	   'Ps5 Controller Dualsense Starlight Blue',
+       '2021-06-18',
+       'Compra el nuevo mando inalámbrico de Playstation 5 DualSense Starlight Blue que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '74.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-starlight/dualsense-starlight-cuadrada.jpeg',
+       '/accesorios-ps5/dualsense-starlight/dualsense-starlight-rectangular.jpeg',
+       '/accesorios-ps5/dualsense-starlight/dualsense-starlightBlue.jpeg',
+       '/accesorios-ps5/dualsense-starlight/dualsense-starlightBlue2.jpeg',
+       '/accesorios-ps5/dualsense-starlight/dualsense-starlightBlue3.jpeg',
+       'ps5'
+       ),
+       
+       (6,
+	   'Ps5 Controller Dualsense Blanco',
+       '2021-06-18',
+       'Compra el nuevo mando inalámbrico de Playstation 5 DualSense que multiplicará tus sensaciones ofreciendote un nuevo concepto de inmersión. Haz que los mundos de juego cobren vida y empieza a crear nuevos y épicos recuerdos.',
+       '69.95',
+       '160 × 66 × 106 mm',
+       '280 g',
+       'Communication Wireless: Bluetooth® Ver5.1',
+       '/accesorios-ps5/dualsense-white/dualsense-white-cuadrado.jpg',
+       '/accesorios-ps5/dualsense-white/dualsense-white-rectangular.jpg',
+       '/accesorios-ps5/dualsense-white/dualsense-white.jpeg',
+       '/accesorios-ps5/dualsense-white/dualsense-white2.jpeg',
+       '/accesorios-ps5/dualsense-white/dualsense-white3.jpeg',
+       'ps5'
+       ),
+       
+       (7,
+	   'Auriculares Inalambricos Blancos Pulse 3d Ps5',
+       '2020-09-20',
+       'Auriculares inalámbricos PULSE 3D Los auriculares inalámbricos PULSE 3D para PS5 ofrecen una nueva generación de sonido para juegos. Los juegos suenan Disfruta de audio 3D en consolas PS5 con un auricular especialmente optimizado. Los auriculares inalámbricos Pulse 3D cuentan con un diseño mejorado con dos micrófonos con cancelación de ruido, un puerto USB Type-C para cargar y una serie de controles de fácil acceso',
+       '99.95',
+       '22 x 13 x 22.5 cm',
+       '500 g',
+       'Interfaz de receptor inalámbrico: USB',
+       '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos-cuadrada2.jpeg',
+       '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos-rectangular.jpg',
+       '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos-rectangular2.jpeg',
+       '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos2.jpg',
+       '/auriculares-pulse3d-blancos/auriculares-pulse3d-blancos3.jpg',
+       'switch'
+       ),
+       
+       (8,
+	   'Auriculares Inalambricos Negros Pulse 3d Ps5',
+       '2020-09-20',
+       'Auriculares inalámbricos PULSE 3D Los auriculares inalámbricos PULSE 3D para PS5 ofrecen una nueva generación de sonido para juegos. Los juegos suenan Disfruta de audio 3D en consolas PS5 con un auricular especialmente optimizado. Los auriculares inalámbricos Pulse 3D cuentan con un diseño mejorado con dos micrófonos con cancelación de ruido, un puerto USB Type-C para cargar y una serie de controles de fácil acceso',
+       '99.95',
+       '22 x 13 x 22.5 cm',
+       '500 g',
+       'Interfaz de receptor inalámbrico: USB',
+       '/auriculares-pulse3d-negros/auriculares-pulse3d-negros-cuadrada.jpg',
+       '/auriculares-pulse3d-negros/auriculares-pulse3d-negros-rectangular.jpg',
+       '/auriculares-pulse3d-negros/auriculares-pulse3d-negros.jpg',
+       '/auriculares-pulse3d-negros/auriculares-pulse3d-negros2.jpg',
+       '/auriculares-pulse3d-negros/auriculares-pulse3d-negros3.jpg',
+       'ps5'
+       ),
+       
+       (9,
+	   'Cubierta Ps5 Estándar Midnight Black',
+       '2022-01-21',
+       'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
+       '54.99',
+       '18.9 x 7 x 19.2 cm',
+       '427 g',
+       ' ',
+       '/carcasa-midnightBlack/carcasa-midnightBlack.jpg',
+       '/carcasa-midnightBlack/carcasa-midnightBlack2.jpg',
+       'ps5'
+       ),
+       
+       (10,
+	   'Cubierta Ps5 Estándar Cosmic Red',
+       '2022-01-21',
+       'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
+       '54.99',
+       '18.9 x 7 x 19.2 cm',
+       '427 g',
+       ' ',
+       '/carcasa-cosmicRed/carcasa-cosmicRed.jpg',
+       '/carcasa-cosmicRed/carcasa-cosmicRed2.jpg',
+       'ps5'
+       ),
+
+-- Accesorios Xbox
+
+       (11,
+	   'Auriculares estéreo edición especial del 20 aniversario',
+       '2021-10-07',
+       'Ergonomía cómoda | Ajuste universal | Ligero y flexible
+        Juega alto y claro con los auriculares estéreo Xbox – 20th Anniversary Special Edition en negro 
+        clásico con toques verdes que se remontan al principio, y mucho más. Viaja a través del tiempo 
+        con el micrófono de pluma verde, las marcas verdes "L" y "R" dentro de los auriculares y los diales 
+        de oreja negro translúcido que honran la consola Xbox verde translúcida original.',
+       '64.99',
+       'NA',
+       'NA',
+       'jack 3.5mm',
+       '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_cuadrada.jpg',
+       '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_rectangular.jpg',
+       '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_1.jpg',
+       '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_2.jpg',
+       '/xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_3.jpg',
+       'xbox_s_xs'
+       ),
+        
+        (12,
+	   'Cascos estéreo de Xbox',
+       '2021-09-21',
+       'Ergonomía cómoda | Ajuste universal | Ligeros y flexibles
+        Sumérgete en el juego
+        Juega alto y claro con los Cascos estéreo Xbox, que ofrecen un chat ultranítido y son compatibles 
+        con el sonido espacial de alta fidelidad de Windows Sonic. Gracias a su diseño flexible y ligero, 
+        ofrecen una experiencia cómoda durante sesiones de juego prolongadas.',
+       '45',
+       'NA',
+       'NA',
+       'jack 3.5mm',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo_Xbox_cuadrada.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo_Xbox_rectangular.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo1_Xbox.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo2_Xbox.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo3_Xbox.jpg',
+       'xbox_s_xs'
+       );
 
 
 INSERT INTO perfiles(nombre)
