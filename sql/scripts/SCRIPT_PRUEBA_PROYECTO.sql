@@ -1545,9 +1545,372 @@ VALUES(1,
        '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo2_Xbox.jpg',
        '/xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo3_Xbox.jpg',
        'xbox_s_xs'
+       ),
+        (22,
+	   'Cascos inalámbricos de Xbox',
+       '2021-03-16',
+       'Emparejamiento directo con la consola | Sonido excepcional | Ligeros y flexibles
+
+        El mejor rendimiento de audio de su clase
+        Disfruta de un audio de alta calidad con baja latencia y una conexión totalmente inalámbrica a tu consola Xbox, 
+        sin la necesidad de una llave o estación base. Admite tecnologías de sonido espacial como Windows Sonic, Dolby Atmos 
+        y DTS Headphone:X para ofrecer un realismo y precisión de audio que te envuelven por completo.
+
+        Diseño cómo e intuitivo
+        Juega cómodamente durante horas con los auriculares ultrasuaves de diseño ligero y ajuste personalizable. Los diales en los auriculares 
+        de los Cascos inalámbricos Xbox giran de un lado a otro, lo que demuestra el método intuitivo de cambiar el volumen y lograr un equilibrio 
+        entre el juego y el chat de voz. Ajústalos rápidamente y vuelve al juego. Los micrófonos completamente ajustables se pliegan cuando no están en uso.
+
+        Chat ultranítido
+        El aislamiento de voz centra el micrófono en tu voz para reducir el ruido de fondo. Cuando no estás hablando, la característica de 
+        silenciamiento automático se activa para despejar los canales de comunicación, mientras que el botón de silenciamiento manual te da una opción 
+        de privacidad cuando la necesites.
+
+        Adaptados para ti
+        Usa la app Accesorios para Xbox y ajusta los controles de audio, como la configuración del ecualizador, aumento de graves, sensibilidad al 
+        silenciamiento automático y niveles de supervisión del micrófono. Emparéjalos directamente con tu consola a través de la conexión inalámbrica 
+        de Xbox sin necesidad de conectar una llave, cable o estación base y conéctalos a tu dispositivo móvil con Bluetooth® para escuchar música 
+        o chatear, estés donde estés.',
+        99.99,
+       'N/A',
+       'N/A',
+       'Bluetooth / Cable de carga USB-C',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_cuadrada.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_rectangular.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos1_Xbox.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos2_Xbox.jpg',
+       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos3_Xbox.jpg',
+       'xbox_s_xs'
+       ),
+        (23,
+	   'Xbox Wireless Controller – Aqua Shift Special Edition',
+       '2021-11-09',
+       'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
+        Eleva tu juego
+        Ponte surrealista con el mando inalámbrico Xbox – Aqua Shift Special Edition, con un brillo azul que cambia de color 
+        y agarres giratorios. Manténgase en el objetivo con un D-pad híbrido y un agarre texturizado en los gatillos, 
+        los parachoques y la carcasa trasera. Capture y comparta contenido sin problemas con un botón Compartir dedicado. 
+        Empareja rápidamente, juega y cambia entre dispositivos, incluidos Xbox Series X|S, Xbox One, Pc con Windows 10 
+        y dispositivos móviles.',
+        69.99,
+       '17.8 cm x 7.3 cm x 17.7 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/Cascos_estereo_Xbox_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift3.jpg',
+       'xbox_s_xs'
+       ),
+        (24,
+	   'Mando Inalámbrico Xbox: Daystrike Camo Special Edition',
+       '2021-05-04',
+       'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
+        Juega a otro nivel
+        Disfruta del Mando Inalámbrico Xbox: Daystrike Camo Special Edition, con un llamativo patrón de camuflaje en rojo, 
+        gris y negro. Toma el control con la nueva cruceta híbrida, agarre texturizado en los gatillos, botones 
+        y parte trasera. Captura y comparte contenido sin problemas con el botón dedicado Compartir. 
+        Empareja rápidamente, juega y cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows, Android e iOS.',
+        64.99,
+       '17.8 cm x 7.3 cm x 17.7 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial3.jpg',
+       'xbox_s_xs'
+       ),
+        (25,
+	   'Mando inalámbrico Xbox: Edición especial del 20º aniversario',
+       '2021-11-15',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
+        Celebremos juntos 20 años de Xbox.
+        Celebra 20 años de Xbox con el Mando inalámbrico Xbox: Edición especial del 20º aniversario en color negro 
+        clásico con toques verdes que vuelven a los inicios y mucho más. Viaja por el tiempo con los colores verdes 
+        y negros translúcidos de este mando hasta el momento del lanzamiento de la consola Xbox original en verde translúcido. 
+        Mira a través de la parte superior en negro translúcido para ver los detalles plateados en el interior que 
+        representan 20 años de tecnología de Xbox transportada hasta nuestros días.',
+        69.99,
+       '17.8 cm x 7.3 cm x 17.7 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario3.jpg',
+       'xbox_s_xs'
+       ),
+        (26,
+	   'Mando inalámbrico Xbox – Forza Horizon 5 Edición limitada',
+       '2021-09-11',
+       'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
+        Conduce con estilo
+        Usa el Mando inalámbrico Xbox – Forza Horizon 5 Edición limitada para disfrutar de la aventura Horizon definitiva, 
+        con agarres personalizados inspirados en las carreras y un innovador acabado amarillo transparente. Domina cualquier 
+        terreno con los gatillos texturizados, parte trasera personalizada y agarre con patrones inspirados en los volantes 
+        de coches de alto rendimiento. Incluye contenido exclusivo: coche de edición Forza y artículo cosmético
+        (el contenido descargable requiere el juego Forza Horizon 5, que se vende por separado).',
+        69.99,
+       '17.8 cm x 7.3 cm x 17.7 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-3.jpg',
+       'xbox_s_xs'
+       ),
+        (27,
+	   'Mando inalámbrico Xbox Elite Series 2 – Halo Infinite Edición limitada',
+       '2021-11-15',
+       'Palancas de mando de tensión ajustable | Gatillos de alta sensibilidad con bloqueo más corto | Agarre texturizado envolvente | Componentes rediseñados
+        FORMA PARTE DE LA ELITE
+        Ponte en la armadura del mayor héroe de la humanidad con el Mando inalámbrico Xbox Elite Series 2 – Halo Infinite Edición limitada 
+        y descubre más de 30 nuevas maneras de jugar como un profesional. Dispara a velocidad Spartan con los gatillos de alta sensibilidad 
+        con bloqueo más corto y tres configuraciones exclusivas. Mejora tu puntería con las nuevas palancas de mando ajustables y mantén el 
+        objetivo con un agarre envolvente en forma de diamante.
+        Optimizado para ti
+        Adapta el mando a tu estilo de juego preferido con nuevas formas intercambiables para las palancas de mando y la cruceta. Guarda hasta tres 
+        perfiles personalizados y un perfil predeterminado en el mando y cambia entre ellos cuando quieras con el botón Perfil. Usa Xbox Wireless, 
+        Bluetooth o el cable USB-C personalizado de color verde y naranja para jugar en tu consola Xbox One y dispositivos Windows 10.
+        Más formas de personalizar
+        Disfruta de una personalización ilimitada con la app Accesorios de Xbox. Utiliza opciones de configuración exclusivas, 
+        como la asignación de botones a comandos de voz como "grabar eso" o "hacer una captura de pantalla". Asigna un botón para que 
+        actúe como la tecla Mayús para habilitar entradas alternativas de cada uno de los otros botones.
+        Diseñado para sesiones de juego prolongadas
+        Juega durante más tiempo con hasta 40 horas de batería recargable y componentes perfeccionados diseñados para durar. Carga el mando 
+        dentro o fuera de la funda de transporte personalizada de color verde oscuro con la insignia de la UNSC, la base de acoplamiento de 
+        color negro y gris con detalles grabados y el cable USB-C personalizado de color verde y naranja.
+        ¿Qué se incluye en la caja?
+            - Mando inalámbrico Xbox Elite Series 2 – Halo Infinite Edición limitada
+            - Funda de transporte
+            - Juego de 6 palancas de mando: estándares (2), clásicas (2), alta (1), en cúpula (1)
+            - Juego de 4 palancas: medianas (2), mini (2)
+            - Juego de 2 crucetas: estándar, circular
+            - Herramienta de ajuste de palanca de mando
+            - Base de carga
+            - Cable USB-C
+            - Símbolo de armas del Mando Xbox Elite',
+        199.99,
+       '17.5 cm x 7.3 cm x 17.7 cm',
+       '500 g',
+       'inalambrico / cableUSB',
+       '/xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada3.jpg',
+       'xbox_s_xs'
+       ),
+        (28,
+	   'Mando inalámbrico Xbox Azul',
+       '2020-11-10',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
+        Juega a otro nivel
+        Disfruta del diseño modernizado del mando inalámbrico Xbox, con superficies esculpidas y una geometría refinada 
+        para una mayor comodidad durante el juego. Toma el control con el agarre texturizado y la cruceta híbrida. 
+        Captura y comparte contenido sin problemas con el botón dedicado Compartir. Empareja rápidamente, juega y 
+        cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows 10, Android e iOS.',
+        59.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul3.jpg',
+       'xbox_s_xs'
+       ),
+        (29,
+	   'Mando inalámbrico Xbox Blanco',
+       '2020-11-10',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
+        Juega a otro nivel
+        Disfruta del diseño modernizado del mando inalámbrico Xbox, con superficies esculpidas y una geometría refinada 
+        para una mayor comodidad durante el juego. Toma el control con el agarre texturizado y la cruceta híbrida. 
+        Captura y comparte contenido sin problemas con el botón dedicado Compartir. Empareja rápidamente, juega y 
+        cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows 10, Android e iOS.',
+        59.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco3.jpg',
+       'xbox_s_xs'
+       ),
+        (30,
+	   'Mando inalámbrico Xbox Negro',
+       '2020-11-10',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
+        Juega a otro nivel
+        Disfruta del diseño modernizado del mando inalámbrico Xbox, con superficies esculpidas y una geometría refinada 
+        para una mayor comodidad durante el juego. Toma el control con el agarre texturizado y la cruceta híbrida. 
+        Captura y comparte contenido sin problemas con el botón dedicado Compartir. Empareja rápidamente, juega y 
+        cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows 10, Android e iOS.',
+        59.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro3.jpg',
+       'xbox_s_xs'
+       ),
+        (31,
+	   'Mando inalámbrico Xbox Rojo',
+       '2020-11-10',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
+        Juega a otro nivel
+        Disfruta del diseño modernizado del mando inalámbrico Xbox, con superficies esculpidas y una geometría refinada 
+        para una mayor comodidad durante el juego. Toma el control con el agarre texturizado y la cruceta híbrida. 
+        Captura y comparte contenido sin problemas con el botón dedicado Compartir. Empareja rápidamente, juega y 
+        cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows 10, Android e iOS.',
+        59.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo3.jpg',
+       'xbox_s_xs'
+       ),
+        (32,
+	   'Mando inalámbrico Xbox Voltaje',
+       '2020-11-10',
+       'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
+        Juega a otro nivel
+        Disfruta del diseño modernizado del mando inalámbrico Xbox, con superficies esculpidas y una geometría refinada 
+        para una mayor comodidad durante el juego. Toma el control con el agarre texturizado y la cruceta híbrida. 
+        Captura y comparte contenido sin problemas con el botón dedicado Compartir. Empareja rápidamente, juega y 
+        cambia entre dispositivos como Xbox Series X|S, Xbox One, PC Windows 10, Android e iOS.',
+        59.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'inalambrico / pilas AA',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje_rectangular.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje3.jpg',
+       'xbox_s_xs'
+       ),
+        (33,
+	   'Mando Xbox edicion primavera: azul algodon',
+       '2022-03-20',
+       'Botones avanzados para videojuegos
+        Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
+        que puedes programar en cualquier momento, incluso en medio de un juego.
+        Ultracomodidad
+        El diseño ergonómico, la distribución intuitiva de botones y suaves anillos antifricción alrededor 
+        de cada palanca de mando te permiten jugar con comodidad durante más tiempo que nunca.
+        Videojuegos envolventes
+        Tus juegos favoritos cobran vida cuando conectas tus auriculares al conector de auriculares de 3,5 mm y 
+        sientes los dos motores de vibración hiperrealistas en cada mano. Tanto si se trata de un ritmo palpitante 
+        como de un sutil temblor, cada vez que juegues tendrás la sensación de haber entrado en un mundo completamente nuevo.
+        Características esenciales de Xbox
+        Un mando no queda completo sin el intuitivo botón Compartir fácil de alcanzar, dial en los auriculares y 
+        desactivación del micrófono de acceso fácil. El mando Enhanced Wired Controller for Xbox Series X|S ofrece todo eso 
+        y más.
+        Cableado, pero no atado
+        Un cable desmontable de alta calidad de 3 metros le da la libertad de jugar desde tu lugar favorito en la habitación,
+        luego puedes envolverlo con la correa de gancho conectada para guardarlo hasta la próxima vez que juegues.',
+        41.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'USB cableado',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon3.jpg',
+       'xbox_s_xs'
+       ),
+        (34,
+	   'Mando Xbox edicion primavera: remolinos purpura',
+       '2022-03-20',
+       'Botones avanzados para videojuegos
+        Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
+        que puedes programar en cualquier momento, incluso en medio de un juego.
+        Ultracomodidad
+        El diseño ergonómico, la distribución intuitiva de botones y suaves anillos antifricción alrededor 
+        de cada palanca de mando te permiten jugar con comodidad durante más tiempo que nunca.
+        Videojuegos envolventes
+        Tus juegos favoritos cobran vida cuando conectas tus auriculares al conector de auriculares de 3,5 mm y 
+        sientes los dos motores de vibración hiperrealistas en cada mano. Tanto si se trata de un ritmo palpitante 
+        como de un sutil temblor, cada vez que juegues tendrás la sensación de haber entrado en un mundo completamente nuevo.
+        Características esenciales de Xbox
+        Un mando no queda completo sin el intuitivo botón Compartir fácil de alcanzar, dial en los auriculares y 
+        desactivación del micrófono de acceso fácil. El mando Enhanced Wired Controller for Xbox Series X|S ofrece todo eso 
+        y más.
+        Cableado, pero no atado
+        Un cable desmontable de alta calidad de 3 metros le da la libertad de jugar desde tu lugar favorito en la habitación,
+        luego puedes envolverlo con la correa de gancho conectada para guardarlo hasta la próxima vez que juegues.',
+        41.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'USB cableado',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_remolinosPurpura1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura3.jpg',
+       'xbox_s_xs'
+       ),
+        (35,
+	   'Mando Xbox edicion primavera: rosa limonada',
+       '2022-03-20',
+       'Botones avanzados para videojuegos
+        Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
+        que puedes programar en cualquier momento, incluso en medio de un juego.
+        Ultracomodidad
+        El diseño ergonómico, la distribución intuitiva de botones y suaves anillos antifricción alrededor 
+        de cada palanca de mando te permiten jugar con comodidad durante más tiempo que nunca.
+        Videojuegos envolventes
+        Tus juegos favoritos cobran vida cuando conectas tus auriculares al conector de auriculares de 3,5 mm y 
+        sientes los dos motores de vibración hiperrealistas en cada mano. Tanto si se trata de un ritmo palpitante 
+        como de un sutil temblor, cada vez que juegues tendrás la sensación de haber entrado en un mundo completamente nuevo.
+        Características esenciales de Xbox
+        Un mando no queda completo sin el intuitivo botón Compartir fácil de alcanzar, dial en los auriculares y 
+        desactivación del micrófono de acceso fácil. El mando Enhanced Wired Controller for Xbox Series X|S ofrece todo eso 
+        y más.
+        Cableado, pero no atado
+        Un cable desmontable de alta calidad de 3 metros le da la libertad de jugar desde tu lugar favorito en la habitación,
+        luego puedes envolverlo con la correa de gancho conectada para guardarlo hasta la próxima vez que juegues.',
+        41.99,
+       '7 cm x 17 cm x 18 cm',
+       '480 g',
+       'USB cableado',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada1.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada2.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada3.jpg',
+       'xbox_s_xs'
+       ),
+        (36,
+	   'Batería recargable Xbox + cable USB-C',
+       '2020-11-10',
+       'Cargas mientras juegas | Carga completa en 4 horas.
+        Di adiós a los AAs
+        Mantén la acción con la batería recargable Xbox + cable USB-C. Recarga mientras juegas o después, 
+        incluso cuando tu Xbox está en espera. La batería recargable de larga duración se carga completamente 
+        en menos de 4 horas. Di adiós a las baterías desechables y al juego interrumpido.',
+        24.99,
+       'N/A',
+       'N/A',
+       'inalambrico / USB cableado',
+       '/xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox1.jpg',
+       '/xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox2.jpg',
+       '/xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox3.jpg',
+       'xbox_s_xs'
        );
-
-
 
 INSERT INTO perfiles(nombre)
 VALUES('admin'),
