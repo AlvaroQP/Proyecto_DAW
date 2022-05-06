@@ -1131,11 +1131,11 @@ VALUES('nsoled',
              '6,5 cm x 15,1 cm y 27,5 cm',
              '1.92kg',
              '512 GB',
-             'Xbox/Xbox_seriesS/Xbox_seriesS_cuadrada.jpg',
-             'Xbox/Xbox_seriesS/Xbox_seriesS_rectangular.jpg',
-             'Xbox/Xbox_seriesS/Xbox_seriesS_1.jpg',
-             'Xbox/Xbox_seriesS/Xbox_seriesS_2.jpg',
-             'Xbox/Xbox_seriesS/Xbox_seriesS_3.jpg',
+             'Xbox/XseriesS/Xbox_seriesS_cuadrada.jpg',
+             'Xbox/XseriesS/Xbox_seriesS_rectangular.jpg',
+             'Xbox/XseriesS/Xbox_seriesS_1.jpg',
+             'Xbox/XseriesS/Xbox_seriesS_2.jpg',
+             'Xbox/XseriesS/Xbox_seriesS_3.jpg',
              'xbox_s_xs'
           ),
 		  (
@@ -1168,11 +1168,11 @@ VALUES('nsoled',
              '15.1cm x 15.1cm x 30.1cm',
              '4.45kg',
              '1 TB',
-             'Xbox/Xbox_seriesX/Xbox_seriesX_cuadrada.jpg',
-             'Xbox/Xbox_seriesX/Xbox_seriesX_rectangular.jpg',
-             'Xbox/Xbox_seriesX/Xbox_seriesX_1.jpg',
-             'Xbox/Xbox_seriesX/Xbox_seriesX_2.jpg',
-             'Xbox/Xbox_seriesX/Xbox_seriesX_3.jpg',
+             'Xbox/XseriesX/Xbox_seriesX_cuadrada.jpg',
+             'Xbox/XseriesX/Xbox_seriesX_rectangular.jpg',
+             'Xbox/XseriesX/Xbox_seriesX_1.jpg',
+             'Xbox/XseriesX/Xbox_seriesX_2.jpg',
+             'Xbox/XseriesX/Xbox_seriesX_3.jpg',
              'xbox_s_xs'
           ),
 -- Consolas Ps5
@@ -1936,4 +1936,4 @@ FROM videojuegos
 INNER JOIN videojuego_en_consola vec ON videojuegos.id_videojuego = vec.id_videojuego
 INNER JOIN consolas ON consolas.id_consola = vec.id_consola;
 
--- DROP DATABASE pruebas_proyecto;
+DROP DATABASE pruebas_proyecto;

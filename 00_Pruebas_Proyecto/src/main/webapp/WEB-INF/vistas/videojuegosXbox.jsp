@@ -12,7 +12,7 @@
 	<jsp:include page="nav.jsp"></jsp:include>
 	
 		<header>
-			<img src="/images/banners/banner_Xbox.jpg" alt="banner Xbox" class="banner_Xbox">
+			<img src="/images/banners/banner_Xbox2.jpeg" alt="banner Xbox" class="banner_Xbox">
 		</header>
 		
 	    <div class="contenedor_tarjetas">
