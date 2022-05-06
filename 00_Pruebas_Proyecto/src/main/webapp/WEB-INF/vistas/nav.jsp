@@ -94,17 +94,12 @@
 	                	</a>
                 	</div>
                 	<div>
-	                	<a href="">
+	                	<a href="/registro">
 	                		<span class="material-symbols-outlined icono_registro">person_add</span>
 	                		Registro
 	                	</a>
                 	</div>                	
                 </div>
-                
-                <!-- <form action="" method="POST">
-                    <input class="form-control" type="text" name="cadena" placeholder="Buscar por título" required>
-                    <input type="submit" value="Buscar" class="boton_buscar">
-                </form> -->
           </div>
         </div>
     </nav>
