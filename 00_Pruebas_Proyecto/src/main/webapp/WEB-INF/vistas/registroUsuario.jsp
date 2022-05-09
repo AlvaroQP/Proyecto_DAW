@@ -13,6 +13,8 @@
 
    <jsp:include page="nav.jsp"></jsp:include>
 
+   <h3>${mensaje}</h3>
+
    <section class="seccion_formulario_alta">
         <div class="contenedor_formulario_alta">
             
@@ -88,195 +90,195 @@
                         <div class="selecciona_imagen">Selecciona tu avatar</div>
                         <div class="contenedor_avatares">
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-mario.png" checked>
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-mario.png" checked>
                                 <img src="/images/avatares/avatar-mario.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-yoshi.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-yoshi.png">
                                 <img src="/images/avatares/avatar-yoshi.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-peach.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-peach.png">
                                 <img src="/images/avatares/avatar-peach.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-luigi.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-luigi.png">
                                 <img src="/images/avatares/avatar-luigi.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-bowser.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-bowser.png">
                                 <img src="/images/avatares/avatar-bowser.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-link.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-link.png">
                                 <img src="/images/avatares/avatar-link.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-zelda.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-zelda.png">
                                 <img src="/images/avatares/avatar-zelda.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-pikachu.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-pikachu.png">
                                 <img src="/images/avatares/avatar-pikachu.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-charizard.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-charizard.png">
                                 <img src="/images/avatares/avatar-charizard.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-charmander.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-charmander.png">
                                 <img src="/images/avatares/avatar-charmander.png" alt="avatar usuario" class="avatar_usuario">
                             </label>  
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-squirtle.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-squirtle.png">
                                 <img src="/images/avatares/avatar-squirtle.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-sonic.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-sonic.png">
                                 <img src="/images/avatares/avatar-sonic.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-spyro.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-spyro.png">
                                 <img src="/images/avatares/avatar-spyro.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-crash.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-crash.png">
                                 <img src="/images/avatares/avatar-crash.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-cloud.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-cloud.png">
                                 <img src="/images/avatares/avatar-cloud.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-ryu.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-ryu.png">
                                 <img src="/images/avatares/avatar-ryu.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-ken.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-ken.png">
                                 <img src="/images/avatares/avatar-ken.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-kratos.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-kratos.png">
                                 <img src="/images/avatares/avatar-kratos.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-lara.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-lara.png">
                                 <img src="/images/avatares/avatar-lara.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-mg.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-mg.png">
                                 <img src="/images/avatares/avatar-mg.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-metroid.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-metroid.png">
                                 <img src="/images/avatares/avatar-metroid.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-megaman.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-megaman.png">
                                 <img src="/images/avatares/avatar-megaman.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-minecraft.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-minecraft.png">
                                 <img src="/images/avatares/avatar-minecraft.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-mk.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-mk.png">
                                 <img src="/images/avatares/avatar-mk.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-mc.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-mc.png">
                                 <img src="/images/avatares/avatar-mc.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-ac.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-ac.png">
                                 <img src="/images/avatares/avatar-ac.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-borderlands.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-borderlands.png">
                                 <img src="/images/avatares/avatar-borderlands.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-fallout.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-fallout.png">
                                 <img src="/images/avatares/avatar-fallout.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-chrom.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-chrom.png">
                                 <img src="/images/avatares/avatar-chrom.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-lucina.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-lucina.png">
                                 <img src="/images/avatares/avatar-lucina.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-ellie.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-ellie.png">
                                 <img src="/images/avatares/avatar-ellie.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-joel.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-joel.png">
                                 <img src="/images/avatares/avatar-joel.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-goku.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-goku.png">
                                 <img src="/images/avatares/avatar-goku.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-gta.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-gta.png">
                                 <img src="/images/avatares/avatar-gta.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-kirby.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-kirby.png">
                                 <img src="/images/avatares/avatar-kirby.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-jinx.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-jinx.png">
                                 <img src="/images/avatares/avatar-jinx.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-got.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-got.png">
                                 <img src="/images/avatares/avatar-got.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-na.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-na.png">
                                 <img src="/images/avatares/avatar-na.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-overwatch.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-overwatch.png">
                                 <img src="/images/avatares/avatar-overwatch.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-dva.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-dva.png">
                                 <img src="/images/avatares/avatar-dva.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-rac.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-rac.png">
                                 <img src="/images/avatares/avatar-rac.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-re.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-re.png">
                                 <img src="/images/avatares/avatar-re.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-rdr.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-rdr.png">
                                 <img src="/images/avatares/avatar-rdr.png" alt="avatar usuario" class="avatar_usuario">
                             </label>
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-skyrim.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-skyrim.png">
                                 <img src="/images/avatares/avatar-skyrim.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-spiderman.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-spiderman.png">
                                 <img src="/images/avatares/avatar-spiderman.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-uncharted.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-uncharted.png">
                                 <img src="/images/avatares/avatar-uncharted.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-sw.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-sw.png">
                                 <img src="/images/avatares/avatar-sw.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                             <label>
-                                <input type="radio" name="imagenUsuario" value="/images/avatares/avatar-witcher.png">
+                                <input type="radio" name="avatarUsuario" value="/images/avatares/avatar-witcher.png">
                                 <img src="/images/avatares/avatar-witcher.png" alt="avatar usuario" class="avatar_usuario">
                             </label> 
                         </div>
