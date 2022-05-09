@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>JAS Gaming</title>
 </head>
-<body>
+<body class="body_background_general">
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	

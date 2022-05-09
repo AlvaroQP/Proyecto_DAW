@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Consolas Nintendo Switch</title>
 </head>
-<body>
+<body class="body_juegos_switch">
 	
 	<jsp:include page="nav.jsp"></jsp:include>
 	

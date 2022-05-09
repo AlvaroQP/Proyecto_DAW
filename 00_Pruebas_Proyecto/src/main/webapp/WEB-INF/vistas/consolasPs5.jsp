@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Consolas PS5</title>
 </head>
-<body>
+<body class="body_juegos_ps">
 	
 	<jsp:include page="nav.jsp"></jsp:include>
 	

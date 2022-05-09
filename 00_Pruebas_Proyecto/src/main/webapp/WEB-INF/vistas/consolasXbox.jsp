@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>Consolas Xbox</title>
 </head>
-<body>
+<body class="body_juegos_xbox">
 	
 	<jsp:include page="nav.jsp"></jsp:include>
 	
