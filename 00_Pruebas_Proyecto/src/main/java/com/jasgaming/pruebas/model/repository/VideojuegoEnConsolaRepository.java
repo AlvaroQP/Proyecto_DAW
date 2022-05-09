@@ -12,11 +12,20 @@ public interface VideojuegoEnConsolaRepository extends JpaRepository<VideojuegoE
 	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'ps5'")
 	public List<VideojuegoEnConsola> findVideojuegosPs5();
 	
+	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'ps5' and v.videojuego.novedad= 's'")
+	public List<VideojuegoEnConsola> findNovedadPs5();
+	
 	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'switch'")
 	public List<VideojuegoEnConsola> findVideojuegosSwitch();
 	
+	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'switch' and v.videojuego.novedad= 's'")
+	public List<VideojuegoEnConsola> findNovedadSwitch();
+	
 	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'xbox_s_xs'")
 	public List<VideojuegoEnConsola> findVideojuegosXbox();
+	
+	@Query("select v from VideojuegoEnConsola v where v.consola.idConsola = 'xbox_s_xs' and v.videojuego.novedad= 's'")
+	public List<VideojuegoEnConsola> findNovedadXbox();
 	
 	@Query("select v from VideojuegoEnConsola v where v.precio <= ?1")
 	public List<VideojuegoEnConsola> findPrecioMenorIgualA(BigDecimal precio);

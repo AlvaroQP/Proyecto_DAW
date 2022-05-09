@@ -10,8 +10,11 @@ public interface VideojuegoEnConsolaService {
 	List<VideojuegoEnConsola> findAll();
 	VideojuegoEnConsola findById(int idVec);
 	List<VideojuegoEnConsola> findVideojuegosPs5();
+	List<VideojuegoEnConsola> findNovedadPs5();
 	List<VideojuegoEnConsola> findVideojuegosSwitch();
+	List<VideojuegoEnConsola> findNovedadSwitch();
 	List<VideojuegoEnConsola> findVideojuegosXbox();
+	List<VideojuegoEnConsola> findNovedadXbox();
 	List<VideojuegoEnConsola> findPrecioMenorIgualA(BigDecimal precio);
 	List<VideojuegoEnConsola> findPrecioMayorIgualA(BigDecimal precio);
 	List<VideojuegoEnConsola> findVecPorCadena(String cadena);

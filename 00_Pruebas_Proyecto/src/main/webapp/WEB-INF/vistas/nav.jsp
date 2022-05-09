@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/index">
                 <img src="/images/logos/jas_gaming/jas_gaming_rectangulo.png" alt="JAS Gaming" class="logo_jas">
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">

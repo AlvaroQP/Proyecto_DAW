@@ -101,5 +101,20 @@ public class VideojuegoEnConsolaServiceImpl implements VideojuegoEnConsolaServic
 	public List<VideojuegoEnConsola> findNovedades() {
 		return vecRepository.findNovedades();
 	}
+
+	@Override
+	public List<VideojuegoEnConsola> findNovedadPs5() {
+		return vecRepository.findNovedadPs5();
+	}
+
+	@Override
+	public List<VideojuegoEnConsola> findNovedadSwitch() {
+		return vecRepository.findNovedadSwitch();
+	}
+
+	@Override
+	public List<VideojuegoEnConsola> findNovedadXbox() {
+		return vecRepository.findNovedadXbox();
+	}
 	
 }

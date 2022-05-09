@@ -11,6 +11,10 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	
+		<header>
+			<img src="/images/banners/banner_PS5_2.jpg" alt="banner PS" class="banner_PS">
+		</header>
+	
 	    <div class="contenedor_tarjetas contenedor_tarjetas_accesorios">
   			<c:forEach var="accesorio" items="${accesoriosPs5}">
   				<div class="tarjeta_wrapper">

@@ -1585,7 +1585,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (23,
-	   'Xbox Wireless Controller – Aqua Shift Special Edition',
+	   'Aqua Shift Special Edition',
        '2021-11-09',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
         Eleva tu juego
@@ -1598,7 +1598,7 @@ VALUES(1,
        '17.8 cm x 7.3 cm x 17.7 cm',
        '480 g',
        'inalambrico / pilas AA',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/Cascos_estereo_Xbox_cuadrada.jpg',
+       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_cuadrada.jpg',
        '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_rectangular.jpg',
        '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift1.jpg',
        '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift2.jpg',
@@ -1606,7 +1606,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (24,
-	   'Mando Inalámbrico Xbox: Daystrike Camo Special Edition',
+	   'Daystrike Camo Special Edition',
        '2021-05-04',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
         Juega a otro nivel
@@ -1626,7 +1626,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (25,
-	   'Mando inalámbrico Xbox: Edición especial del 20º aniversario',
+	   'Edición especial del 20º aniversario',
        '2021-11-15',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
         Celebremos juntos 20 años de Xbox.
@@ -1647,7 +1647,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (26,
-	   'Mando inalámbrico Xbox – Forza Horizon 5 Edición limitada',
+	   'Forza Horizon 5 Edición limitada',
        '2021-09-11',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
         Conduce con estilo
@@ -1668,7 +1668,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (27,
-	   'Mando inalámbrico Xbox Elite Series 2 – Halo Infinite Edición limitada',
+	   'Elite Series 2 – Halo Infinite Edición limitada',
        '2021-11-15',
        'Palancas de mando de tensión ajustable | Gatillos de alta sensibilidad con bloqueo más corto | Agarre texturizado envolvente | Componentes rediseñados
         FORMA PARTE DE LA ELITE
@@ -1810,7 +1810,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (33,
-	   'Mando Xbox edicion primavera: azul algodon',
+	   'Edicion primavera: azul algodon',
        '2022-03-20',
        'Botones avanzados para videojuegos
         Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
@@ -1841,7 +1841,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (34,
-	   'Mando Xbox edicion primavera: remolinos purpura',
+	   'Edicion primavera: remolinos purpura',
        '2022-03-20',
        'Botones avanzados para videojuegos
         Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
@@ -1872,7 +1872,7 @@ VALUES(1,
        'xbox_s_xs'
        ),
         (35,
-	   'Mando Xbox edicion primavera: rosa limonada',
+	   'Edicion primavera: rosa limonada',
        '2022-03-20',
        'Botones avanzados para videojuegos
         Consigue una ventaja sobre la competencia con dos botones avanzados para videojuegos asignables 
@@ -1946,4 +1946,4 @@ FROM videojuegos
 INNER JOIN videojuego_en_consola vec ON videojuegos.id_videojuego = vec.id_videojuego
 INNER JOIN consolas ON consolas.id_consola = vec.id_consola;
 
-DROP DATABASE pruebas_proyecto;
+-- DROP DATABASE pruebas_proyecto;
