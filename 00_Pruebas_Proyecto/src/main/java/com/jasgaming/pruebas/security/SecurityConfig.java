@@ -1,5 +1,4 @@
 package com.jasgaming.pruebas.security;
-
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,15 +30,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 									" inner join Perfiles p on p.id_perfil = us.id_Perfil where us.username=?");
 	}	
 	
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 		.csrf().disable()
 		.authorizeRequests()
-		.antMatchers("/css/**", "/images/**").permitAll()
-		.antMatchers("/", "/registro", "/login", "/logout", "/rest/libros/**").permitAll()
+		.antMatchers("/css/**", "/js/**", "/images/**").permitAll()
+		.antMatchers("/registro", "/login", "/logout", "/videojuego/**", "/consola/**", "/accesorio/**").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().permitAll();
-	
 	}	
+		
 }

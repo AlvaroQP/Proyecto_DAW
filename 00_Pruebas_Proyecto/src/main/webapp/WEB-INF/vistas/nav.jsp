@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index">
+            <a class="navbar-brand" href="/">
                 <img src="/images/logos/jas_gaming/jas_gaming_rectangulo.png" alt="JAS Gaming" class="logo_jas">
             </a>
             <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,23 +84,51 @@
 	                            Xbox Series X/S
                             </a>
                           </div>
-                    </div>   
-                </ul>
+                       </div>   
+                    </ul>
                 
-                <div class="contenedor_login_registro">
-                	<div>
-	                	<a href="">
-	                		<span class="material-symbols-outlined icono_login">account_circle</span>
-	                		Login
-	                	</a>
+                	<div class="contenedor_usuario">
+                
+                	<sec:authorize access="!isAuthenticated()">
+	                	<div class="contenedor_login_registro">
+		                    <div>
+			                	<a href="/login">
+			                		<span class="material-symbols-outlined icono_login">account_circle</span>
+			                		Login
+			                	</a>
+		                	</div>
+		                	<div>
+			                	<a href="/registro">
+			                		<span class="material-symbols-outlined icono_registro">person_add</span>
+			                		Registro
+			                	</a>
+		                	</div>   
+	                	</div>
+	                 </sec:authorize>
+	                 <sec:authorize access="isAuthenticated()">
+                	    <div class=" drop-menu">
+		                	<div class="contenedor_info_usuario">
+		                		<img src="${usuario.avatarUsuario}" alt="avatar">
+		                		<span>${usuario.username}</span>
+                			</div>
+	                        <div class="drop-content">
+	                            <a class="nav-link" href="">
+									<span class="material-symbols-outlined icono_contenedor_usuario">account_circle</span>
+		                            Perfil
+	                            </a>
+	                            <a class="nav-link" href="">
+		                            <span class="material-symbols-outlined icono_contenedor_usuario">shopping_bag</span>
+		                            Mis Pedidos
+	                            </a>
+	                            <a class="nav-link" href="/logout">
+		                            <span class="material-symbols-outlined icono_contenedor_usuario">logout</span>
+		                            Cerrar Sesión
+	                            </a>
+	                          </div>
+	                      </div>  
+	                  </sec:authorize> 
                 	</div>
-                	<div>
-	                	<a href="/registro">
-	                		<span class="material-symbols-outlined icono_registro">person_add</span>
-	                		Registro
-	                	</a>
-                	</div>                	
-                </div>
+               
           </div>
         </div>
     </nav>

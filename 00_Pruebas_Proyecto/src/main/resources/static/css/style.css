@@ -31,6 +31,7 @@ body {
 	background-color: var(--color-principal-rojo);
     font-size: 1.6rem;
     padding: 0;
+
 }
 
 .navbar form {
@@ -115,6 +116,13 @@ body {
 	width: 2.4rem;
 }
 
+.contenedor_usuario {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 1rem;
+}
+
 .contenedor_login_registro {
 	display: flex;
 	flex-direction: row;
@@ -141,6 +149,39 @@ body {
 	transform: translateY(.75rem);
 	margin-right: .2rem;
 }
+
+.drop-menu:hover .contenedor_info_usuario {
+	background-color: var(--color-rojo-hover);
+} 
+
+.contenedor_info_usuario {
+	padding: .2rem .7rem;
+	margin-right: .5rem;
+	min-width: 14rem;
+	color: white;
+}
+
+.contenedor_info_usuario:hover {
+	cursor: pointer;
+}
+
+.contenedor_usuario .drop-content a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 1rem;
+}
+
+.icono_contenedor_usuario {
+	font-size: 1.2rem;
+	margin-right: .7rem;
+}
+
+.contenedor_info_usuario img {
+	height: 5rem;
+	padding: .3rem;
+	margin-right: .8rem;
+} 
 
 /* ==================================================================== 
    ==================================================================== */
@@ -683,7 +724,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: 70%;
-
 }
 
 .item_flex_tarjeta_2 {

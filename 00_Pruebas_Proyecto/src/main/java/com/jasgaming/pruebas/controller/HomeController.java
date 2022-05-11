@@ -1,7 +1,10 @@
 package com.jasgaming.pruebas.controller;
 import java.util.Date;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,13 +31,25 @@ public class HomeController {
 	@Autowired
 	private UsuarioService usuarioService;
 	
-	@GetMapping("/index")
-	public String inicio(Model model) {
+
+	@GetMapping("/")
+	public String inicio(Authentication auth, HttpSession session, Model model) {
+		
+		if(auth != null) {
+			session.setAttribute("usuario", usuarioService.findById(auth.getName()));
+			model.addAttribute("perfiles", auth.getAuthorities());
+		}
+		
 		model.addAttribute("novedadPs5", vecService.findNovedadPs5());
 		model.addAttribute("novedadSwitch", vecService.findNovedadSwitch());
 		model.addAttribute("novedadXbox", vecService.findNovedadXbox());
+		
+		System.out.println(auth.getName());
+		System.out.println(auth.getAuthorities());
 		return "index";
 	}
+	
+
 	
 	@GetMapping("/registro")
 	public String registro() {
@@ -61,7 +76,7 @@ public class HomeController {
 	@GetMapping("/pwd")
 	@ResponseBody
 	public String encriptar() {
-		String encriptado = passwordEncoder.encode("jasgaming");
+		String encriptado = passwordEncoder.encode("noelia123");
 		System.out.println(encriptado);
 		return encriptado;
 	}
