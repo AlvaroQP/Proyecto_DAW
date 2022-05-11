@@ -44,12 +44,8 @@ public class HomeController {
 		model.addAttribute("novedadSwitch", vecService.findNovedadSwitch());
 		model.addAttribute("novedadXbox", vecService.findNovedadXbox());
 		
-		System.out.println(auth.getName());
-		System.out.println(auth.getAuthorities());
 		return "index";
 	}
-	
-
 	
 	@GetMapping("/registro")
 	public String registro() {
@@ -68,8 +64,16 @@ public class HomeController {
 		} else {
 			attr.addFlashAttribute("mensaje", "Usuario no dado de alta");
 		}		
-		return "redirect:/registro";
+		return "redirect:/";
 	}
+	
+	
+	@GetMapping("/perfil")
+	public String verPerfil(Model model, Authentication auth) {
+		// model.addAttribute("usuario", usuarioService.findById(auth.getName()));
+		return "perfil";
+	}
+	
 	
 	
 	// Método para generar contraseñas encriptadas de prueba

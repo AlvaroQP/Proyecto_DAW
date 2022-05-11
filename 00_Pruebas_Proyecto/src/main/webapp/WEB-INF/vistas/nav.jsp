@@ -34,15 +34,15 @@
                         </button>
                         <div class="drop-content">
                             <a class="nav-link" href="/videojuego/ps5">
-	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_ps.png" class="nav_logo_consola">
 	                            PlayStation 5
                             </a>
 	                            <a class="nav-link" href="/videojuego/switch">
-	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
-                            Nintendo Switch
+	                            <img src="/images/iconos/icono_switch.png" class="nav_logo_consola">
+                            	Nintendo Switch
                             </a>
                             <a class="nav-link" href="/videojuego/xbox">
-	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_xbox.png" class="nav_logo_consola">
 	                            Xbox Series X/S
                             </a>
                           </div>
@@ -53,15 +53,15 @@
                         </button>
                         <div class="drop-content">
                             <a class="nav-link" href="/consola/ps5">
-	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_ps.png" class="nav_logo_consola">
 	                            PlayStation 5
                             </a>
                             <a class="nav-link" href="/consola/switch">
-	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_switch.png" class="nav_logo_consola">
 	                            Nintendo Switch
                             </a>
                             <a class="nav-link" href="/consola/xbox">
-	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_xbox.png" class="nav_logo_consola">
 	                            Xbox Series X/S
                             </a>
                           </div>
@@ -72,20 +72,57 @@
                         </button>
                         <div class="drop-content">
                             <a class="nav-link" href="/accesorio/ps5">
-	                            <img src="/images/logos/consolas/ps/playstation_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_ps.png" class="nav_logo_consola">
 	                            PlayStation 5
                             </a>
                             <a class="nav-link" href="/accesorio/switch">
-	                            <img src="/images/logos/consolas/switch/switch_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_switch.png" class="nav_logo_consola">
 	                            Nintendo Switch
                             </a>
                             <a class="nav-link" href="/accesorio/xbox">
-	                            <img src="/images/logos/consolas/xbox/xbox_logo.png" class="nav_logo_consola">
+	                            <img src="/images/iconos/icono_xbox.png" class="nav_logo_consola">
 	                            Xbox Series X/S
                             </a>
                           </div>
-                       </div>   
-                    </ul>
+                     </div>   
+                     
+                     <sec:authorize access="hasAuthority('admin')"> 
+	                     <div class=" drop-menu">
+	                        <button class="dropbtn">
+	                        	<div class="div_panel_admin">
+	                        		<span class="material-symbols-outlined icono_admin">admin_panel_settings</span>
+	                        		<span class="titulo_admin">Admin</span> 
+	                        		<i class="fa fa-caret-down"></i>
+	                        	</div>                        
+	                        </button>
+	                        <div class="drop-content">
+	                            <a class="nav-link" href="/admin/videojuego">
+		                            Videojuegos
+	                            </a>
+	                            <a class="nav-link" href="/admin/consolas">
+		                            Consolas
+	                            </a>
+	                            <a class="nav-link" href="/admin/accesorios">
+		                            Accesorios
+	                            </a>
+	                            <a class="nav-link" href="/admin/clientes">
+		                            Clientes
+	                            </a>
+	                          </div>
+	                     </div>   
+                     </sec:authorize>
+                     
+                     <sec:authorize access="hasAuthority('cliente')">
+                     	<div class="div_carrito_nav">
+	                     	<a class="" href="/cliente/carrito"> 
+                        		<div class="material-symbols-outlined icono_carrito_compra">shopping_cart</div>
+                        		<div class="titulo_carrito">Carrito</div> 
+	                        </a>
+	                    </div>
+                     </sec:authorize>    
+                   </ul>
+                
+                	
                 
                 	<div class="contenedor_usuario">
                 
@@ -110,16 +147,19 @@
 		                	<div class="contenedor_info_usuario">
 		                		<img src="${usuario.avatarUsuario}" alt="avatar">
 		                		<span>${usuario.username}</span>
+		                		<i class="fa fa-caret-down"></i>
                 			</div>
 	                        <div class="drop-content">
-	                            <a class="nav-link" href="">
+	                            <a class="nav-link" href="/perfil">
 									<span class="material-symbols-outlined icono_contenedor_usuario">account_circle</span>
 		                            Perfil
 	                            </a>
-	                            <a class="nav-link" href="">
-		                            <span class="material-symbols-outlined icono_contenedor_usuario">shopping_bag</span>
-		                            Mis Pedidos
-	                            </a>
+	                            <sec:authorize access="hasAuthority('cliente')"> 
+		                            <a class="nav-link" href="/cliente/pedidos">
+			                            <span class="material-symbols-outlined icono_contenedor_usuario">shopping_bag</span>
+			                            Mis Pedidos
+		                            </a>
+	                            </sec:authorize>
 	                            <a class="nav-link" href="/logout">
 		                            <span class="material-symbols-outlined icono_contenedor_usuario">logout</span>
 		                            Cerrar Sesión

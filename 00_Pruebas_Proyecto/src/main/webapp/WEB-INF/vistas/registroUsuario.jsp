@@ -13,8 +13,6 @@
 
    <jsp:include page="nav.jsp"></jsp:include>
 
-   <h3>${mensaje}</h3>
-
    <section class="seccion_formulario_alta">
         <div class="contenedor_formulario_alta">
             
@@ -39,7 +37,7 @@
                     <div class="contenedor_derecha contenedor_derecha_1">
                         <div class="registro registro_1">
                             <label for="username">Username</label><br>
-                            <input type="text" name="username" id="username" class="input_form" required>
+                            <input type="text" name="username" id="username" class="input_form" maxlength="10" required>
                         </div>
                         <div class="registro registro_2">
                             <label for="password">Password</label><br>

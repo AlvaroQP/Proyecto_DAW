@@ -49,7 +49,6 @@
                             <strong>Conectividad</strong><br>
                             ${accesorio.conectividad}
                         </li>
-
                     </ul>
                 </div>
 

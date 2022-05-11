@@ -24,12 +24,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.jdbcAuthentication().dataSource(dataSource)
+		auth.jdbcAuthentication()
+		.dataSource(dataSource)
 		.usersByUsernameQuery("select username, password, enabled from Usuarios where username=?")
 		.authoritiesByUsernameQuery("select us.username, p.nombre from Usuarios us" +
 									" inner join Perfiles p on p.id_perfil = us.id_Perfil where us.username=?");
 	}	
-	
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -37,9 +37,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.csrf().disable()
 		.authorizeRequests()
 		.antMatchers("/css/**", "/js/**", "/images/**").permitAll()
-		.antMatchers("/registro", "/login", "/logout", "/videojuego/**", "/consola/**", "/accesorio/**").permitAll()
+		.antMatchers("/", "/registro", "/login", "/logout", "/videojuego/**", "/consola/**", "/accesorio/**").permitAll()
 		.anyRequest().authenticated()
-		.and().formLogin().permitAll();
+		.and().formLogin().defaultSuccessUrl("/")
+		.and().logout().invalidateHttpSession(true).logoutSuccessUrl("/").clearAuthentication(true);
 	}	
 		
 }

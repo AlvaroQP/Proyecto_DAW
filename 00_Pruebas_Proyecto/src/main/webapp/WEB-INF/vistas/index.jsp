@@ -14,6 +14,9 @@
 		<header>
 			<img src="/images/banners/banner_index.jpg" alt="banner index" class="banner_index">
 		</header>
+	
+		<h3>${mensaje}</h3>
+	
 		<div class=contenedor_tituloIndex> <h2 class=tituloIndex>NOVEDADES</h2> </div>
 		<div class=contenedor_titulos> <h2 class=tituloIndexPS>PS5</h2> </div>
 		    <div class="contenedor_tarjetas">
