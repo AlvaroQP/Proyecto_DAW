@@ -193,8 +193,7 @@ VALUES(1,
 (	   2, 
 	   "Luigi's Mansion 3", 
        '2019-10-31', 
-       "Únete a Luigi, un héroe de lo más cobardica, en una aventura fantasmagórica (y un pelín viscosa, todo hay que decirlo) para salvar a Mario y compañía en Luigi's Mansion 3 para Nintendo Switch.
-		Puedes recorrer los sobrenaturales pisos de un hotel encantado en compañía de un amigo en el modo cooperativo, plantarles cara a fantasmas revoltosos y resolver puzles paranormales.
+       "Únete a Luigi, un héroe de lo más cobardica, en una aventura fantasmagórica (y un pelín viscosa, todo hay que decirlo) para salvar a Mario y compañía en Luigi's Mansion 3 para Nintendo Switch. Puedes recorrer los sobrenaturales pisos de un hotel encantado en compañía de un amigo en el modo cooperativo, plantarles cara a fantasmas revoltosos y resolver puzles paranormales.<br><br>
         ¿Quién puede rechazar una invitación a un hotel de lujo para pasar unas vacaciones de miedo con Mario y compañía? ¡Luigi no, desde luego! Sin embargo, el sueño pronto se convierte en pesadilla cuando los fantasmas empiezan a poner todo patas arriba y su macabra majestad, el Rey Boo, encierra a Mario y a sus amigos dentro de unos cuadros.
 		Con la ayuda del inefable profesor Fesor y sus últimas invenciones, Luigi deberá armarse otra vez de valor para desbaratar los malvados planes del Rey Boo y salvar a todo el mundo.",
 	   'PEGI 7',
@@ -215,7 +214,7 @@ VALUES(1,
 (	   3,
 	   "Animal Crossing: New Horizons",
        "2020-03-20",
-       "¡Archipiélago Paraíso te necesita! Únete al equipo de desarrollo inmobiliario de Nuria, y échale una mano para construir casas de vacaciones de ensueño.
+       "¡Archipiélago Paraíso te necesita! Únete al equipo de desarrollo inmobiliario de Nuria, y échale una mano para construir casas de vacaciones de ensueño.<br>
 		¡Más allá del horizonte te aguarda una nueva vida la mar de relajada! Desciende del avión y pon pie en tu propia isla desierta donde harás nuevos amigos y descubrimientos, y podrás disfrutar de mil oportunidades. ¡Crea un paraíso a tu medida en Animal Crossing: New Horizons para Nintendo Switch!",
         "PEGI 3",
         "1",
@@ -235,8 +234,8 @@ VALUES(1,
 (		4, 
 		"Kirby y la tierra olvidada",
         "2022-03-25",
-        "Un buen día, un extraño vórtice aparece en el cielo del planeta Pop y absorbe todo lo que pilla... ¡Kirby incluido! Más tarde, nuestro héroe de color rosa recobra el conocimiento en un mundo en ruinas, en el que civilización y naturaleza comparten entorno. Ahora le toca a Kirby rescatar a los Waddle Dees, que han sido raptados por un temible grupo llamado 'la jauría'.
-		 ¡En compañía de su nuevo amigo Elfilin, Kirby emprende una gran aventura para rescatar a los Waddle Dees y regresar a casa!",
+        "Un buen día, un extraño vórtice aparece en el cielo del planeta Pop y absorbe todo lo que pilla... ¡Kirby incluido! Más tarde, nuestro héroe de color rosa recobra el conocimiento en un mundo en ruinas, en el que civilización y naturaleza comparten entorno.<br>
+        Ahora le toca a Kirby rescatar a los Waddle Dees, que han sido raptados por un temible grupo llamado 'la jauría'. ¡En compañía de su nuevo amigo Elfilin, Kirby emprende una gran aventura para rescatar a los Waddle Dees y regresar a casa!",
         "PEGI 7",
         "1-2",
         "HAL Laboratory",
@@ -275,7 +274,7 @@ VALUES(1,
 (		6,
 		"Mario Kart 8 Deluxe",
         "2017-04-28",
-        "Mario, Luigi, Peach y otros personajes populares de la serie Super Mario están ahora acompañados por pilotos nuevos y veteranos, como Rey Boo, Bowsitos o Bowsy. ¡Incluso los inkling de Splatoon se unen a la carrera!
+        "Mario, Luigi, Peach y otros personajes populares de la serie Super Mario están ahora acompañados por pilotos nuevos y veteranos, como Rey Boo, Bowsitos o Bowsy. ¡Incluso los inkling de Splatoon se unen a la carrera!<br>
 		 Una vez que hayas escogido un piloto, elige un vehículo y personalízalo con diferentes ruedas, carrocerías y alerones antes de sacarlo al asfalto.
 		 Compite por tierra, mar y aire, e incluso por techos y paredes, en 48 niveles. Todos los circuitos (¡y personajes!) de Mario Kart 8 para Wii U vuelven en Mario Kart 8 Deluxe, incluido circuitos descargables anteriores inspirados en Animal Crossing, Excitebike, The Legend of Zelda y muchos más.",
         "PEGI 3",
@@ -316,7 +315,7 @@ VALUES(1,
 (		8,
 		"Pokémon Diamante Brillante",
         "2021-11-19",
-        "¡Vive una nostálgica aventura que vuelve a cobrar vida en Pokémon Diamante Brillante para Nintendo Switch! Emprende un viaje repleto de misterios a lo largo de la región de Sinnoh, atrapa Pokémon, enfréntate a los Entrenadores Pokémon más fuertes de la región y desbarata los pérfidos planes del Equipo Galaxia.
+        "¡Vive una nostálgica aventura que vuelve a cobrar vida en Pokémon Diamante Brillante para Nintendo Switch! Emprende un viaje repleto de misterios a lo largo de la región de Sinnoh, atrapa Pokémon, enfréntate a los Entrenadores Pokémon más fuertes de la región y desbarata los pérfidos planes del Equipo Galaxia.<br><br>
          Tu aventura comienza cuando un famoso profesor que investiga las evoluciones de los Pokémon te recluta para que viajes a lo largo y ancho de la región con el fin de completar una enciclopedia Pokémon conocida como Pokédex.",
 		"PEGI 7",
         "1-2",
@@ -336,7 +335,7 @@ VALUES(1,
 (		9,
         "Pokémon Perla Reluciente",
         "2021-11-19",
-        "¡Vive una nostálgica aventura que vuelve a cobrar vida en Pokémon Perla Reluciente para Nintendo Switch! Emprende un viaje repleto de misterios a lo largo de la región de Sinnoh, atrapa Pokémon, enfréntate a los Entrenadores Pokémon más fuertes de la región y desbarata los pérfidos planes del Equipo Galaxia.
+        "¡Vive una nostálgica aventura que vuelve a cobrar vida en Pokémon Perla Reluciente para Nintendo Switch! Emprende un viaje repleto de misterios a lo largo de la región de Sinnoh, atrapa Pokémon, enfréntate a los Entrenadores Pokémon más fuertes de la región y desbarata los pérfidos planes del Equipo Galaxia.<br><br>
          Tu aventura comienza cuando un famoso profesor que investiga las evoluciones de los Pokémon te recluta para que viajes a lo largo y ancho de la región con el fin de completar una enciclopedia Pokémon conocida como Pokédex.",
       	"PEGI 7",
         "1-2",
@@ -413,7 +412,7 @@ VALUES(1,
 (		13,
         "The Witcher 3: Wild Hunt",
         "2021-01-28",
-        "Galardonado con más de 250 premios al juego del año, The Witcher 3: Wild Hunt es una aventura de mundo abierto basada en la narrativa y ambientada en un oscuro universo de fantasía.
+        "Galardonado con más de 250 premios al juego del año, The Witcher 3: Wild Hunt es una aventura de mundo abierto basada en la narrativa y ambientada en un oscuro universo de fantasía.<br><br>
 		 Eres Geralt de Rivia, cazador de monstruos a sueldo. Tienes a tu disposición todas las herramientas de tu oficio: espadas afiladas, brebajes letales, ballestas sigilosas y una poderosa magia de combate. Ante ti se extiende un continente devastado por la guerra e infestado de monstruos que puedes explorar a tu antojo. ¿Cuál es tu contrato actual? Encontrar a la niña de la profecía, un arma viviente que puede alterar el mundo tal y como lo conocemos.",
         "PEGI 18",
         "1",
@@ -664,8 +663,8 @@ VALUES(1,
 (       23, 
 	  'Death Stranding', 
         '2021-09-24', 
-        "Hideo Kojima, el legendario creador de videojuegos, nos ofrece una experiencia que desafía a todos los géneros, ahora ampliada y remasterizada para PS5 en el DIRECTOR'S CUT.
-         En el futuro, un evento misterioso conocido como el Death Stranding ha abierto una puerta entre los vivos y los muertos y ha permitido que grotescas criaturas del otro mundo deambulen por un planeta en ruinas habitado por una sociedad desolada.
+        "Hideo Kojima, el legendario creador de videojuegos, nos ofrece una experiencia que desafía a todos los géneros, ahora ampliada y remasterizada para PS5 en el DIRECTOR'S CUT.<br><br>
+         En el futuro, un evento misterioso conocido como el Death Stranding ha abierto una puerta entre los vivos y los muertos y ha permitido que grotescas criaturas del otro mundo deambulen por un planeta en ruinas habitado por una sociedad desolada.<br><br>
 	   En la piel de Sam Bridges, tu misión es llevar la esperanza a la humanidad, para lo que deberás conectar a los últimos supervivientes de unos Estados Unidos arrasados.
 	   ¿Podrás volver a unir un mundo fragmentado, paso a paso?",
         'PEGI 18',
@@ -686,8 +685,8 @@ VALUES(1,
 (       24, 
 	 'Deathloop', 
        '2021-09-14', 
-       "Participa en la eterna pugna entre dos asesinos extraordinarios. Ponte en la piel de Colt y busca la manera de intentar romper el bucle en el que estás atrapado en Blackreef al mismo tiempo que los habitantes de la isla te dan caza.
-        Utiliza armas y habilidades poderosas para eliminar a ocho objetivos principales localizados en la impresionante y caótica isla antes de que el día comience de nuevo.
+       "Participa en la eterna pugna entre dos asesinos extraordinarios. Ponte en la piel de Colt y busca la manera de intentar romper el bucle en el que estás atrapado en Blackreef al mismo tiempo que los habitantes de la isla te dan caza.<br><br>
+        Utiliza armas y habilidades poderosas para eliminar a ocho objetivos principales localizados en la impresionante y caótica isla antes de que el día comience de nuevo.<br><br>
 		En las sombras, te acechará Juliana, tu rival asesina, que tiene la única misión de abatir a Colt y mantener el bucle en funcionamiento. Aprende de cada ciclo y prueba caminos y estrategias nuevas para romper el bucle definitivamente.",
         'PEGI 18',
         '1-2',
@@ -707,9 +706,9 @@ VALUES(1,
 (       25, 
 	  "Demon's Souls", 
         '2021-09-14', 
-	  "Este remake rediseñado por completo, te invita a vivir la inquietante historia y el despiadado combate de Demon’s Souls. PlayStation Studios y Bluepoint Games presentan un remake del clásico de PlayStation, Demon's Souls. Este remake, rediseñado por completo y optimizado de forma magistral, presenta los horrores de una oscura y neblinosa tierra de fantasía a una nueva generación de jugadores. Aquellos que ya
-        se hayan enfrentado a sus dificultades y adversidades pueden volver a desafiar a la oscuridad con una calidad visual sin igual y un rendimiento increíble.
-        En la búsqueda por aumentar su poder, el rey Allant XII, monarca de Boletaria, canalizó las antiguas artes del alma y despertó a un demonio tan antiguo como el tiempo: el Anciano. Esta acción provocó que una niebla incolora se extendiera por toda la región, liberando a terroríficas criaturas hambrientas de almas humanas. Aquellos cuyas almas les fueron arrebatadas perdieron la cordura y solo les quedó el deseo de atacar a quien aún la conserve.
+	  "Este remake rediseñado por completo, te invita a vivir la inquietante historia y el despiadado combate de Demon’s Souls. PlayStation Studios y Bluepoint Games presentan un remake del clásico de PlayStation, Demon's Souls. Este remake, rediseñado por completo y optimizado de forma magistral, presenta los horrores de una oscura y neblinosa tierra de fantasía a una nueva generación de jugadores.<br><br>
+      Aquellos que ya se hayan enfrentado a sus dificultades y adversidades pueden volver a desafiar a la oscuridad con una calidad visual sin igual y un rendimiento increíble.<br><br>
+        En la búsqueda por aumentar su poder, el rey Allant XII, monarca de Boletaria, canalizó las antiguas artes del alma y despertó a un demonio tan antiguo como el tiempo: el Anciano. Esta acción provocó que una niebla incolora se extendiera por toda la región, liberando a terroríficas criaturas hambrientas de almas humanas. Aquellos cuyas almas les fueron arrebatadas perdieron la cordura y solo les quedó el deseo de atacar a quien aún la conserve.<br><br>
         Ahora, Boletaria está aislada del mundo exterior, y los caballeros que se atreven a penetrar la densa niebla para liberar la región desaparecen para siempre. Encarna a un guerrero solitario y adéntrate en la peligrosa niebla, donde deberás enfrentarte a los desafíos más difíciles para ganarte el título de 'matademonios' y devolver al Anciano a su letargo",
         'PEGI 18',
         '1-6',
@@ -729,7 +728,7 @@ VALUES(1,
 (       26, 
 	  "Ghost of Tsushima Director's Cut", 
         '2020-08-20', 
-        "Se avecina una tormenta.Descubre la experiencia ampliada de Ghost  of Tsushima con Director´s Cut. Descubre las maravillas ocultas de Tsushima en esta aventura de acción de mundo abierto creada por Sucker Punch Productions y PlayStation Studios, disponible para PS5 y PS4.
+        "Se avecina una tormenta.Descubre la experiencia ampliada de Ghost  of Tsushima con Director´s Cut. Descubre las maravillas ocultas de Tsushima en esta aventura de acción de mundo abierto creada por Sucker Punch Productions y PlayStation Studios, disponible para PS5 y PS4.<br><br>
         Forja un nuevo camino y libra una guerra poco convencional por la libertad de Tsushima. Reta a los oponentes con tu katana, domina el arco para eliminar amenazas a distancia, desarrolla tácticas de sigilo para tender emboscadas a los enemigos y explora una nueva historia en la isla de Iki.",
         'PEGI 18',
         '1-4',
@@ -769,8 +768,9 @@ VALUES(1,
 (       28, 
 	  "Returnal", 
         '2021-04-30', 
-        "Rompe el ciclo del caos en un planeta alienígena que no deja de cambiar. Tras el aterrizaje forzoso en este mundo cambiante, Selene debe buscar en el desolado paisaje una antigua civilización para poder escapar. Sola y aislada, se ve abocada a luchar con uñas y dientes para sobrevivir. Cae derrotada una y otra vez, lo que la obliga a reiniciar su viaje cada vez que muere
-        .A través de un sistema de juego roguelike implacable, descubrirás que conforme el planeta cambia en cada ciclo, también lo hacen los objetos a tu disposición. Cada repetición ofrece nuevas combinaciones, por lo que tendrás que esforzarte al límite y utilizar una estrategia de combate distinta cada vez.",
+        "Rompe el ciclo del caos en un planeta alienígena que no deja de cambiar. Tras el aterrizaje forzoso en este mundo cambiante, Selene debe buscar en el desolado paisaje una antigua civilización para poder escapar. Sola y aislada, se ve abocada a luchar con uñas y dientes para sobrevivir.<br><br>
+        Cae derrotada una y otra vez, lo que la obliga a reiniciar su viaje cada vez que muere .A través de un sistema de juego roguelike implacable, descubrirás que conforme el planeta cambia en cada ciclo, también lo hacen los objetos a tu disposición.<br><br> 
+        Cada repetición ofrece nuevas combinaciones, por lo que tendrás que esforzarte al límite y utilizar una estrategia de combate distinta cada vez.",
         'PEGI 16',
         '1',
         'Housemarque',
@@ -789,7 +789,7 @@ VALUES(1,
 (       29, 
 	  "Sack Boy", 
         '2020-11-12', 
-        "Embárcate en una aventura en solitario o forma equipo con valientes amigos mientras os lo pasáis en grande en montañas nevadas, selvas frondosas, reinos subacuáticos empapados y... colonias del espacio espacial.
+        "Embárcate en una aventura en solitario o forma equipo con valientes amigos mientras os lo pasáis en grande en montañas nevadas, selvas frondosas, reinos subacuáticos empapados y... colonias del espacio espacial.<br><br>
 	   Acaba con Vex. Salva a los sack. Evita la catástrofe. Ha llegado el momento de cumplir con tu destino, Sackboy. Amable y achuchable niño a héroe de arpillera... Álzate, como un Caballero de la Puntada.",
         'PEGI 7',
         '1-4',
@@ -809,7 +809,7 @@ VALUES(1,
 (       30, 
 	  "Marvel's Spider-man Miles Morales", 
         '2020-11-12', 
-        "Tu grandeza es ser tú mismo. Vive la transformación de Miles Morales en un increíble superhéroe con poderes explosivos que lo convertirán en un nuevo Spiderman. En la última aventura del universo de Spider-Man de Marvel, el adolescente Miles Morales se adapta a su nuevo barrio al tiempo que sigue los pasos de Peter Parker, su mentor, y se convierte en un nuevo Spider-Man.
+        "Tu grandeza es ser tú mismo. Vive la transformación de Miles Morales en un increíble superhéroe con poderes explosivos que lo convertirán en un nuevo Spiderman. En la última aventura del universo de Spider-Man de Marvel, el adolescente Miles Morales se adapta a su nuevo barrio al tiempo que sigue los pasos de Peter Parker, su mentor, y se convierte en un nuevo Spider-Man.<br><br>
         Pero cuando una feroz lucha de poderes amenaza con destruir su nuevo hogar, el aspirante a héroe se da cuenta de que un gran poder debe conllevar una gran responsabilidad. Para salvar la Nueva York de Marvel, Miles debe tomar el relevo de Spider-Man y estar a la altura.",
         'PEGI 16',
         '1',
@@ -829,7 +829,7 @@ VALUES(1,
 (       31, 
 	  "Uncharted Col. Legado de los Ladrones", 
         '2022-01-28', 
-        "Estás en disposición de buscar fortuna? Busca tu legado y deja huella en el mundo con UNCHARTED: Colección Legado de los Ladrones. Disfruta de la increíble narrativa cinematográfica y de las mayores secuencias de acción de la emblemática franquicia de Naughty Dog.
+        "Estás en disposición de buscar fortuna? Busca tu legado y deja huella en el mundo con UNCHARTED: Colección Legado de los Ladrones. Disfruta de la increíble narrativa cinematográfica y de las mayores secuencias de acción de la emblemática franquicia de Naughty Dog.<br><br>
         UNCHARTED: Colección Legado de los Ladrones incluye las laureadas aventuras para un jugador que ofrecen UNCHARTED 4: El Desenlace del Ladrón y UNCHARTED: El Legado Perdido, remasterizadas con gráficos mejorados, mayor velocidad de fotogramas y un increíble nivel de detalle para la consola PS5™.",
         'PEGI 16',
         '1',
@@ -845,6 +845,155 @@ VALUES(1,
         "uncharted-col-legado_ps5/uncharted_4.jpg",
         "uncharted-col-legado_ps5/uncharted_5.jpg",
         "pegi-16.png"
+        
+        
+),
+
+-- Videojuegos multi
+
+(       32, 
+	  "Crash Bandicoot 4", 
+        '2020-10-02', 
+        "¡Ya era hora de que llegara un juego nuevo de Crash Bandicoot™! Crash se lanza de lleno con tus marsupiales favoritos a una aventura temporal que se cae a pedazos.Neo Cortex y N. Tropy han vuelto a las andadas y esta vez no planean darle la tabarra al universo.<br><br>
+        ¡su objetivo es el multiverso entero! Crash y Coco tendrán que reunir cuatro máscaras cuánticas y trastocar las leyes de la realidad para salvar el mundo. ¿Habilidades nuevas? Evidentemente. ¿Más personajes jugables? Sep. ¿Dimensiones alternativas? Faltaría más. ¿Jefes alocadísimos? Por supuesto. ¿Cañita de la buena? Por los 'jorts' que lleva que sí. ¿Cómo? ¿Entonces se llaman 'jorts' de verdad? ¡En este universo no!",
+        'PEGI 12',
+        '1-4',
+        'Activision Blizzard',
+        's',
+        26,
+        85,
+        "crash-bandicoot-4_multi/crash_bandicoot_4_cuadrada.jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_rectangular.jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_1.jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_2jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_3.jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_4.jpg",
+        "crash-bandicoot-4_multi/crash_bandicoot_4_5.jpg",
+        "pegi-12.png"
+        
+        
+
+),
+
+(       33, 
+	  "Dying Light 2", 
+        '2022-02-04', 
+        "Hace más de veinte años, nos enfrentamos al virus en Harran... Y perdimos. Y ahora se avecina una nueva derrota. La Ciudad, uno de los últimos grandes asentamientos de la humanidad, está siendo destruida por las luchas internas. La civilización ha vuelto a la Edad Oscura. Pero queda esperanza.<br><br>
+        Eres un vagabundo con el poder de cambiar el futuro de la Ciudad. Pero tus excepcionales habilidades tienen un alto coste. Te atormentan recuerdos que no puedes descifrar, por lo que partes en busca de la verdad... y acabas en medio de una zona de combate.<br><br> 
+        Practica tus habilidades porque para derrotar a tus enemigos y hacer amigos necesitarás tanto maña como fuerza. Descubre los oscuros secretos de quienes tienen poder, elige tu bando y decide tu destino. Y, hagas lo que hagas, no pierdas tu humanidad.",
+        'PEGI 18',
+        '1-4',
+        'Techland',
+        's',
+        40,
+        76,
+        "dying-light-2_multi/dying_light_2_cuadrada.jpg",
+        "dying-light-2_multi/dying_light_2_rectangular.jpg",
+        "dying-light-2_multi/dying_light_2_1.jpg",
+        "dying-light-2_multi/dying_light_2_2.jpg",
+        "dying-light-2_multi/dying_light_2_3.jpg",
+        "dying-light-2_multi/dying_light_2_4.jpg",
+        "dying-light-2_multi/dying_light_2_5.jpg",
+        "pegi-18.png"
+        
+        
+
+),
+
+(       34, 
+	  "Lego Star Wars - The Skywalker Saga", 
+        '2022-04-05', 
+        "La galaxia será tuya con LEGO® Star Wars™: La Saga De Skywalker. Revive los momentos emblemáticos y la acción constante de las nueve películas de la saga de Skywalker, reinterpretadas con el humor característico de LEGO. La edición digital también incluye el exclusivo personaje jugable Obi-Wan Kenobi clásico.",
+        'PEGI 7',
+        '1-2',
+        'Warner Bros Interactive Entertainment',
+        's',
+        23,
+        81,
+        "lego-star-wars-tss_multi/lego_star_wars_cuadrada.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_rectangular.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_1.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_2.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_3.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_4.jpg",
+        "lego-star-wars-tss_multi/lego_star_wars_5.jpg",
+        "pegi-7.png"
+        
+        
+
+),
+
+(       35, 
+	  "Minecraft", 
+        '2018-11-18', 
+        "Explora mundos generados aleatoriamente y construye cosas maravillosas, desde una simple casa hasta un fastuoso castillo. Juega en modo creativo con recursos ilimitados o explota a lo grande el mundo con el modo supervivencia, fabricando armas y armaduras para deshacerte de peligrosas criaturas.<br><br>
+        Esta versión te permitirá jugar con diferentes dispositivos, acceder a múltiples contenidos a través de la tienda del juego y obtener todas las futuras actualizaciones.",
+        'PEGI 7',
+        '1-4',
+        'Mojang AB',
+        'n',
+        10,
+        88,
+        "minecraft_multi/minecraft_cuadrada.jpg",
+        "minecraft_multi/minecraft_rectangular.jpg",
+        "minecraft_multi/minecraft_1.jpg",
+        "minecraft_multi/minecraft_2.jpg",
+        "minecraft_multi/minecraft_3.jpg",
+        "minecraft_multi/minecraft_4.jpg",
+        "minecraft_multi/minecraft_5.jpg",
+        "pegi-7.png"
+        
+        
+
+),
+
+(       36, 
+	  "NBA 2K22", 
+        '2021-09-10', 
+        "NBA 2K22 pone un universo de baloncesto al alcance de tus manos. JUEGA YA en entornos realistas de la NBA y WNBA contra auténticos equipos y jugadores. Forma tu equipo de ensueño en MyTEAM con las estrellas de la actualidad y leyendas del pasado. Vive tu propio ascenso al estrellato profesional de la NBA en Mi CARRERA. Demuestra tus capacidades como un importante director en Mi GM y Mi LIGA.<br><br>
+        Seas quien seas, estés donde estés, puedes formar parte de NBA 2K22. Nuevas tácticas ofensivas se enfrentan a una defensa actualizada para una experiencia de juego más competitiva e inmersiva en NBA 2K22. Suma las habilidades de dribblings, tiro, mates y alley-opps a tu gama de movimientos, y contraataca con nuevos bloqueos y punteos implacables al otro lado de la cancha. ",
+        'PEGI 3',
+        '1-4',
+        '2k',
+        'n',
+        17,
+        76,
+        "nba2k-22_multi/nba2k22_cuadrada.jpg",
+        "nba2k-22_multi/nba2k22_rectangular.jpg",
+        "nba2k-22_multi/nba2k22_1.jpg",
+        "nba2k-22_multi/nba2k22_2.jpg",
+        "nba2k-22_multi/nba2k22_3.jpg",
+        "nba2k-22_multi/nba2k22_4.jpg",
+        "nba2k-22_multi/nba2k22_5.jpg",
+        "pegi-3.png"
+        
+        
+
+),
+
+(       37, 
+	  "FIFA 22", 
+        '2021-10-01', 
+        "En EA SPORTS™ FIFA 22, cada momento en el campo se potencia gracias a HyperMotion, una tecnología de juego diseñada para aprovechar la potencia de PlayStation 5.<br><br> 
+        Al integrar la tecnología de captura de movimiento avanzada en partidos 11 contra 11 y el aprendizaje automático, HyperMotion aporta a FIFA 22 los datos de movimiento en tiempo real de los jugadores profesionales en partidos de alta intensidad para conseguir la experiencia de juego más realista, fluida y con mayor capacidad de respuesta de la historia de FIFA.<br><br> 
+        Vuelven los modos de juego clásicos con una nueva temporada de innovación: Crea tu propio club en el modo Carrera, sumérgete en la nostalgia con el nuevo FIFA Ultimate Team Heroes y consigue recompensas por tu habilidad en las calles con un juego remodelado en VOLTA FOOTBALL",
+        'PEGI 3',
+        '1-4',
+        'Electronic Arts',
+        'n',
+        7,
+        78,
+        "fifa-22_multi/fifa_22_cuadrada.jpg",
+        "fifa-22_multi/fifa_22_rectangular.jpg",
+        "fifa-22_multi/fifa_22_1.jpg",
+        "fifa-22_multi/fifa_22_2.jpg",
+        "fifa-22_multi/fifa_22_3.jpg",
+        "fifa-22_multi/fifa_22_4.jpg",
+        "fifa-22_multi/fifa_22_5.jpg",
+        "pegi-3.png"
+        
+        
+
 );
     
 -- Caratulas Switch
@@ -864,6 +1013,12 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (12, 'switch', 'super-smash-bros-ult_switch/super_smash_bros_caja.jpg', 69.99),
       (13, 'switch', 'the-witcher-3_switch/the_witcher_3_caja_switch.jpg', 39.99),
       (14, 'switch', 'zelda-skyward-sword_switch/zelda_ss_caja.jpg', 59.99),
+      (32, 'switch', 'crash-bandicoot-4_multi/crash_bandicoot_4_caja_switch.jpg', 49.99),
+      (33, 'switch', 'dying-light-2_multi/dying_light_2_caja_switch.jpg', 59.95),
+      (34, 'switch', 'lego-star-wars-tss_multi/lego_star_wars_caja_switch.jpg', 59.95),
+      (35, 'switch', 'minecraft_multi/minecraft_caja_switch.jpg', 59.95),
+      (36, 'switch', 'nba2k-22_multi/nba2k22_caja_switch.jpg', 59.95),
+      (37, 'switch', 'fifa-22_multi/fifa_22_caja_switch.jpg', 59.95),
       
 -- Caratulas Xbox
 
@@ -875,6 +1030,12 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (20, 'xbox_s_xs', 'Sable_Xbox/Sable_caratula.jpg', 24.99),
       (21, 'xbox_s_xs', 'Sea_of_thieves_Xbox/Sea_of_thieves_caratula.jpg', 19.99),
       (22, 'xbox_s_xs', 'Tunic_Xbox/Tunic_caratula.jpg', 29.99),
+      (32, 'xbox_s_xs', 'crash-bandicoot-4_multi/crash_bandicoot_4_caja_xbox.jpg', 49.99),
+      (33, 'xbox_s_xs', 'dying-light-2_multi/dying_light_2_caja_xbox.jpg', 59.95),
+      (34, 'xbox_s_xs', 'lego-star-wars-tss_multi/lego_star_wars_caja_xbox.jpg', 59.95),
+      (35, 'xbox_s_xs', 'minecraft_multi/minecraft_caja_xbox.jpg', 59.95),
+      (36, 'xbox_s_xs', 'nba2k-22_multi/nba2k22_caja_xbox.jpg', 59.95),
+      (37, 'xbox_s_xs', 'fifa-22_multi/fifa_22_caja_xbox', 59.95),
 
 -- Caratulas ps5
 
@@ -886,7 +1047,14 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (28, 'ps5', "returnal_ps5/returnal_caja.jpg", 79.99),
       (29, 'ps5', "sack-boy_ps5/sackboy_caratula.jpg", 69.99),
       (30, 'ps5', "spiderman-miles-morales_ps5/spiderman_caratula.jpg", 59.99),
-      (31, 'ps5', "uncharted-col-legado_ps5/uncharted_caratula.jpg", 49.99);
+      (31, 'ps5', "uncharted-col-legado_ps5/uncharted_caratula.jpg", 49.99),
+      (32, 'ps5', 'crash-bandicoot-4_multi/crash_bandicoot_4_caja_ps5.jpg', 59.95),
+      (33, 'ps5', 'dying-light-2_multi/dying_light_2_caja_ps5.jpg', 59.95),
+      (34, 'ps5', 'lego-star-wars-tss_multi/lego_star_wars_caja_ps5.jpg', 59.95),
+      (35, 'ps5', 'minecraft_multi/minecraft_caja_ps5.jpg', 59.95),
+      (36, 'ps5', 'nba2k-22_multi/nba2k22_caja_ps5.jpg', 59.95),
+      (37, 'ps5', 'fifa-22_multi/fifa_22_caja_ps5.jpg', 59.95);
+      
 
 
 INSERT INTO videojuego_y_genero(id_videojuego, id_genero)
@@ -946,7 +1114,12 @@ VALUES(1, 1),
       (29, 1),
       (30, 1),
       (31, 1),
-      (31, 2);
+	(32, 1),
+	(33, 1),
+	(34, 1),
+	(35, 2),
+	(36, 14),
+	(37, 14);
 	
     
 -- Consolas Switch
@@ -1479,38 +1652,9 @@ VALUES(1,
        'accesorios-ps5/auriculares-pulse3d-negros/auriculares-pulse3d-negros3.jpg',
        'ps5'
        ),
-       (18,
-	   'Cubierta Ps5 Estándar Midnight Black',
-       '2022-01-21',
-       'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
-        54.99,
-       '18.9 x 7 x 19.2 cm',
-       '427 g',
-       'N/A',
-       '',
-       '',
-       'accesorios-ps5/carcasa-midnightBlack/carcasa-midnightBlack.jpg',
-       'accesorios-ps5/carcasa-midnightBlack/carcasa-midnightBlack2.jpg',
-       '',
-       'ps5'
-       ),
-       (19,
-	   'Cubierta Ps5 Estándar Cosmic Red',
-       '2022-01-21',
-       'Las únicas cubiertas de consola creadas por PlayStation para PS5. Personaliza tu PlayStation 5 o PlayStation 5 edición digital con una llamativa selección de nuevos colores. Fáciles de montar, solo tienes que retirar las cubiertas blancas originales de tu consola PS5 e instalar las nuevas cubiertas.',
-        54.99,
-       '18.9 x 7 x 19.2 cm',
-       '427 g',
-       'N/A',
-       '',
-       '',
-       'accesorios-ps5/carcasa-cosmicRed/carcasa-cosmicRed.jpg',
-       'accesorios-ps5/carcasa-cosmicRed/carcasa-cosmicRed2.jpg',
-       '',
-       'ps5'
-       ),
+
 -- Accesorios Xbox
-       (20,
+       (18,
 	   'Auriculares edición 20 aniversario',
        '2021-10-07',
        'Ergonomía cómoda | Ajuste universal | Ligero y flexible
@@ -1529,7 +1673,7 @@ VALUES(1,
        'xbox_series_xs/Cascos_Xbox/Auriculares20aniversario_Xbox/Auriculares20aniversario_3.jpg',
        'xbox_s_xs'
        ),
-        (21,
+        (19,
 	   'Cascos estéreo de Xbox',
        '2021-09-21',
        'Ergonomía cómoda | Ajuste universal | Ligeros y flexibles
@@ -1548,7 +1692,7 @@ VALUES(1,
        'xbox_series_xs/Cascos_Xbox/AuricularesEstereo_Xbox/Cascos_estereo3_Xbox.jpg',
        'xbox_s_xs'
        ),
-        (22,
+        (20,
 	   'Cascos inalámbricos de Xbox',
        '2021-03-16',
        'Emparejamiento directo con la consola | Sonido excepcional | Ligeros y flexibles
@@ -1577,14 +1721,14 @@ VALUES(1,
        'N/A',
        'N/A',
        'Bluetooth / Cable de carga USB-C',
-       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_cuadrada.jpg',
-       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_rectangular.jpg',
-       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos1_Xbox.jpg',
-       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos2_Xbox.jpg',
-       '/xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos3_Xbox.jpg',
+       'xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_cuadrada.jpg',
+       'xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos_Xbox_rectangular.jpg',
+       'xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos1_Xbox.jpg',
+       'xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos2_Xbox.jpg',
+       'xbox_series_xs/Cascos_Xbox/AuricularesInalambricos_Xbox/Auriculares_Inalambricos3_Xbox.jpg',
        'xbox_s_xs'
        ),
-        (23,
+        (21,
 	   'Aqua Shift Special Edition',
        '2021-11-09',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
@@ -1598,14 +1742,14 @@ VALUES(1,
        '17.8 cm x 7.3 cm x 17.7 cm',
        '480 g',
        'inalambrico / pilas AA',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_cuadrada.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_rectangular.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift1.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift2.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift3.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift_rectangular.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift1.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift2.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_aquaShiftEspecialEdition_Xbox/xbox_xs_controller_aquaShift3.jpg',
        'xbox_s_xs'
        ),
-        (24,
+        (22,
 	   'Daystrike Camo Special Edition',
        '2021-05-04',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
@@ -1618,14 +1762,14 @@ VALUES(1,
        '17.8 cm x 7.3 cm x 17.7 cm',
        '480 g',
        'inalambrico / pilas AA',
-       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_cuadrada.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_rectangular.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial1.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial2.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial3.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial_rectangular.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial1.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial2.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_Daystrike_camoSpecialEdition_Xbox/xbox_xs_controller_daystrikeCamoSpecial3.jpg',
        'xbox_s_xs'
        ),
-        (25,
+        (23,
 	   'Edición especial del 20º aniversario',
        '2021-11-15',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
@@ -1639,14 +1783,14 @@ VALUES(1,
        '17.8 cm x 7.3 cm x 17.7 cm',
        '480 g',
        'inalambrico / pilas AA',
-       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_rectangular.jpg',-- cambiar
-       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_cuadrada.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario1.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario2.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario3.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario_rectangular.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario1.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario2.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_edicionEspecial20aniversario_Xbox/xbox_xs_controller_edicion20aniversario3.jpg',
        'xbox_s_xs'
        ),
-        (26,
+        (24,
 	   'Forza Horizon 5 Edición limitada',
        '2021-09-11',
        'Gatillos y bumpers texturizados | Cruceta híbrida | Asignación de botones | Tecnología Bluetooth
@@ -1660,14 +1804,14 @@ VALUES(1,
        '17.8 cm x 7.3 cm x 17.7 cm',
        '480 g',
        'inalambrico / pilas AA',
-       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-rectangular.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-cuadrada.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-1.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-2.jpg',
-       '/xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-3.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-rectangular.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-1.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-2.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_ForzaHorizon5EdiciónLimitada_Xbox/xbox_xs_controller_forzaHorizon5-3.jpg',
        'xbox_s_xs'
        ),
-        (27,
+        (25,
 	   'Elite Series 2 – Halo Infinite Edición limitada',
        '2021-11-15',
        'Palancas de mando de tensión ajustable | Gatillos de alta sensibilidad con bloqueo más corto | Agarre texturizado envolvente | Componentes rediseñados
@@ -1702,14 +1846,14 @@ VALUES(1,
        '17.5 cm x 7.3 cm x 17.7 cm',
        '500 g',
        'inalambrico / cableUSB',
-       'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mando_HaloInfiniteEdiciónLimitada_Xbox/xbox_xs_controller_haloEdicionLimitada3.jpg',
        'xbox_s_xs'
        ),
-        (28,
+        (26,
 	   'Mando inalámbrico Xbox Azul',
        '2020-11-10',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
@@ -1722,14 +1866,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'inalambrico / pilas AA',
-       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_azul_Xbox/xbox_xs_controller_azul3.jpg',
        'xbox_s_xs'
        ),
-        (29,
+        (27,
 	   'Mando inalámbrico Xbox Blanco',
        '2020-11-10',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
@@ -1742,14 +1886,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'inalambrico / pilas AA',
-       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_blanco_Xbox/xbox_xs_controller_blanco3.jpg',
        'xbox_s_xs'
        ),
-        (30,
+        (28,
 	   'Mando inalámbrico Xbox Negro',
        '2020-11-10',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
@@ -1762,14 +1906,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'inalambrico / pilas AA',
-       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_negro_Xbox/xbox_xs_controller_negro3.jpg',
        'xbox_s_xs'
        ),
-        (31,
+        (29,
 	   'Mando inalámbrico Xbox Rojo',
        '2020-11-10',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
@@ -1782,14 +1926,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'inalambrico / pilas AA',
-       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_rojo_Xbox/xbox_xs_controller_rojo3.jpg',
        'xbox_s_xs'
        ),
-        (32,
+        (30,
 	   'Mando inalámbrico Xbox Voltaje',
        '2020-11-10',
        'Gatillos y botones texturizados | Cruceta híbrida | Asignación de botones | Tecnología bluetooth
@@ -1802,14 +1946,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'inalambrico / pilas AA',
-       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_Basic_Xbox/Mando_voltaje_Xbox/xbox_xs_controller_voltaje3.jpg',
        'xbox_s_xs'
        ),
-        (33,
+        (31,
 	   'Edicion primavera: azul algodon',
        '2022-03-20',
        'Botones avanzados para videojuegos
@@ -1833,14 +1977,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'USB cableado',
-       '',
-       '',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_azul_algodon_Xbox/xbox_xs_controller_azulAlgodon3.jpg',
        'xbox_s_xs'
        ),
-        (34,
+        (32,
 	   'Edicion primavera: remolinos purpura',
        '2022-03-20',
        'Botones avanzados para videojuegos
@@ -1864,14 +2008,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'USB cableado',
-       '',
-       '',
-       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_remolinosPurpura1.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura_rectangular.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_remolinos_purpura_Xbox/xbox_xs_controller_remolinosPurpura3.jpg',
        'xbox_s_xs'
        ),
-        (35,
+        (33,
 	   'Edicion primavera: rosa limonada',
        '2022-03-20',
        'Botones avanzados para videojuegos
@@ -1895,14 +2039,14 @@ VALUES(1,
        '7 cm x 17 cm x 18 cm',
        '480 g',
        'USB cableado',
-       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_azulAlgodon_rectangular.jpg',
-       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_azulAlgodon_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada_cuadrada.jpg',
+       'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada_rectangular.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada1.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada2.jpg',
        'xbox_series_xs/Mandos_Xbox/Mandos_edicionPrimavera_Xbox/Mando_rosa_limonada_Xbox/xbox_xs_controller_rosaLimonada3.jpg',
        'xbox_s_xs'
        ),
-        (36,
+        (34,
 	   'Batería recargable Xbox + cable USB-C',
        '2020-11-10',
        'Cargas mientras juegas | Carga completa en 4 horas.
@@ -1914,8 +2058,8 @@ VALUES(1,
        'N/A',
        'N/A',
        'inalambrico / USB cableado',
-       '',
-       '',
+       'xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox_cuadrada.jpg',
+       'xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox_rectangular.jpg',
        'xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox1.jpg',
        'xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox2.jpg',
        'xbox_series_xs/otros/Bateria_Recargable_Xbox/Bateria_Recargable_Xbox3.jpg',
@@ -1926,6 +2070,9 @@ INSERT INTO perfiles(nombre)
 VALUES('admin'),
       ('cliente');
 
+INSERT INTO usuarios
+VALUES('alvaroqp', 'jasgaming', 1, 'Álvaro', 'Quiles Pomares', 'C/ Pokémon 10', 'alvquipom@gmail.com', '2022-05-09', '/images/avatares/avatar-mg.png', 'hombre', 'si', 1),
+	  ('sergiog', 'jasgaming', 2, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 2);
 
 -- --------------------- --
 -- USUARIO Y PRIVILEGIOS --
