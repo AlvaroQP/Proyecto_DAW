@@ -5,6 +5,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.jasgaming.pruebas.model.repository.ModelosConsolaRepository;
+import com.jasgaming.pruebas.model.service.AccesorioService;
 import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
 
 @Controller
@@ -13,6 +15,12 @@ public class AdminController {
 
 	@Autowired
 	private VideojuegoEnConsolaService vecService;
+	
+	@Autowired
+	private ModelosConsolaRepository mcService;
+	
+	@Autowired
+	private AccesorioService accService;
 	
 	@GetMapping("/videojuego")
 	public String mostrarVideojuegos(Model model) {
@@ -23,6 +31,23 @@ public class AdminController {
 		return "adminVideojuegos";
 	}
 	
+	@GetMapping("/consola")
+	public String mostrarConsolas(Model model) {
+		model.addAttribute("consolasPs5", mcService.findConsolasPs5());
+		model.addAttribute("consolasSwitch", mcService.findConsolasSwitch());
+		model.addAttribute("consolasXbox", mcService.findConsolasXbox());
+		
+		return "adminConsolas";
+	}
+	
+	@GetMapping("/accesorio")
+	public String mostrarAccesorios(Model model) {
+		model.addAttribute("accesoriosPs5", accService.findAccesoriosPs5());
+		model.addAttribute("accesoriosSwitch", accService.findAccesoriosSwitch());
+		model.addAttribute("accesoriosXbox", accService.findAccesoriosXbox());
+		
+		return "adminAccesorios";
+	}
 	
 	
 }

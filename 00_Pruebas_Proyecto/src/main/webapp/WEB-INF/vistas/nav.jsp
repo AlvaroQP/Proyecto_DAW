@@ -99,13 +99,13 @@
 	                            <a class="nav-link" href="/admin/videojuego">
 		                            Videojuegos
 	                            </a>
-	                            <a class="nav-link" href="/admin/consolas">
+	                            <a class="nav-link" href="/admin/consola">
 		                            Consolas
 	                            </a>
-	                            <a class="nav-link" href="/admin/accesorios">
+	                            <a class="nav-link" href="/admin/accesorio">
 		                            Accesorios
 	                            </a>
-	                            <a class="nav-link" href="/admin/clientes">
+	                            <a class="nav-link" href="/admin/cliente">
 		                            Clientes
 	                            </a>
 	                          </div>

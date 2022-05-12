@@ -1453,6 +1453,80 @@ input.noValido {
 	width: 35%;
 }
 
+
+/* SECCIÓN ADMIN */
+.body_admin {
+	background-color: #dedbdbcf;
+}
+
+.admin_tabla {
+    width: 80%;
+    margin: 5rem auto;
+    font-size: 1.4rem;
+}
+
+.admin_tabla tr th, .admin_tabla tr td {
+    border-color: #c9c5c5;
+    padding: .5rem;
+}
+
+.admin_tabla thead tr {
+    color: white;
+}
+
+.tabla_head_1 {
+	background-color: none;
+	width: 100%;
+}
+
+.tabla_videojuegos_logo {
+	width: 25rem;
+	padding: 1rem;
+}
+
+.tabla_head_2 th {
+	padding: 1.2rem;
+}
+
+.tabla_switch .tabla_head_2 {
+	background-color: rgb(208, 21, 21);
+}
+
+.tabla_xbox .tabla_head_2 {
+	background-color: rgb(21, 116, 13);
+}
+
+.tabla_ps5 .tabla_head_2 {
+	background-color: rgb(25, 42, 137);
+}
+
+.admin_tabla tbody tr:nth-of-type(odd) {
+    background-color: #edebeb;
+}
+.admin_tabla tbody tr:nth-of-type(even) {
+    background-color: #fdfdfd;
+}
+.admin_tabla tbody tr:hover {
+    background: #f5cfd0;
+}
+.admin_tabla .acciones {
+    width: 15rem;
+}
+.admin_tabla td a {
+    margin: 0 .5rem;
+}
+.admin_tabla .acciones img {
+    margin-top: .2rem;
+    margin-right: 1.2rem;
+    height: 1.8rem;
+}
+
+.tabla_admin_imagen_juego {
+	height: 6rem;
+	width: 6rem;
+}
+
+
 /* FOOTER */
 footer {
     display: flex;
