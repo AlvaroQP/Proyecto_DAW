@@ -1488,7 +1488,8 @@ input.noValido {
 	padding: 1.2rem;
 }
 
-.tabla_switch .tabla_head_2 {
+.tabla_switch .tabla_head_2,
+.admin_tabla .tabla_head_2 {
 	background-color: rgb(208, 21, 21);
 }
 

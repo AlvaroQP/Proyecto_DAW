@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.jasgaming.pruebas.model.repository.ModelosConsolaRepository;
 import com.jasgaming.pruebas.model.service.AccesorioService;
+import com.jasgaming.pruebas.model.service.UsuarioService;
 import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
 
 @Controller
@@ -21,6 +22,9 @@ public class AdminController {
 	
 	@Autowired
 	private AccesorioService accService;
+	
+	@Autowired
+	private UsuarioService usuService;
 	
 	@GetMapping("/videojuego")
 	public String mostrarVideojuegos(Model model) {
@@ -48,6 +52,16 @@ public class AdminController {
 		
 		return "adminAccesorios";
 	}
+	
+	@GetMapping("/cliente")
+	public String mostrarUsuarios(Model model) {
+		model.addAttribute("usuariosAdmin", usuService.findUsuariosAdmin());
+		model.addAttribute("usuariosCliente", usuService.findUsuariosCliente());
+		
+		return "adminUsuarios";
+	}
+	
+	
 	
 	
 }

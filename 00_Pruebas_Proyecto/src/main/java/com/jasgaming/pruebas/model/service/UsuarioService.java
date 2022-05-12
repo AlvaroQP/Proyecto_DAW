@@ -10,5 +10,7 @@ public interface UsuarioService {
 	int insertarUsuario(Usuario usuario);
 	int editarUsuario(Usuario usuario);
 	int eliminarUsuario(String username);
+	List<Usuario> findUsuariosAdmin();
+	List<Usuario> findUsuariosCliente();
 	
 }

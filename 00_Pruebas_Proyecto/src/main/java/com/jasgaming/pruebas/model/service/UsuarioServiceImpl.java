@@ -66,4 +66,14 @@ public class UsuarioServiceImpl implements UsuarioService {
 		return filasEliminadas;
 	}
 
+	@Override
+	public List<Usuario> findUsuariosAdmin() {
+		return usuarioRepository.findUsuariosAdmin();
+	}
+
+	@Override
+	public List<Usuario> findUsuariosCliente() {
+		return usuarioRepository.findUsuariosCliente();
+	}
+
 }

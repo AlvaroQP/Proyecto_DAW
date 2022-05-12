@@ -2037,7 +2037,8 @@ VALUES('admin'),
 
 INSERT INTO usuarios
 VALUES('alvaroqp', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Álvaro', 'Quiles Pomares', 'C/ Pokémon 10', 'alvquipom@gmail.com', '2022-05-09', '/images/avatares/avatar-mg.png', 'hombre', 'si', 1),
-	  ('sergiog', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 1);
+	  ('sergiog', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 1),
+      ('jorgeg', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Jorge', 'García', 'C/ Warzone 17', 'warzone@gmail.com', '2022-05-10', '/images/avatares/avatar-joel.png', 'hombre', 'si', 1);
 
 -- --------------------- --
 -- USUARIO Y PRIVILEGIOS --
