@@ -657,16 +657,14 @@ VALUES(1,
         'Tunic_Xbox/Tunic_5.jpg',
         'pegi-7.png'
 ),
-
 -- Videojuegos ps5
-
 (       23, 
-	  'Death Stranding', 
+	    'Death Stranding', 
         '2021-09-24', 
         "Hideo Kojima, el legendario creador de videojuegos, nos ofrece una experiencia que desafía a todos los géneros, ahora ampliada y remasterizada para PS5 en el DIRECTOR'S CUT.<br><br>
          En el futuro, un evento misterioso conocido como el Death Stranding ha abierto una puerta entre los vivos y los muertos y ha permitido que grotescas criaturas del otro mundo deambulen por un planeta en ruinas habitado por una sociedad desolada.<br><br>
-	   En la piel de Sam Bridges, tu misión es llevar la esperanza a la humanidad, para lo que deberás conectar a los últimos supervivientes de unos Estados Unidos arrasados.
-	   ¿Podrás volver a unir un mundo fragmentado, paso a paso?",
+	     En la piel de Sam Bridges, tu misión es llevar la esperanza a la humanidad, para lo que deberás conectar a los últimos supervivientes de unos Estados Unidos arrasados.
+	     ¿Podrás volver a unir un mundo fragmentado, paso a paso?",
         'PEGI 18',
         '1',
         'Kojima production',
@@ -683,7 +681,7 @@ VALUES(1,
         "pegi-18.png"
 ),
 (       24, 
-	 'Deathloop', 
+	   'Deathloop', 
        '2021-09-14', 
        "Participa en la eterna pugna entre dos asesinos extraordinarios. Ponte en la piel de Colt y busca la manera de intentar romper el bucle en el que estás atrapado en Blackreef al mismo tiempo que los habitantes de la isla te dan caza.<br><br>
         Utiliza armas y habilidades poderosas para eliminar a ocho objetivos principales localizados en la impresionante y caótica isla antes de que el día comience de nuevo.<br><br>
@@ -704,10 +702,10 @@ VALUES(1,
         "pegi-18.png"
 ),
 (       25, 
-	  "Demon's Souls", 
+	    "Demon's Souls", 
         '2021-09-14', 
-	  "Este remake rediseñado por completo, te invita a vivir la inquietante historia y el despiadado combate de Demon’s Souls. PlayStation Studios y Bluepoint Games presentan un remake del clásico de PlayStation, Demon's Souls. Este remake, rediseñado por completo y optimizado de forma magistral, presenta los horrores de una oscura y neblinosa tierra de fantasía a una nueva generación de jugadores.<br><br>
-      Aquellos que ya se hayan enfrentado a sus dificultades y adversidades pueden volver a desafiar a la oscuridad con una calidad visual sin igual y un rendimiento increíble.<br><br>
+	    "Este remake rediseñado por completo, te invita a vivir la inquietante historia y el despiadado combate de Demon’s Souls. PlayStation Studios y Bluepoint Games presentan un remake del clásico de PlayStation, Demon's Souls. Este remake, rediseñado por completo y optimizado de forma magistral, presenta los horrores de una oscura y neblinosa tierra de fantasía a una nueva generación de jugadores.<br><br>
+        Aquellos que ya se hayan enfrentado a sus dificultades y adversidades pueden volver a desafiar a la oscuridad con una calidad visual sin igual y un rendimiento increíble.<br><br>
         En la búsqueda por aumentar su poder, el rey Allant XII, monarca de Boletaria, canalizó las antiguas artes del alma y despertó a un demonio tan antiguo como el tiempo: el Anciano. Esta acción provocó que una niebla incolora se extendiera por toda la región, liberando a terroríficas criaturas hambrientas de almas humanas. Aquellos cuyas almas les fueron arrebatadas perdieron la cordura y solo les quedó el deseo de atacar a quien aún la conserve.<br><br>
         Ahora, Boletaria está aislada del mundo exterior, y los caballeros que se atreven a penetrar la densa niebla para liberar la región desaparecen para siempre. Encarna a un guerrero solitario y adéntrate en la peligrosa niebla, donde deberás enfrentarte a los desafíos más difíciles para ganarte el título de 'matademonios' y devolver al Anciano a su letargo",
         'PEGI 18',
@@ -726,7 +724,7 @@ VALUES(1,
         "pegi-18.png"
 ),
 (       26, 
-	  "Ghost of Tsushima Director's Cut", 
+	    "Ghost of Tsushima Director's Cut", 
         '2020-08-20', 
         "Se avecina una tormenta.Descubre la experiencia ampliada de Ghost  of Tsushima con Director´s Cut. Descubre las maravillas ocultas de Tsushima en esta aventura de acción de mundo abierto creada por Sucker Punch Productions y PlayStation Studios, disponible para PS5 y PS4.<br><br>
         Forja un nuevo camino y libra una guerra poco convencional por la libertad de Tsushima. Reta a los oponentes con tu katana, domina el arco para eliminar amenazas a distancia, desarrolla tácticas de sigilo para tender emboscadas a los enemigos y explora una nueva historia en la isla de Iki.",
@@ -746,7 +744,7 @@ VALUES(1,
         "pegi-18.png"
 ),
 (       27, 
-	  "Ratchet & Clank: Una Dimensión Aparte", 
+	    "Ratchet & Clank: Una Dimensión Aparte", 
         '2021-06-11', 
         "Lánzate a una aventura interdimensional. Viaja entre dimensiones con Ratchet y Clank en su lucha contra un malvado emperador de otra realidad. Salta entre mundos cargados de acción y más allá a velocidades de vértigo, 
         con unos gráficos espectaculares y un arsenal demencial en el estreno de estos aventureros intergalácticos en la consola PS5™",
@@ -766,7 +764,7 @@ VALUES(1,
         "pegi-7.png"
 ),
 (       28, 
-	  "Returnal", 
+	    "Returnal", 
         '2021-04-30', 
         "Rompe el ciclo del caos en un planeta alienígena que no deja de cambiar. Tras el aterrizaje forzoso en este mundo cambiante, Selene debe buscar en el desolado paisaje una antigua civilización para poder escapar. Sola y aislada, se ve abocada a luchar con uñas y dientes para sobrevivir.<br><br>
         Cae derrotada una y otra vez, lo que la obliga a reiniciar su viaje cada vez que muere .A través de un sistema de juego roguelike implacable, descubrirás que conforme el planeta cambia en cada ciclo, también lo hacen los objetos a tu disposición.<br><br> 
@@ -787,10 +785,10 @@ VALUES(1,
         "pegi-16.png"
 ),
 (       29, 
-	  "Sack Boy", 
+	    "Sack Boy", 
         '2020-11-12', 
         "Embárcate en una aventura en solitario o forma equipo con valientes amigos mientras os lo pasáis en grande en montañas nevadas, selvas frondosas, reinos subacuáticos empapados y... colonias del espacio espacial.<br><br>
-	   Acaba con Vex. Salva a los sack. Evita la catástrofe. Ha llegado el momento de cumplir con tu destino, Sackboy. Amable y achuchable niño a héroe de arpillera... Álzate, como un Caballero de la Puntada.",
+	     Acaba con Vex. Salva a los sack. Evita la catástrofe. Ha llegado el momento de cumplir con tu destino, Sackboy. Amable y achuchable niño a héroe de arpillera... Álzate, como un Caballero de la Puntada.",
         'PEGI 7',
         '1-4',
         'Sumo Digital',
@@ -807,7 +805,7 @@ VALUES(1,
         "pegi-7.png"
 ),
 (       30, 
-	  "Marvel's Spider-man Miles Morales", 
+	    "Marvel's Spider-man Miles Morales", 
         '2020-11-12', 
         "Tu grandeza es ser tú mismo. Vive la transformación de Miles Morales en un increíble superhéroe con poderes explosivos que lo convertirán en un nuevo Spiderman. En la última aventura del universo de Spider-Man de Marvel, el adolescente Miles Morales se adapta a su nuevo barrio al tiempo que sigue los pasos de Peter Parker, su mentor, y se convierte en un nuevo Spider-Man.<br><br>
         Pero cuando una feroz lucha de poderes amenaza con destruir su nuevo hogar, el aspirante a héroe se da cuenta de que un gran poder debe conllevar una gran responsabilidad. Para salvar la Nueva York de Marvel, Miles debe tomar el relevo de Spider-Man y estar a la altura.",
@@ -827,7 +825,7 @@ VALUES(1,
         "pegi-16.png"
 ),
 (       31, 
-	  "Uncharted Col. Legado de los Ladrones", 
+	    "Uncharted Col. Legado de los Ladrones", 
         '2022-01-28', 
         "Estás en disposición de buscar fortuna? Busca tu legado y deja huella en el mundo con UNCHARTED: Colección Legado de los Ladrones. Disfruta de la increíble narrativa cinematográfica y de las mayores secuencias de acción de la emblemática franquicia de Naughty Dog.<br><br>
         UNCHARTED: Colección Legado de los Ladrones incluye las laureadas aventuras para un jugador que ofrecen UNCHARTED 4: El Desenlace del Ladrón y UNCHARTED: El Legado Perdido, remasterizadas con gráficos mejorados, mayor velocidad de fotogramas y un increíble nivel de detalle para la consola PS5™.",
@@ -845,14 +843,10 @@ VALUES(1,
         "uncharted-col-legado_ps5/uncharted_4.jpg",
         "uncharted-col-legado_ps5/uncharted_5.jpg",
         "pegi-16.png"
-        
-        
 ),
-
 -- Videojuegos multi
-
 (       32, 
-	  "Crash Bandicoot 4", 
+	    "Crash Bandicoot 4", 
         '2020-10-02', 
         "¡Ya era hora de que llegara un juego nuevo de Crash Bandicoot™! Crash se lanza de lleno con tus marsupiales favoritos a una aventura temporal que se cae a pedazos.Neo Cortex y N. Tropy han vuelto a las andadas y esta vez no planean darle la tabarra al universo.<br><br>
         ¡su objetivo es el multiverso entero! Crash y Coco tendrán que reunir cuatro máscaras cuánticas y trastocar las leyes de la realidad para salvar el mundo. ¿Habilidades nuevas? Evidentemente. ¿Más personajes jugables? Sep. ¿Dimensiones alternativas? Faltaría más. ¿Jefes alocadísimos? Por supuesto. ¿Cañita de la buena? Por los 'jorts' que lleva que sí. ¿Cómo? ¿Entonces se llaman 'jorts' de verdad? ¡En este universo no!",
@@ -870,13 +864,9 @@ VALUES(1,
         "crash-bandicoot-4_multi/crash_bandicoot_4_4.jpg",
         "crash-bandicoot-4_multi/crash_bandicoot_4_5.jpg",
         "pegi-12.png"
-        
-        
-
 ),
-
 (       33, 
-	  "Dying Light 2", 
+	    "Dying Light 2", 
         '2022-02-04', 
         "Hace más de veinte años, nos enfrentamos al virus en Harran... Y perdimos. Y ahora se avecina una nueva derrota. La Ciudad, uno de los últimos grandes asentamientos de la humanidad, está siendo destruida por las luchas internas. La civilización ha vuelto a la Edad Oscura. Pero queda esperanza.<br><br>
         Eres un vagabundo con el poder de cambiar el futuro de la Ciudad. Pero tus excepcionales habilidades tienen un alto coste. Te atormentan recuerdos que no puedes descifrar, por lo que partes en busca de la verdad... y acabas en medio de una zona de combate.<br><br> 
@@ -895,13 +885,9 @@ VALUES(1,
         "dying-light-2_multi/dying_light_2_4.jpg",
         "dying-light-2_multi/dying_light_2_5.jpg",
         "pegi-18.png"
-        
-        
-
 ),
-
 (       34, 
-	  "Lego Star Wars - The Skywalker Saga", 
+	    "Lego Star Wars - The Skywalker Saga", 
         '2022-04-05', 
         "La galaxia será tuya con LEGO® Star Wars™: La Saga De Skywalker. Revive los momentos emblemáticos y la acción constante de las nueve películas de la saga de Skywalker, reinterpretadas con el humor característico de LEGO. La edición digital también incluye el exclusivo personaje jugable Obi-Wan Kenobi clásico.",
         'PEGI 7',
@@ -918,13 +904,9 @@ VALUES(1,
         "lego-star-wars-tss_multi/lego_star_wars_4.jpg",
         "lego-star-wars-tss_multi/lego_star_wars_5.jpg",
         "pegi-7.png"
-        
-        
-
 ),
-
 (       35, 
-	  "Minecraft", 
+	    "Minecraft", 
         '2018-11-18', 
         "Explora mundos generados aleatoriamente y construye cosas maravillosas, desde una simple casa hasta un fastuoso castillo. Juega en modo creativo con recursos ilimitados o explota a lo grande el mundo con el modo supervivencia, fabricando armas y armaduras para deshacerte de peligrosas criaturas.<br><br>
         Esta versión te permitirá jugar con diferentes dispositivos, acceder a múltiples contenidos a través de la tienda del juego y obtener todas las futuras actualizaciones.",
@@ -942,13 +924,9 @@ VALUES(1,
         "minecraft_multi/minecraft_4.jpg",
         "minecraft_multi/minecraft_5.jpg",
         "pegi-7.png"
-        
-        
-
 ),
-
 (       36, 
-	  "NBA 2K22", 
+	    "NBA 2K22", 
         '2021-09-10', 
         "NBA 2K22 pone un universo de baloncesto al alcance de tus manos. JUEGA YA en entornos realistas de la NBA y WNBA contra auténticos equipos y jugadores. Forma tu equipo de ensueño en MyTEAM con las estrellas de la actualidad y leyendas del pasado. Vive tu propio ascenso al estrellato profesional de la NBA en Mi CARRERA. Demuestra tus capacidades como un importante director en Mi GM y Mi LIGA.<br><br>
         Seas quien seas, estés donde estés, puedes formar parte de NBA 2K22. Nuevas tácticas ofensivas se enfrentan a una defensa actualizada para una experiencia de juego más competitiva e inmersiva en NBA 2K22. Suma las habilidades de dribblings, tiro, mates y alley-opps a tu gama de movimientos, y contraataca con nuevos bloqueos y punteos implacables al otro lado de la cancha. ",
@@ -966,13 +944,9 @@ VALUES(1,
         "nba2k-22_multi/nba2k22_4.jpg",
         "nba2k-22_multi/nba2k22_5.jpg",
         "pegi-3.png"
-        
-        
-
 ),
-
 (       37, 
-	  "FIFA 22", 
+	    "FIFA 22", 
         '2021-10-01', 
         "En EA SPORTS™ FIFA 22, cada momento en el campo se potencia gracias a HyperMotion, una tecnología de juego diseñada para aprovechar la potencia de PlayStation 5.<br><br> 
         Al integrar la tecnología de captura de movimiento avanzada en partidos 11 contra 11 y el aprendizaje automático, HyperMotion aporta a FIFA 22 los datos de movimiento en tiempo real de los jugadores profesionales en partidos de alta intensidad para conseguir la experiencia de juego más realista, fluida y con mayor capacidad de respuesta de la historia de FIFA.<br><br> 
@@ -991,17 +965,14 @@ VALUES(1,
         "fifa-22_multi/fifa_22_4.jpg",
         "fifa-22_multi/fifa_22_5.jpg",
         "pegi-3.png"
-        
-        
-
 );
     
 -- Caratulas Switch
 
 INSERT INTO videojuego_en_consola(id_videojuego, id_consola, imagen_caja, precio)
 VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
-	(2, 'switch', 'luigis-mansion-3_switch/luigis_mansion_3_caja.jpg', 59.99),
-	(3, 'switch', 'animal-crossing-nh_switch/animal_crossing_nh_caja.jpg', 59.99),
+	  (2, 'switch', 'luigis-mansion-3_switch/luigis_mansion_3_caja.jpg', 59.99),
+	  (3, 'switch', 'animal-crossing-nh_switch/animal_crossing_nh_caja.jpg', 59.99),
       (4, 'switch', 'kirby-tierra-olvidada_switch/kirby_to_caja.jpg', 59.99),
       (5, 'switch', 'mario-golf-super-rush_switch/mario_golf_sr_caja.jpg', 59.99),
       (6, 'switch', 'mario-kart-8-deluxe_switch/mario_kart_8_caja.jpg', 59.99),
@@ -1019,9 +990,7 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (35, 'switch', 'minecraft_multi/minecraft_caja_switch.jpg', 59.95),
       (36, 'switch', 'nba2k-22_multi/nba2k22_caja_switch.jpg', 59.95),
       (37, 'switch', 'fifa-22_multi/fifa_22_caja_switch.jpg', 59.95),
-      
 -- Caratulas Xbox
-
       (15, 'xbox_s_xs', 'Flight_simulator_Xbox/Flight_simulator_caratula.jpg', 55.99),
       (16, 'xbox_s_xs', 'forza-horizon-5_Xbox/forza_horizon5_caratula.jpeg', 69.99),
       (17, 'xbox_s_xs', 'Gears_of_war5_Xbox/Gears5_caratula.jpg', 27.99),
@@ -1036,10 +1005,8 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (35, 'xbox_s_xs', 'minecraft_multi/minecraft_caja_xbox.jpg', 59.95),
       (36, 'xbox_s_xs', 'nba2k-22_multi/nba2k22_caja_xbox.jpg', 59.95),
       (37, 'xbox_s_xs', 'fifa-22_multi/fifa_22_caja_xbox', 59.95),
-
 -- Caratulas ps5
-
-	(23, 'ps5', "death-stranding-director's-cut_ps5/death_stranding_caratula.jpg", 49.99),
+	  (23, 'ps5', "death-stranding-director's-cut_ps5/death_stranding_caratula.jpg", 49.99),
       (24, 'ps5', "deathloop_ps5/deathloop_caja.jpg", 69.99),
       (25, 'ps5', "demons-souls_ps5/demons_souls_caja.jpg", 79.99),
       (26, 'ps5', "ghost-of-tsushima_ps5/ghost_of_tsushima_caratula.jpg", 79.99),
@@ -1055,14 +1022,12 @@ VALUES(1, 'switch', 'zelda-botw_switch/zelda_botw_caja.jpg', 69.99),
       (36, 'ps5', 'nba2k-22_multi/nba2k22_caja_ps5.jpg', 59.95),
       (37, 'ps5', 'fifa-22_multi/fifa_22_caja_ps5.jpg', 59.95);
       
-
-
 INSERT INTO videojuego_y_genero(id_videojuego, id_genero)
 VALUES(1, 1),
-	(1, 2),
+	  (1, 2),
       (2, 1),
       (2, 2),
-	(3, 8),
+	  (3, 8),
       (4, 2),
       (4, 4),
       (5, 2),
@@ -1088,24 +1053,24 @@ VALUES(1, 1),
       (13, 3),
       (14, 1),
       (14, 2),
-	(15, 8),
-	(16, 8),
-	(16, 13),
-	(17, 1),
-	(17, 2),
-	(17, 5),
-	(18, 1),
-	(18, 2),
-	(19, 1),
-	(19, 5),
-	(19, 10),
-	(20, 1),
-	(20, 2),
-	(21, 1),
-	(21, 2),
-	(22, 1),
-	(22, 3),
-	(23, 1),
+	  (15, 8),
+	  (16, 8),
+	  (16, 13),
+	  (17, 1),
+	  (17, 2),
+	  (17, 5),
+	  (18, 1),
+	  (18, 2),
+	  (19, 1),
+	  (19, 5),
+	  (19, 10),
+	  (20, 1),
+	  (20, 2),
+	  (21, 1),
+	  (21, 2),
+	  (22, 1),
+	  (22, 3),
+	  (23, 1),
       (24, 1),
       (25, 1),
       (26, 3),
@@ -1114,12 +1079,12 @@ VALUES(1, 1),
       (29, 1),
       (30, 1),
       (31, 1),
-	(32, 1),
-	(33, 1),
-	(34, 1),
-	(35, 2),
-	(36, 14),
-	(37, 14);
+	  (32, 1),
+	  (33, 1),
+	  (34, 1),
+	  (35, 2),
+	  (36, 14),
+	  (37, 14);
 	
     
 -- Consolas Switch
@@ -2071,8 +2036,8 @@ VALUES('admin'),
       ('cliente');
 
 INSERT INTO usuarios
-VALUES('alvaroqp', 'jasgaming', 1, 'Álvaro', 'Quiles Pomares', 'C/ Pokémon 10', 'alvquipom@gmail.com', '2022-05-09', '/images/avatares/avatar-mg.png', 'hombre', 'si', 1),
-	  ('sergiog', 'jasgaming', 2, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 2);
+VALUES('alvaroqp', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Álvaro', 'Quiles Pomares', 'C/ Pokémon 10', 'alvquipom@gmail.com', '2022-05-09', '/images/avatares/avatar-mg.png', 'hombre', 'si', 1),
+	  ('sergiog', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 1);
 
 -- --------------------- --
 -- USUARIO Y PRIVILEGIOS --

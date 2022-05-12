@@ -22,7 +22,7 @@
 		    <div class="contenedor_tarjetas">
  			<c:forEach var="vec" items="${novedadPs5}">
  				<div class="tarjeta_wrapper">
- 				 	<a href="/videojuego/detalle/${vec.videojuego.idVideojuego}">
+ 				 	<a href="/videojuego/detalle/${vec.idVec}">
 		            <div class="tarjeta_juego">
 		                <div class="imagen_juego">
 		                    <img src="/images/videojuegos/${vec.videojuego.imagenCuadrada}" alt="imagen_juego">
@@ -52,7 +52,7 @@
       		<div class="contenedor_tarjetas contenedor_tarjetas_switch">
   			<c:forEach var="vec" items="${novedadSwitch}">
   				<div class="tarjeta_wrapper">
-  				 	<a href="/videojuego/detalle/${vec.videojuego.idVideojuego}">
+  				 	<a href="/videojuego/detalle/${vec.idVec}">
 			            <div class="tarjeta_juego">
 			                <div class="imagen_juego">
 			                    <img src="/images/videojuegos/${vec.videojuego.imagenCuadrada}" alt="imagen_juego">
@@ -82,7 +82,7 @@
         <div class="contenedor_tarjetas">
   			<c:forEach var="vec" items="${novedadXbox}">
   				<div class="tarjeta_wrapper">
-  				 	<a href="/videojuego/detalle/${vec.videojuego.idVideojuego}">
+  				 	<a href="/videojuego/detalle/${vec.idVec}">
 			            <div class="tarjeta_juego">
 			                <div class="imagen_juego">
 			                    <img src="/images/videojuegos/${vec.videojuego.imagenCuadrada}" alt="imagen_juego">

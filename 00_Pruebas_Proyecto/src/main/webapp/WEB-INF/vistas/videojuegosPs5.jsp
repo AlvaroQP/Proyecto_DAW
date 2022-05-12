@@ -18,7 +18,7 @@
     <div class="contenedor_tarjetas">
  			<c:forEach var="vec" items="${videojuegosPs5}">
  				<div class="tarjeta_wrapper">
- 				 	<a href="/videojuego/detalle/${vec.videojuego.idVideojuego}">
+ 				 	<a href="/videojuego/detalle/${vec.idVec}">
 		            <div class="tarjeta_juego">
 		                <div class="imagen_juego">
 		                    <img src="/images/videojuegos/${vec.videojuego.imagenCuadrada}" alt="imagen_juego">
