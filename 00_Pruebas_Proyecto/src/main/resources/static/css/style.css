@@ -1320,7 +1320,8 @@ input.noValido {
 
 /* PERFIL */
 .body_perfil {
-	background-color: #dbc4c4cf;
+	background: rgb(196,196,196);
+	background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .contenedor_perfil_usuario {
@@ -1461,7 +1462,8 @@ input.noValido {
 
 /* SECCIÓN ADMIN */
 .body_admin {
-	background-color: #dedbdbcf;
+	background: rgb(196,196,196);
+	background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 .admin_tabla {
