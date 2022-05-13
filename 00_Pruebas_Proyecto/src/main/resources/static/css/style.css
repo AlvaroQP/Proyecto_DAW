@@ -52,17 +52,8 @@ body {
     margin-right: 1rem;
 }
 
-.navbar .boton_buscar {
-    border: none;
-    border-width: .5rem;
-    border-radius: .2rem;
-    padding: 0 .5rem;
-    margin-right: .5rem;
-}
-
 .navbar a.nav-link {
     color: var(--color-texto-negro);
-
 }
 
 .navbar-toggler-icon {
@@ -74,7 +65,7 @@ body {
     border: none;
     outline: none;
     color: var(--color-principal-blanco);
-    padding: 1.6rem;
+    padding: 1.6rem 1.3rem;
     background-color: inherit;
     font-family: inherit;
 }
@@ -101,7 +92,7 @@ body {
   
 .drop-content a.nav-link {
     float: none;
-    padding: 1.2rem;
+    padding: 1.5rem;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -170,7 +161,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
 .icono_contenedor_usuario {
@@ -198,7 +189,6 @@ body {
 	height: 100%;
 }  
 
-
 .div_carrito_nav {
 	display: flex;
 	align-items: center;
@@ -225,6 +215,12 @@ body {
 .icono_carrito_compra {
 	margin-right: .5rem;
 } 
+
+.icono_nav_admin {
+	height: 2.4rem;
+	margin-right: .5rem;
+} 
+
 
 /* ==================================================================== 
    ==================================================================== */
@@ -1534,6 +1530,56 @@ input.noValido {
 	width: 6rem;
 }
 
+.tabla_usuarios h2 {
+	font-size: 3.5rem;
+	color: #c70103;
+}
+
+/* BOTONES ALTA (ADMIN) */
+.boton_alta_videojuego {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	color: white;
+	border: none;
+	border-radius: 1rem;
+	padding: 1rem;
+	font-size: 1.8rem;
+	box-shadow: 2px 2px 7px 1px #978b8b;
+	margin: 0 auto;
+}
+
+.boton_alta_videojuego_switch {
+	background-color: rgb(208, 21, 21);
+}
+
+.boton_alta_videojuego_switch:hover {
+	background-color: #fb171e;
+}
+
+.boton_alta_videojuego_xbox {
+	background-color: rgb(21, 116, 13);
+}
+
+.boton_alta_videojuego_xbox:hover {
+	background-color: rgb(31, 170, 19);
+}
+
+.boton_alta_videojuego_ps5 {
+	background-color: rgb(25, 42, 137);
+}
+
+.boton_alta_videojuego_ps5:hover {
+	background-color: rgb(43, 72, 236);
+}
+
+.icono_alta_videojuego {
+	margin-right: 1.5rem;
+}
+
+.admin_tabla a {
+	text-decoration: none;
+}
 
 /* FOOTER */
 footer {

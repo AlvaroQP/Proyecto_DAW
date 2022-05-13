@@ -15,7 +15,7 @@
         <thead>
         	<tr class="tabla_head_1">
 	        	<td colspan="5">
-	        		<img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Consolas PlayStation 5" class="tabla_videojuegos_logo">
+	        		<h2>Admins</h2>
 	        	</td>
         	</tr>
             <tr class="tabla_head_2">
@@ -47,7 +47,7 @@
         <thead>
         	<tr class="tabla_head_1">
 	        	<td colspan="5">
-	        		<img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Consolas PlayStation 5" class="tabla_videojuegos_logo">
+	        		<h2>Clientes</h2>
 	        	</td>
         	</tr>
             <tr class="tabla_head_2">

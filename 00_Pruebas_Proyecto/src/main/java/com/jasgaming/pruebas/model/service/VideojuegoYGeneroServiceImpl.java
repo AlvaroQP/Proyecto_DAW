@@ -28,4 +28,46 @@ public class VideojuegoYGeneroServiceImpl implements VideojuegoYGeneroService {
 		return vygRepo.findGenerosIdVideojuego(idVideojuego);
 	}
 
+	@Override
+	public int insertarVideojuegoYGenero(VideojuegoYGenero videojuegoYGenero) {
+		int filasInsertadas = 0;
+		
+		try {
+			vygRepo.save(videojuegoYGenero);
+			filasInsertadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasInsertadas;
+	}
+
+	@Override
+	public int editarVideojuegoYGenero(VideojuegoYGenero videojuegoYGenero) {
+		int filasModificadas = 0;
+		
+		try {
+			vygRepo.save(videojuegoYGenero);
+			filasModificadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasModificadas;
+	}
+
+	@Override
+	public int eliminarVideojuegoYGenero(int idVyg) {
+		int filasEliminadas = 0;
+		
+		try {
+			vygRepo.deleteById(idVyg);
+			filasEliminadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasEliminadas;
+	}
+
 }

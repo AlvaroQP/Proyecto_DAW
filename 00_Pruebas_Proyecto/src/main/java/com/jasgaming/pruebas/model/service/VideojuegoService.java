@@ -7,5 +7,8 @@ public interface VideojuegoService {
 
 	List<Videojuego> findAll();
 	Videojuego findById(int idVideojuego);
+	int insertarVideojuego(Videojuego videojuego);
+	int editarVideojuego(Videojuego videojuego);
+	int eliminarVideojuego(int idVideojuego);
 	
 }

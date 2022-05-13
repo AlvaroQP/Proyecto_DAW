@@ -24,4 +24,46 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 		return videojuegoRepo.findById(idVideojuego).orElse(null);
 	}
 
+	@Override
+	public int insertarVideojuego(Videojuego videojuego) {
+		int filasInsertadas = 0;
+		
+		try {
+			videojuegoRepo.save(videojuego);
+			filasInsertadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasInsertadas;
+	}
+
+	@Override
+	public int editarVideojuego(Videojuego videojuego) {
+		int filasModificadas = 0;
+		
+		try {
+			videojuegoRepo.save(videojuego);
+			filasModificadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasModificadas;
+	}
+
+	@Override
+	public int eliminarVideojuego(int idVideojuego) {
+		int filasEliminadas = 0;
+		
+		try {
+			videojuegoRepo.deleteById(idVideojuego);
+			filasEliminadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasEliminadas;
+	}
+
 }

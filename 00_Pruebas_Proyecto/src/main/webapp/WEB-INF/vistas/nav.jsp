@@ -29,7 +29,9 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <div class=" drop-menu">
-                        <button class="dropbtn">Videojuegos 
+                        <button class="dropbtn">
+                        <img src="/images/iconos/mushroom.png" class="icono_nav_admin">
+                        	Videojuegos 
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
@@ -48,7 +50,9 @@
                           </div>
                     </div>
                     <div class=" drop-menu">
-                        <button class="dropbtn">Consolas 
+                        <button class="dropbtn">
+                        	<img src="/images/iconos/consola.png" class="icono_nav_admin">
+                        	Consolas 
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
@@ -67,7 +71,9 @@
                           </div>
                     </div>
                     <div class=" drop-menu">
-                        <button class="dropbtn">Accesorios 
+                        <button class="dropbtn">
+                        	<img src="/images/iconos/controller.png" class="icono_nav_admin">
+                        	Accesorios 
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="drop-content">
@@ -90,22 +96,27 @@
 	                     <div class=" drop-menu">
 	                        <button class="dropbtn">
 	                        	<div class="div_panel_admin">
-	                        		<span class="material-symbols-outlined icono_admin">admin_panel_settings</span>
+	                        		<img src="/images/iconos/escudo.png" class="icono_nav_admin">
+	                        		<!-- <span class="material-symbols-outlined icono_admin">admin_panel_settings</span> -->
 	                        		<span class="titulo_admin">Admin</span> 
 	                        		<i class="fa fa-caret-down"></i>
 	                        	</div>                        
 	                        </button>
 	                        <div class="drop-content">
 	                            <a class="nav-link" href="/admin/videojuego">
+	                            	<img src="/images/iconos/mushroom.png" class="icono_nav_admin">
 		                            Videojuegos
 	                            </a>
 	                            <a class="nav-link" href="/admin/consola">
+	                            	<img src="/images/iconos/consola.png" class="icono_nav_admin">
 		                            Consolas
 	                            </a>
 	                            <a class="nav-link" href="/admin/accesorio">
+	                            	<img src="/images/iconos/controller.png" class="icono_nav_admin">
 		                            Accesorios
 	                            </a>
 	                            <a class="nav-link" href="/admin/cliente">
+	                            	<img src="/images/iconos/users.png" class="icono_nav_admin">
 		                            Clientes
 	                            </a>
 	                          </div>
