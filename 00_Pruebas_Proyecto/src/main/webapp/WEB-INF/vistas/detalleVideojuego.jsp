@@ -9,7 +9,7 @@
 <title>${vec.videojuego.titulo}</title>
 <script defer src="/js/slider.js"></script>
 </head>
-<body>
+<body class="body_background_detalle">
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	

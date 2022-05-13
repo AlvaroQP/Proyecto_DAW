@@ -1318,7 +1318,7 @@ VALUES('nsoled',
 -- Consolas Ps5
           (
 			'Ps5digital',
-            'Play Station 5 Digital Edition',
+            'PlayStation 5 Digital Edition',
 			"La consola PS5 hace posibles otras formas de juego que jamás habías imaginado.
             Experimenta cargas rápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de juegos de PlayStation
             Descubre una experiencia de juego más intensa mediante tecnología háptica, gatillos adaptables y audio 3D y una inmersión que te dejará sin aliento.
@@ -1337,7 +1337,7 @@ VALUES('nsoled',
           ),
           (
 			'Ps5disco',
-            'Play Station 5 Standard Edition',
+            'PlayStation 5 Standard Edition',
 			"La consola PS5 hace posibles otras formas de juego que jamás habías imaginado.
             Experimenta cargas rápidas gracias a una unidad de estado sólido (SSD) de alta velocidad, una inmersión más profunda con retroalimentación háptica, gatillos adaptables y audio 3D, además de una nueva generación de juegos de PlayStation
             Descubre una experiencia de juego más intensa mediante tecnología háptica, gatillos adaptables y audio 3D y una inmersión que te dejará sin aliento.
