@@ -59,6 +59,14 @@ public class HomeController {
 		usuario.setPerfile(new Perfile(2, "cliente"));
 		usuario.setPassword(passwordEncoder.encode(usuario.getPassword()));
 		
+		// Comprobamos si el username ya está seleccionado por otro usuario
+		for(Usuario usu : usuarioService.findAll()) {
+			if(usu.getUsername().equalsIgnoreCase(usuario.getUsername())) {
+				attr.addFlashAttribute("mensaje", "Username en uso. Por favor, selecciona otro.");
+				return "redirect:/";
+			}
+		}
+		
 		if(usuarioService.insertarUsuario(usuario) == 1) {
 			attr.addFlashAttribute("mensaje", "Usuario dado de alta");
 		} else {

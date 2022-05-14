@@ -226,7 +226,7 @@ body {
    ==================================================================== */
 
 
-/* CONTENEDORES VIDEOJUEGOS/CONSOLAS/ACCESORIOS */
+/* DETALLE VIDEOJUEGOS/CONSOLAS/ACCESORIOS */
 .seccion_detalle_videojuego,
 .seccion_detalle_consola,
 .seccion_detalle_accesorio {
@@ -404,12 +404,21 @@ body {
     grid-area: cuatro;
 	background-color: white;
 	border-radius: 0;
-
 }
 
 .contenedor_compra h3 {
     color: #54ad44;
     margin-bottom: 1rem;
+}
+
+.contenedor_compra p {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.contenedor_compra a {
+	font-weight: 700;
+	color: var(--color-principal-rojo);
 }
 
 .btn-comprar {
@@ -1580,6 +1589,101 @@ input.noValido {
 .admin_tabla a {
 	text-decoration: none;
 }
+
+/* FORMULARIO ALTA VIDEOJUEGO */
+.body_form_alta_videojuego {
+    background-color: #7b1111;
+}
+
+.form_alta_videojuego {
+	background-color: #facaca;
+	width: 70%;
+	margin: 7rem auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	padding: 3.5rem;	
+	border-radius: 1rem;
+	box-shadow: 3px 3px 5px 3px #b75858;
+}
+
+.form_alta_videojuego h2 {
+	font-weight: 900;
+	margin-bottom: 3rem;
+	color: #a80000;
+}
+
+.form_alta_videojuego h4 {
+	font-size: 1.6rem;
+	font-weight: 900;
+}
+
+.form_alta_videojuego input[type=text],
+.form_alta_videojuego input[type=number],
+.form_alta_videojuego textarea {
+	width: 100%;
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+.form_alta_videojuego input[type=date] {
+	margin-bottom: 1rem;
+	outline: none;
+}
+
+.form_alta_videojuego input[type=radio] {
+	opacity: 1;
+}
+
+.form_alta_videojuego .contenedor_checkbox label {
+	margin-right: .7rem;
+}
+
+.form_alta_videojuego_grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-bottom: 1.5rem;
+}
+
+.form_alta_videojuego_grid > div {
+	margin: 1rem 0;
+}
+
+.form_alta_videojuego_grid #puntuacion,
+.form_alta_videojuego_grid #numeroJugadores {
+	width: 97%;
+}
+
+.form_alta_videojuego .contenedor_generos_form {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-bottom: 3rem;
+}
+
+.contenedor_sub_res_alta_vid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 3rem;
+}
+
+.form_alta_videojuego .submit_alta_videojuego,
+.form_alta_videojuego .reset_alta_videojuego {
+	background-color: var(--color-principal-rojo);
+	border: none;
+	color: white;
+	font-size: 1.8rem;
+	border-radius: 1rem;
+	padding: .5rem 0;
+	width: 30%;
+	margin: 0 1rem;
+}
+
+.form_alta_videojuego .submit_alta_videojuego:hover,
+.form_alta_videojuego .reset_alta_videojuego:hover {
+	background-color: var(--color-rojo-hover);
+}
+
 
 /* FOOTER */
 footer {

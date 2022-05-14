@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,17 +21,28 @@
                     <img src="/images/videojuegos/${vec.videojuego.imagenRectangular}" alt="imagen videojuego rectangular">
                 </div>
 
-                <div class="contenedor_compra">
-                    <h3>¡En stock!</h3>
-                    <div class="contenedor_precio_videojuego">
-                        ${vec.precio} €
-                    </div>
-                    <button type="button" class="btn btn-lg btn-comprar">
-                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
-                        Añadir
-                    </button>
-                </div>
-
+				<sec:authorize access="isAuthenticated()">
+	                <div class="contenedor_compra">
+	                    <h3>¡En stock!</h3>
+	                    <div class="contenedor_precio_videojuego">
+	                        ${vec.precio} €
+	                    </div>
+	                    <button type="button" class="btn btn-lg btn-comprar">
+	                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
+	                        Añadir
+	                    </button>
+	                </div>
+				</sec:authorize>
+				
+				<sec:authorize access="!isAuthenticated()">
+	                <div class="contenedor_compra">
+						<p><a href="/registro">Regístrate</a> o <a href="/login">loguéate</a> para realizar tu compra.</p>
+						<p>¡Gracias!</p>
+	                </div>
+				</sec:authorize>				
+				
+				
+				
                 <div class="contenedor_caja_videojuego">
                     <img src="/images/videojuegos/${vec.imagenCaja}" alt="caja videojuego">
                 </div>
