@@ -98,13 +98,13 @@ public class AdminController {
 		return "adminUsuarios";
 	}
 	
-	@GetMapping("/altaVideojuegoSwitch")
+	@GetMapping("/altaVideojuego")
 	public String altaVideojuegoSwitch(Model model) {
 		model.addAttribute("listadoGeneros", genService.findAll());
-		return "formAltaVideojuegoSwitch";
+		return "formAltaVideojuego";
 	}
 	
-	@PostMapping("/altaVideojuegoSwitch")
+	@PostMapping("/altaVideojuego")
 	public String procesarAltaVideojuegoSwitch(Videojuego videojuego, RedirectAttributes attr,
 																	  @RequestParam("consolaSwitch") String consolaSwitch,
 																	  @RequestParam("imagenCaja") String imagenCaja,

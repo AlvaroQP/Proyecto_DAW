@@ -15,6 +15,8 @@
 	<form action="/admin/altaVideojuegoSwitch" method="POST" class="form_alta_videojuego">
 	 	<h2>Alta Videojuego</h2>
 
+		<img src="/images/png/pikachu.png" class="imagen_form_alta_vj">
+
 		<div>
 			<h4><label for="titulo">Título</label></h4>		
 			<input type="text" id="titulo" name="titulo" required>		
@@ -23,6 +25,12 @@
 			<h4><label for="estudio">Estudio</label></h4>			
 			<input type="text" id="estudio" name="estudio" required>		
 		</div>
+		<h4><label for="consola">Consola</label></h4> 
+		<select id="consola" name="idConsola">
+			<option value="switch">Nintendo Switch</option>
+			<option value="ps5">PlayStation 5</option>
+			<option value="xbox_s_xs">Xbox Series X/S</option>							
+		</select>		
 		<div>
 			<h4><label for="fechaLanzamiento">Fecha lanzamiento</label></h4>			
 			<input type="date" id="fechaLanzamiento" name="fechaLanzamiento" required>	
@@ -53,7 +61,7 @@
 				</div>	
 			</div>
 			<div>
-				<h4><label for="puntuacion">Puntuación</label></h4>
+				<h4><label for="puntuacion">Puntuación Metracritic (0-100)</label></h4>
 				<input type="number" id="puntuacion" name="puntuacion" min="0" max="100" required>		
 			</div>		
 			<div>

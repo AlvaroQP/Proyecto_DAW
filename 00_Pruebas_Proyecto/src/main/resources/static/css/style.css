@@ -1467,8 +1467,8 @@ input.noValido {
 
 /* SECCIÓN ADMIN */
 .body_admin {
-	background: rgb(196,196,196);
-	background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%);
+	background-color: rgb(228, 220, 220);
+	/* background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%); */
 }
 
 .admin_tabla {
@@ -1548,41 +1548,24 @@ input.noValido {
 .boton_alta_videojuego {
 	display: flex;
 	justify-content: center;
-	width: 90%;
+	width: 80%;
 	color: white;
 	border: none;
 	border-radius: 1rem;
-	padding: 1rem;
-	font-size: 1.8rem;
+	padding: 1.5rem .5rem;
+	font-size: 2.2rem;
 	box-shadow: 2px 2px 7px 1px #978b8b;
 	margin: 0 auto;
-}
-
-.boton_alta_videojuego_switch {
 	background-color: rgb(208, 21, 21);
 }
 
-.boton_alta_videojuego_switch:hover {
+
+.boton_alta_videojuego:hover {
 	background-color: #fb171e;
 }
 
-.boton_alta_videojuego_xbox {
-	background-color: rgb(21, 116, 13);
-}
-
-.boton_alta_videojuego_xbox:hover {
-	background-color: rgb(31, 170, 19);
-}
-
-.boton_alta_videojuego_ps5 {
-	background-color: rgb(25, 42, 137);
-}
-
-.boton_alta_videojuego_ps5:hover {
-	background-color: rgb(43, 72, 236);
-}
-
 .icono_alta_videojuego {
+	margin-top: .3rem;
 	margin-right: 1.5rem;
 }
 
@@ -1592,12 +1575,12 @@ input.noValido {
 
 /* FORMULARIO ALTA VIDEOJUEGO */
 .body_form_alta_videojuego {
-    background-color: #7b1111;
+    background-color: rgb(228, 220, 220);
 }
 
 .form_alta_videojuego {
-	background-color: #facaca;
-	width: 70%;
+	background-color: #f0d3d3;
+	width: 50%;
 	margin: 7rem auto;
 	display: flex;
 	flex-direction: column;
@@ -1605,12 +1588,20 @@ input.noValido {
 	padding: 3.5rem;	
 	border-radius: 1rem;
 	box-shadow: 3px 3px 5px 3px #b75858;
+	position: relative;
 }
 
 .form_alta_videojuego h2 {
+	font-size: 2.5rem;
 	font-weight: 900;
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 	color: #a80000;
+}
+
+.form_alta_videojuego .imagen_form_alta_vj {
+	width: 9rem;
+	position: absolute;
+	right: 5%;
 }
 
 .form_alta_videojuego h4 {
@@ -1622,7 +1613,7 @@ input.noValido {
 .form_alta_videojuego input[type=number],
 .form_alta_videojuego textarea {
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 1.2rem;
 	outline: none;
 }
 
@@ -1672,7 +1663,7 @@ input.noValido {
 	background-color: var(--color-principal-rojo);
 	border: none;
 	color: white;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	border-radius: 1rem;
 	padding: .5rem 0;
 	width: 30%;
@@ -1682,6 +1673,11 @@ input.noValido {
 .form_alta_videojuego .submit_alta_videojuego:hover,
 .form_alta_videojuego .reset_alta_videojuego:hover {
 	background-color: var(--color-rojo-hover);
+}
+
+#consola {
+	width: min-content;
+	margin-bottom: 1.2rem;
 }
 
 

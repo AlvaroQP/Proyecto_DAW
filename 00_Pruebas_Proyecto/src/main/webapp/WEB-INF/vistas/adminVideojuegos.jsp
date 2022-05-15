@@ -18,8 +18,8 @@
 	        		<img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Videojuegos PlayStation 5" class="tabla_videojuegos_logo">
 	        	</td>
 	        	<td colspan="2">
-	        		<a href="/admin/altaVideojuegoSwitch">
-	        			<button class="boton_alta_videojuego boton_alta_videojuego_switch">
+	        		<a href="/admin/altaVideojuego">
+	        			<button class="boton_alta_videojuego">
 			        		<span class="material-symbols-outlined icono_alta_videojuego">add_circle</span>
 			        		Alta Videojuego
 	        			</button>
@@ -57,18 +57,9 @@
     <table class="admin_tabla tabla_xbox">
         <thead>
         	<tr class="tabla_head_1">
-	        	<td colspan="3">
+	        	<td colspan="5">
 	        		<img src="/images/logos/consolas/xbox/xbox_logo_horizontal.png" alt="Videojuegos PlayStation 5" class="tabla_videojuegos_logo">
-	        	</td>
-	            <td colspan="2">
-	        		<a href="/admin/altaVideojuegoXbox">
-	        			<button class="boton_alta_videojuego boton_alta_videojuego_xbox">
-			        		<span class="material-symbols-outlined icono_alta_videojuego">add_circle</span>
-			        		Alta Videojuego
-	        			</button>
-	        		</a>
-	        	</td>
-	        	
+	        	</td>	        	
         	</tr>
             <tr class="tabla_head_2">
                 <th>#</th>
@@ -101,17 +92,9 @@
     <table class="admin_tabla tabla_ps5">
         <thead>
         	<tr class="tabla_head_1">
-	        	<td colspan="3">
+	        	<td colspan="5">
 	        		<img src="/images/logos/consolas/ps/ps5_logo_horizontal.png" alt="Videojuegos PlayStation 5" class="tabla_videojuegos_logo">
-	        	</td>
-	        	<td colspan="2">
-	        		<a href="/admin/altaVideojuegoPs5">
-	        			<button class="boton_alta_videojuego boton_alta_videojuego_ps5">
-			        		<span class="material-symbols-outlined icono_alta_videojuego">add_circle</span>
-			        		Alta Videojuego
-	        			</button>
-	        		</a>
-	        	</td>	        	
+	        	</td>        	
         	</tr>
             <tr class="tabla_head_2">
                 <th>#</th>
