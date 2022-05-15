@@ -18,7 +18,9 @@
 		<h3>${mensaje}</h3>
 	
 		<div class=contenedor_tituloIndex> <h2 class=tituloIndex>NOVEDADES</h2> </div>
-		<div class=contenedor_titulos> <h2 class=tituloIndexPS>PS5</h2> </div>
+		     	<div class=tituloLogoIndex>
+	        		<img src="/images/logos/consolas/ps/ps5_logo_horizontal.png" alt="PlayStation5_logo" class="logoIndex">
+	        	</div>
 		    <div class="contenedor_tarjetas">
  			<c:forEach var="vec" items="${novedadPs5}">
  				<div class="tarjeta_wrapper">
@@ -48,7 +50,9 @@
         	</div> 	
  			</c:forEach>
       	</div>
-        <div class=contenedor_titulos> <h2 class=tituloIndexSW>SWITCH</h2> </div>
+       	<div class=tituloLogoIndex>
+	       <img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Nintendo_logo" class="logoIndex">
+	    </div>
       		<div class="contenedor_tarjetas contenedor_tarjetas_switch">
   			<c:forEach var="vec" items="${novedadSwitch}">
   				<div class="tarjeta_wrapper">
@@ -78,7 +82,9 @@
 	        	</div> 	
   			</c:forEach>
        </div>
-       <div class=contenedor_titulos> <h2 class=tituloIndexXB>XBOX S/X</h2> </div>
+       	<div class=tituloLogoIndex>
+	       <img src="/images/logos/consolas/xbox/xbox_logo_horizontal.png" alt="Xbox_logo" class="logoIndex">
+	    </div>
         <div class="contenedor_tarjetas">
   			<c:forEach var="vec" items="${novedadXbox}">
   				<div class="tarjeta_wrapper">
