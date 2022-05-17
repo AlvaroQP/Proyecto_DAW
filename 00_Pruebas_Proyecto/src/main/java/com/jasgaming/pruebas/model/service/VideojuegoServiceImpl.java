@@ -78,8 +78,9 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 		if(!imagen.isEmpty()) {
 			try {
 				
-				String fileLocation = new File("src//main//resources//static//images//videojuegos").getAbsolutePath() + "//" + nombreCarpeta + "//" + imagen.getOriginalFilename();
-				FileOutputStream output = new FileOutputStream(fileLocation);
+				String ruta = new File("src//main//resources//static//images//videojuegos").getAbsolutePath() 
+											 + "//" + nombreCarpeta + "//" + imagen.getOriginalFilename();
+				FileOutputStream output = new FileOutputStream(ruta);
 				output.write(imagen.getBytes());
 				output.close();
 				

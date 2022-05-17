@@ -23,13 +23,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.jasgaming.pruebas.model.entities.Accesorio;
+import com.jasgaming.pruebas.model.entities.ModelosConsola;
 import com.jasgaming.pruebas.model.entities.Videojuego;
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
 import com.jasgaming.pruebas.model.entities.VideojuegoYGenero;
-import com.jasgaming.pruebas.model.repository.ModelosConsolaRepository;
+
 import com.jasgaming.pruebas.model.service.AccesorioService;
 import com.jasgaming.pruebas.model.service.ConsolaService;
 import com.jasgaming.pruebas.model.service.GeneroService;
+import com.jasgaming.pruebas.model.service.ModelosConsolaService;
 import com.jasgaming.pruebas.model.service.UsuarioService;
 import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
 import com.jasgaming.pruebas.model.service.VideojuegoService;
@@ -50,7 +53,7 @@ public class AdminController {
 	private VideojuegoEnConsolaService vecService;
 	
 	@Autowired
-	private ModelosConsolaRepository mcService;
+	private ModelosConsolaService mcService;
 	
 	@Autowired
 	private AccesorioService accService;
@@ -108,25 +111,25 @@ public class AdminController {
 	}
 	
 	@GetMapping("/altaVideojuego")
-	public String altaVideojuegoSwitch(Model model) {
+	public String altaVideojuego(Model model) {
 		model.addAttribute("listadoGeneros", genService.findAll());
 		return "formAltaVideojuego";
 	}
 	
 	@PostMapping("/altaVideojuego")
-	public String procesarAltaVideojuegoSwitch(Videojuego videojuego, RedirectAttributes attr,
-											   @RequestParam("idConsola") String idConsola,
-											   @RequestParam("precio") BigDecimal precio,
-											   @RequestParam("genero") int[] generoArray,
-											   @RequestParam("nombreCarpeta") String nombreCarpeta,
-											   @RequestParam("imagenCua") MultipartFile imagenCua,
-											   @RequestParam("imagenRec") MultipartFile imagenRec,	   
-											   @RequestParam("imag1") MultipartFile imag1,
-											   @RequestParam("imag2") MultipartFile imag2,
-											   @RequestParam("imag3") MultipartFile imag3,
-											   @RequestParam("imag4") MultipartFile imag4,
-											   @RequestParam("imag5") MultipartFile imag5,
-											   @RequestParam("imagCaja") MultipartFile imagCaja) throws IOException {
+	public String procesarAltaVideojuego(Videojuego videojuego, RedirectAttributes attr,
+										 @RequestParam("idConsola") String idConsola,
+										 @RequestParam("precio") BigDecimal precio,
+										 @RequestParam("genero") int[] generoArray,
+										 @RequestParam("nombreCarpeta") String nombreCarpeta,
+										 @RequestParam("imagenCua") MultipartFile imagenCua,
+										 @RequestParam("imagenRec") MultipartFile imagenRec,	   
+										 @RequestParam("imag1") MultipartFile imag1,
+										 @RequestParam("imag2") MultipartFile imag2,
+										 @RequestParam("imag3") MultipartFile imag3,
+										 @RequestParam("imag4") MultipartFile imag4,
+										 @RequestParam("imag5") MultipartFile imag5,
+										 @RequestParam("imagCaja") MultipartFile imagCaja) throws IOException {
 		
 		if(videojuego.getClasificacionEdad().equals("PEGI 3")) {
 			videojuego.setImagenPegi("pegi-3.png");
@@ -139,7 +142,6 @@ public class AdminController {
 		} else if(videojuego.getClasificacionEdad().equals("PEGI 18")) {
 			videojuego.setImagenPegi("pegi-18.png");
 		}
-	
 		
 		// Creamos el directorio donde irán las imágenes del videojuego		
 		new File("src//main//resources//static//images//videojuegos//" + nombreCarpeta).mkdir();
@@ -171,24 +173,10 @@ public class AdminController {
 		return "redirect:/admin/videojuego";
 	}
 	
-	@GetMapping("/altaVideojuegoXbox")
-	public String altaVideojuegoXbox(Model model) {
-		model.addAttribute("listadoGeneros", genService.findAll());	
-		return "formAltaVideojuegoXbox";
-	}
-	
-	@GetMapping("/altaVideojuegoPs5")
-	public String altaVideojuegoPs5(Model model) {
-		model.addAttribute("listadoGeneros", genService.findAll());
-		return "formAltaVideojuegoPs5";
-	}
-	
-	
-	
 	@GetMapping("/videojuego/eliminar/{idVec}")
 	public String eliminarVideojuego(@PathVariable("idVec") int idVec, Model model) {
 		model.addAttribute("vec", vecService.findById(idVec));
-		return "confirmarEliminar";
+		return "confirmarEliminarVideojuego";
 	}
 	
 	
@@ -203,5 +191,113 @@ public class AdminController {
 		return "forward:/admin/videojuego";
 	}
 	
+	@GetMapping("/altaConsola")
+	public String altaConsola(Model model) {
+		// model.addAttribute("listadoConsolas", conService.findAll());
+		return "formAltaConsola";
+	}
+	
+	@PostMapping("/altaConsola")
+	public String procesarAltaConsola(ModelosConsola modelosConsola, RedirectAttributes attr,
+									  @RequestParam("idConsola") String idConsola,
+									  @RequestParam("nombreCarpeta") String nombreCarpeta,									  
+									  @RequestParam("imagenCua") MultipartFile imagenCua,
+									  @RequestParam("imagenRec") MultipartFile imagenRec,	   
+									  @RequestParam("imag1") MultipartFile imag1,
+									  @RequestParam("imag2") MultipartFile imag2,
+									  @RequestParam("imag3") MultipartFile imag3) {
+		
+		modelosConsola.setConsola(conService.findById(idConsola));
+
+		// Creamos el directorio donde irán las imágenes de la consola	
+		if(idConsola.equals("switch")) {
+			nombreCarpeta = "/nin_switch/" + nombreCarpeta;
+			new File("src//main//resources//static//images//consolas" + nombreCarpeta).mkdir();
+		} else if(idConsola.equals("ps5")) {
+			nombreCarpeta = "/consolas-ps5/" + nombreCarpeta;
+			new File("src//main//resources//static//images//consolas" + nombreCarpeta).mkdir();
+		} else {
+			nombreCarpeta = "/Xbox/" + nombreCarpeta;
+			new File("src//main//resources//static//images//consolas" + nombreCarpeta).mkdir();
+		}
+		
+		mcService.subirImagen(modelosConsola, imagenCua, nombreCarpeta, 1);
+		mcService.subirImagen(modelosConsola, imagenRec, nombreCarpeta, 2);
+		mcService.subirImagen(modelosConsola, imag1, nombreCarpeta, 3);
+		mcService.subirImagen(modelosConsola, imag2, nombreCarpeta, 4);
+		mcService.subirImagen(modelosConsola, imag3, nombreCarpeta, 5);
+		
+		if(mcService.insertarModeloConsola(modelosConsola) == 1) {
+			attr.addFlashAttribute("mensaje", "Consola dada de alta");
+		} else {
+			attr.addFlashAttribute("mensaje", "Consola no dada de alta");
+		}
+		
+		return "redirect:/admin/consola";
+	}
+	
+	@GetMapping("/consola/eliminar/{idModeloConsola}")
+	public String eliminarConsola(@PathVariable("idModeloConsola") String idModeloConsola, Model model) {
+		model.addAttribute("mc", mcService.findById(idModeloConsola));
+		model.addAttribute("imagen", new File(mcService.findById(idModeloConsola).getImagenCuadrada()).getPath());
+		return "confirmarEliminarConsola";
+	}
+	
+	
+	@GetMapping("/confirmarEliminarConsola/{idModeloConsola}")
+	public String confirmarEliminarConsola(@PathVariable("idModeloConsola") String idModeloConsola, Model model) {
+		String nombre = mcService.findById(idModeloConsola).getNombre();
+		if(mcService.eliminarModeloConsola(idModeloConsola) == 1) {
+			model.addAttribute("mensaje", nombre + " eliminado correctamente.");
+		} else {
+			model.addAttribute("mensaje", nombre + "no se ha podido eliminar.");
+		}
+		return "forward:/admin/consola";
+	}	
+	
+	
+	@GetMapping("/altaAccesorio")
+	public String altaAccesorio(Model model) {
+		return "formAltaAccesorio";
+	}
+	
+	@PostMapping("/altaAccesorio")
+	public String procesarAltaAccesorio(Accesorio accesorio, RedirectAttributes attr,
+										@RequestParam("idConsola") String idConsola,	
+										@RequestParam("imagenCua") MultipartFile imagenCua,
+										@RequestParam("imagenRec") MultipartFile imagenRec,	   
+										@RequestParam("imag1") MultipartFile imag1,
+										@RequestParam("imag2") MultipartFile imag2,
+										@RequestParam("imag3") MultipartFile imag3,
+										@RequestParam("nombreCarpeta") String nombreCarpeta) {
+		
+		accesorio.setConsola(conService.findById(idConsola));
+		
+		// Creamos el directorio donde irán las imágenes de la consola	
+		if(idConsola.equals("switch")) {
+			nombreCarpeta = "/nin_switch/" + nombreCarpeta;
+			new File("src//main//resources//static//images//accesorios" + nombreCarpeta).mkdir();
+		} else if(idConsola.equals("ps5")) {
+			nombreCarpeta = "/accesorios-ps5/" + nombreCarpeta;
+			new File("src//main//resources//static//images//accesorios" + nombreCarpeta).mkdir();
+		} else {
+			nombreCarpeta = "/xbox_series_xs/" + nombreCarpeta;
+			new File("src//main//resources//static//images//accesorios" + nombreCarpeta).mkdir();
+		}
+		
+		accService.subirImagen(accesorio, imagenCua, nombreCarpeta, 1);
+		accService.subirImagen(accesorio, imagenRec, nombreCarpeta, 2);
+		accService.subirImagen(accesorio, imag1, nombreCarpeta, 3);
+		accService.subirImagen(accesorio, imag2, nombreCarpeta, 4);
+		accService.subirImagen(accesorio, imag3, nombreCarpeta, 5);
+		
+		if(accService.insertarAccesorio(accesorio) == 1) {
+			attr.addFlashAttribute("mensaje", "Accesorio dado de alta");
+		} else {
+			attr.addFlashAttribute("mensaje", "Accesorio no dado de alta");
+		}
+				
+		return "redirect:/admin/accesorio";
+	}
 	
 }

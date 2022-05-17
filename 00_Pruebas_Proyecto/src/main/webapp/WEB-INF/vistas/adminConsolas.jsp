@@ -11,11 +11,21 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 
+	<h3 class="alerta_admin_consolas">${mensaje}</h3>
+
     <table class="admin_tabla tabla_switch">
         <thead>
         	<tr class="tabla_head_1">
-	        	<td colspan="5">
+	        	<td colspan="2">
 	        		<img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Consolas PlayStation 5" class="tabla_videojuegos_logo">
+	        	</td>
+	        	<td colspan="3">
+	        		<a href="/admin/altaConsola">
+	        			<button class="boton_alta_consola">
+			        		<span class="material-symbols-outlined icono_alta_videojuego">add_circle</span>
+			        		Alta Consola
+	        			</button>
+	        		</a>
 	        	</td>
         	</tr>
             <tr class="tabla_head_2">
@@ -34,9 +44,9 @@
 					</td>	                
 	                <td>${con.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/consola/detalle/${con.idModeloConsola}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/consola/editar/${con.idModeloConsola}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/consola/eliminar/${con.idModeloConsola}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
@@ -67,9 +77,9 @@
 					</td>	                
 	                <td>${con.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/consola/detalle/${con.idModeloConsola}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/consola/editar/${con.idModeloConsola}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/consola/eliminar/${con.idModeloConsola}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
@@ -99,9 +109,9 @@
 					</td>	                
 	                <td>${con.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/consola/detalle/${con.idModeloConsola}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/consola/editar/${con.idModeloConsola}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/consola/eliminar/${con.idModeloConsola}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>

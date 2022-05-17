@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Alta Videojuego Switch</title>
+<title>Alta Videojuego</title>
 <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="body_form_alta_videojuego">
@@ -15,7 +15,8 @@
 	<form action="/admin/altaVideojuego" method="POST" enctype="multipart/form-data" class="form_alta_videojuego">
 	 	<h2>Alta Videojuego</h2>
 
-		<img src="/images/png/pikachu.png" class="imagen_form_alta_vj">
+		<img src="/images/png/gow.png" class="imagen_form_alta_vj_1">
+		<img src="/images/png/witcher.png" class="imagen_form_alta_vj_2">
 
 		<div>
 			<h4><label for="titulo">Título</label></h4>		

@@ -1443,7 +1443,8 @@ input.noValido {
 	background-color: rgb(228, 220, 220);
 }
 
-.alerta_admin_videojuegos {
+.alerta_admin_videojuegos,
+.alerta_admin_consolas {
 	margin: 3rem auto;
 	text-align: center;
 	background-color: #f1375a;
@@ -1526,7 +1527,9 @@ input.noValido {
 }
 
 /* BOTONES ALTA (ADMIN) */
-.boton_alta_videojuego {
+.boton_alta_videojuego,
+.boton_alta_consola,
+.boton_alta_accesorio {
 	display: flex;
 	justify-content: center;
 	width: 100%;
@@ -1534,13 +1537,14 @@ input.noValido {
 	border: none;
 	border-radius: 1rem;
 	padding: 1.5rem .5rem;
-	font-size: 2.2rem;
+	font-size: 2rem;
 	box-shadow: 2px 2px 7px 1px #978b8b;
 	background-color: rgb(208, 21, 21);
 }
 
-
-.boton_alta_videojuego:hover {
+.boton_alta_videojuego:hover,
+.boton_alta_consola:hover,
+.boton_alta_accesorio:hover {
 	background-color: #fb171e;
 }
 
@@ -1558,7 +1562,9 @@ input.noValido {
     background-color: rgb(228, 220, 220);
 }
 
-.form_alta_videojuego {
+.form_alta_videojuego,
+.form_alta_consola,
+.form_alta_accesorio {
 	background-color: #f0d3d3;
 	width: 50%;
 	min-width: 65rem;
@@ -1572,33 +1578,58 @@ input.noValido {
 	position: relative;
 }
 
-.form_alta_videojuego h2 {
+.form_alta_videojuego h2,
+.form_alta_consola h2,
+.form_alta_accesorio h2 {
 	font-size: 2.5rem;
 	font-weight: 900;
 	margin-bottom: 5rem;
 	color: #a80000;
 }
 
-.form_alta_videojuego .imagen_form_alta_vj {
-	width: 9rem;
+.form_alta_videojuego .imagen_form_alta_vj_1 {
 	position: absolute;
-	right: 5%;
+	top: 1%;
+	right: 1%;
+	width: 15rem;
+	opacity: 0.4;
 }
 
-.form_alta_videojuego h4 {
+.form_alta_videojuego .imagen_form_alta_vj_2 {
+	position: absolute;
+	right: 1%;
+	bottom: 5%;
+	width: 34rem;
+	opacity: 0.4;
+}
+
+.form_alta_videojuego h4,
+.form_alta_consola h4,
+.form_alta_accesorio h4 {
 	font-size: 1.6rem;
 	font-weight: 900;
 }
 
 .form_alta_videojuego input[type=text],
 .form_alta_videojuego input[type=number],
-.form_alta_videojuego textarea {
+.form_alta_videojuego input[type=file],
+.form_alta_videojuego textarea,
+.form_alta_consola input[type=text],
+.form_alta_consola input[type=number],
+.form_alta_consola input[type=file],
+.form_alta_consola textarea,
+.form_alta_accesorio input[type=text],
+.form_alta_accesorio input[type=number],
+.form_alta_accesorio input[type=file],
+.form_alta_accesorio textarea {
 	width: 100%;
 	margin-bottom: 1.2rem;
 	outline: none;
 }
 
-.form_alta_videojuego input[type=date] {
+.form_alta_videojuego input[type=date],
+.form_alta_consola input[type=date],
+.form_alta_accesorio input[type=date] {
 	margin-bottom: 1rem;
 	outline: none;
 }
@@ -1640,7 +1671,11 @@ input.noValido {
 }
 
 .form_alta_videojuego .submit_alta_videojuego,
-.form_alta_videojuego .reset_alta_videojuego {
+.form_alta_videojuego .reset_alta_videojuego,
+.form_alta_consola .submit_alta_consola,
+.form_alta_consola .reset_alta_consola,
+.form_alta_accesorio .submit_alta_accesorio,
+.form_alta_accesorio .reset_alta_accesorio {
 	background-color: var(--color-principal-rojo);
 	border: none;
 	color: white;
@@ -1652,7 +1687,11 @@ input.noValido {
 }
 
 .form_alta_videojuego .submit_alta_videojuego:hover,
-.form_alta_videojuego .reset_alta_videojuego:hover {
+.form_alta_videojuego .reset_alta_videojuego:hover,
+.form_alta_consola .submit_alta_consola:hover,
+.form_alta_consola .reset_alta_consola:hover,
+.form_alta_accesorio .submit_alta_accesorio:hover,
+.form_alta_accesorio .reset_alta_accesorio:hover {
 	background-color: var(--color-rojo-hover);
 }
 
@@ -1662,7 +1701,7 @@ input.noValido {
 }
 
 
-/* ELIMINACIÓN VIDEOJUEGO */
+/* ELIMINACIÓN VIDEOJUEGO/CONSOLA/ACCESORIO */
 .contenedor_eliminar_producto {
 	display: grid;
 	grid-template-areas: "uno uno"

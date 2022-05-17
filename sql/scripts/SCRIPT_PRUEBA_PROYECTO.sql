@@ -2046,17 +2046,5 @@ VALUES('alvaroqp', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.
 CREATE USER 'adminvideojuegos'@'localhost' IDENTIFIED BY 'adminvideojuegos';   
 GRANT ALL PRIVILEGES ON pruebas_proyecto.* TO 'adminvideojuegos'@'localhost';
 
--- ----------------- --
--- QUERIES DE PRUEBA --
--- ----------------- --
-SELECT videojuegos.titulo, vyg.id_genero, generos.nombre
-FROM videojuegos
-INNER JOIN videojuego_y_genero vyg ON videojuegos.id_videojuego = vyg.id_videojuego
-INNER JOIN generos ON generos.id_genero = vyg.id_genero;
-
-SELECT videojuegos.titulo, vec.id_consola, consolas.nombre
-FROM videojuegos
-INNER JOIN videojuego_en_consola vec ON videojuegos.id_videojuego = vec.id_videojuego
-INNER JOIN consolas ON consolas.id_consola = vec.id_consola;
 
 -- DROP DATABASE pruebas_proyecto;

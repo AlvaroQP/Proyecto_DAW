@@ -5,10 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.firewall.DefaultHttpFirewall;
+import org.springframework.security.web.firewall.HttpFirewall;
 
 @EnableWebSecurity
 @Configuration
@@ -42,5 +45,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.and().formLogin().defaultSuccessUrl("/")
 		.and().logout().invalidateHttpSession(true).logoutSuccessUrl("/").clearAuthentication(true);
 	}	
+	
+	
+	// Para evitar problemas con el firewall al crear las rutas al dar de alta videojuegos/consolas/accesorios
+    @Override
+    public void configure(WebSecurity web) {
+        web.httpFirewall(allowUrlEncodedSlashHttpFirewall());
+    }
+     
+    @Bean
+    public HttpFirewall allowUrlEncodedSlashHttpFirewall() {
+        DefaultHttpFirewall firewall = new DefaultHttpFirewall();
+        firewall.setAllowUrlEncodedSlash(true);
+        return firewall;
+    }
 		
 }

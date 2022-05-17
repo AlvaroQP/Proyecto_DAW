@@ -41,7 +41,8 @@
 			</div>
 		
 			<div class="alert alert-danger alerta_eliminar_producto" role="alert">
- 				Atención: esta acción eliminará el videojuego por completo
+ 				<strong>¡Atención!</strong> <br>
+ 				Esta acción eliminará el videojuego por completo.
 			</div>
 
 			<div class="contenedor_boton_eliminar_volver">

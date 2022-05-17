@@ -14,9 +14,18 @@
     <table class="admin_tabla tabla_switch">
         <thead>
         	<tr class="tabla_head_1">
-	        	<td colspan="5">
+	        	<td colspan="2">
 	        		<img src="/images/logos/consolas/switch/switch_logo_horizontal.png" alt="Consolas PlayStation 5" class="tabla_videojuegos_logo">
 	        	</td>
+	        	<td colspan="3">
+	        		<a href="/admin/altaAccesorio">
+	        			<button class="boton_alta_accesorio">
+			        		<span class="material-symbols-outlined icono_alta_videojuego">add_circle</span>
+			        		Alta Accesorio
+	        			</button>
+	        		</a>
+	        	</td>	        	
+	        	
         	</tr>
             <tr class="tabla_head_2">
                 <th>Accesorio</th>
