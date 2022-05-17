@@ -12,7 +12,7 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 
-	<form action="/admin/altaVideojuegoSwitch" method="POST" class="form_alta_videojuego">
+	<form action="/admin/altaVideojuego" method="POST" enctype="multipart/form-data" class="form_alta_videojuego">
 	 	<h2>Alta Videojuego</h2>
 
 		<img src="/images/png/pikachu.png" class="imagen_form_alta_vj">
@@ -74,7 +74,7 @@
 			</div>		
 			<div>
 				<h4><label for="precio">Precio</label></h4>
-				<input type="number" id="precio" name="precio" placeholder="59.99" required>		
+				<input type="number" id="precio" name="precio" step=".01" placeholder="59.99" required>		
 			</div>				
 		</div>
 			
@@ -89,40 +89,43 @@
 		</div>
 		
 		<div>
+			<h4><label for="nombreCarpeta">Nombre carpeta videojuego</label></h4>
+			<input type="text" id="nombreCarpeta" name="nombreCarpeta" required>
+		</div>
+		
+		<div>
 			<h4><label for="imagenCuadrada">Imagen cuadrada</label></h4>
-			<input type="text" id="imagenCuadrada" name="imagenCuadrada" placeholder="/images/videojuegos/tetris/tetris_cuadrada.jpg" required>		
+			<input type="file" id="imagenCuadrada" name="imagenCua" accept="image/png, image/jpeg" required>		
 		</div>			
 		<div>
 			<h4><label for="imagenRectangular">Imagen rectangular</label></h4>
-			<input type="text" id="imagenRectangular" name="imagenRectangular" placeholder="/images/videojuegos/tetris/tetris_rectangular.jpg" required>		
+			<input type="file" id="imagenRectangular" name="imagenRec" required>		
 		</div>				
 		<div>
 			<h4><label for="imagen1">Imagen 1</label></h4>
-			<input type="text" id="imagen1" name="imagen1" placeholder="/images/videojuegos/tetris/tetris_1.jpg" required>		
+			<input type="file" id="imagen1" name="imag1" required>		
 		</div>				
 		<div>
 			<h4><label for="imagen2">Imagen 2</label></h4>
-			<input type="text" id="imagen2" name="imagen2" placeholder="/images/videojuegos/tetris/tetris_2.jpg" required>		
+			<input type="file" id="imagen2" name="imag2" required>		
 		</div>				
 		<div>
 			<h4><label for="imagen3">Imagen 3</label></h4>
-			<input type="text" id="imagen3" name="imagen3" placeholder="/images/videojuegos/tetris/tetris_3.jpg" required>		
+			<input type="file" id="imagen3" name="imag3" required>		
 		</div>				
 		<div>
 			<h4><label for="imagen4">Imagen 4</label></h4>
-			<input type="text" id="imagen4" name="imagen4" placeholder="/images/videojuegos/tetris/tetris_4.jpg" required>		
+			<input type="file" id="imagen4" name="imag4" required>		
 		</div>		
 		<div>
 			<h4><label for="imagen5">Imagen 5</label></h4>
-			<input type="text" id="imagen5" name="imagen5" placeholder="/images/videojuegos/tetris/tetris_5.jpg" required>		
+			<input type="file" id="imagen5" name="imag5" required>		
 		</div>			
 		<div>
 			<h4><label for="imagenCaja">Imagen caja</label></h4>
-			<input type="text" id="imagenCaja" name="imagenCaja" placeholder="/images/videojuegos/tetris/tetris_caja.jpg" required>		
+			<input type="file" id="imagenCaja" name="imagCaja" required>		
 		</div>			
-						
-		<input type="hidden" name="consolaSwitch" value="switch">
-	
+							
 		<div class="contenedor_sub_res_alta_vid">
 			<input type="submit" value="Alta" class="submit_alta_videojuego">
 			<input type="reset" value="Borrar campos" class="reset_alta_videojuego">	

@@ -65,6 +65,7 @@
                         <li class="list-group-item">
                             <strong>Consola</strong><br>
                             ${vec.consola.nombre}
+                        </li>
                         <li class="list-group-item">
                             <strong>Fecha de lanzamiento</strong><br>
                             <fmt:formatDate pattern = "dd-MM-yyyy" value = "${vec.videojuego.fechaLanzamiento}"/>

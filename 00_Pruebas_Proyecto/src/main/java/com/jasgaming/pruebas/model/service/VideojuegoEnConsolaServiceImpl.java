@@ -1,9 +1,13 @@
 package com.jasgaming.pruebas.model.service;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
 import com.jasgaming.pruebas.model.repository.VideojuegoEnConsolaRepository;
@@ -50,8 +54,7 @@ public class VideojuegoEnConsolaServiceImpl implements VideojuegoEnConsolaServic
 			e.printStackTrace();
 		}
 		
-		return filasInsertadas;
-		
+		return filasInsertadas;		
 	}
 
 	@Override
@@ -115,6 +118,23 @@ public class VideojuegoEnConsolaServiceImpl implements VideojuegoEnConsolaServic
 	@Override
 	public List<VideojuegoEnConsola> findNovedadXbox() {
 		return vecRepository.findNovedadXbox();
+	}
+
+	@Override
+	public void subirImagenCaja(VideojuegoEnConsola videojuegoEnConsola, MultipartFile imagenCaja, String nombreCarpeta) {
+		
+		if(!imagenCaja.isEmpty()) {
+			try {
+				videojuegoEnConsola.setImagenCaja(nombreCarpeta + "/" + imagenCaja.getOriginalFilename());
+				String fileLocation = new File("src//main//resources//static//images//videojuegos").getAbsolutePath() + "//" + nombreCarpeta + "//" + imagenCaja.getOriginalFilename();
+				FileOutputStream output = new FileOutputStream(fileLocation);
+				output.write(imagenCaja.getBytes());
+				output.close();	
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
 	}
 	
 }

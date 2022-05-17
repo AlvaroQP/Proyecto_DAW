@@ -1441,8 +1441,16 @@ input.noValido {
 /* SECCIÓN ADMIN */
 .body_admin {
 	background-color: rgb(228, 220, 220);
-	/* background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(75,75,75,1) 50%, rgba(0,0,0,1) 100%); */
 }
+
+.alerta_admin_videojuegos {
+	margin: 3rem auto;
+	text-align: center;
+	background-color: #f1375a;
+	width: fit-content;
+	color: white;
+	border-radius: 1rem;
+} 
 
 .admin_tabla {
     width: 80%;
@@ -1521,14 +1529,13 @@ input.noValido {
 .boton_alta_videojuego {
 	display: flex;
 	justify-content: center;
-	width: 80%;
+	width: 100%;
 	color: white;
 	border: none;
 	border-radius: 1rem;
 	padding: 1.5rem .5rem;
 	font-size: 2.2rem;
 	box-shadow: 2px 2px 7px 1px #978b8b;
-	margin: 0 auto;
 	background-color: rgb(208, 21, 21);
 }
 
@@ -1554,6 +1561,7 @@ input.noValido {
 .form_alta_videojuego {
 	background-color: #f0d3d3;
 	width: 50%;
+	min-width: 65rem;
 	margin: 7rem auto;
 	display: flex;
 	flex-direction: column;
@@ -1653,6 +1661,81 @@ input.noValido {
 	margin-bottom: 1.2rem;
 }
 
+
+/* ELIMINACIÓN VIDEOJUEGO */
+.contenedor_eliminar_producto {
+	display: grid;
+	grid-template-areas: "uno uno"
+						 "dos tres"
+						 "cuatro cuatro"
+						 "cinco seis";
+	margin: 7rem auto;
+	width: fit-content;
+	font-size: 1.4rem;
+	background-color: white;
+	border-radius: 1rem;
+	box-shadow: 3px 3px 7px 3px #7a7a7a;
+}  
+
+.titulo_eliminar_producto {
+	grid-area: uno;
+	text-align: center;
+	background-color: white;
+	padding: 2rem 0;
+	border-bottom: 1px solid lightgrey;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	background-color: #ab0000;
+	color: white;
+} 
+
+.titulo_eliminar_producto h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin: 0;
+}
+
+.contenedor_imagen_eliminar_producto {
+	grid-area: dos;
+	height: 22.5rem;
+	width: 22.5rem;
+}
+
+.imagen_eliminar_producto {
+	height: 100%;
+	width: 100%;
+}
+
+.detalles_eliminar_producto {
+	grid-area: tres;
+	width: 22.5rem;
+} 
+
+.alerta_eliminar_producto {
+	grid-area: cuatro;
+	text-align: center;
+	border-top: 1px solid lightgrey;
+	font-size: 1.55rem;
+	padding: 2rem 0;
+} 
+
+.contenedor_boton_eliminar_volver,
+.contenedor_boton_confirmar_eliminar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+} 
+
+.contenedor_boton_eliminar_volver button,
+.contenedor_boton_confirmar_eliminar button {
+	font-size: 2rem;
+}	
 
 /* FOOTER */
 footer {

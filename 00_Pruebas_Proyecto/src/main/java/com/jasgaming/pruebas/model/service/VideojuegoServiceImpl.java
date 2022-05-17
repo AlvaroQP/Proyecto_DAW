@@ -1,9 +1,14 @@
 package com.jasgaming.pruebas.model.service;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.jasgaming.pruebas.model.entities.Videojuego;
 import com.jasgaming.pruebas.model.repository.VideojuegoRepository;
@@ -64,6 +69,40 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 		}
 		
 		return filasEliminadas;
+	}
+
+	@Override
+	public void subirImagen(Videojuego videojuego, MultipartFile imagen, 
+					        String nombreCarpeta, int ordenInsercion) {
+		
+		if(!imagen.isEmpty()) {
+			try {
+				
+				String fileLocation = new File("src//main//resources//static//images//videojuegos").getAbsolutePath() + "//" + nombreCarpeta + "//" + imagen.getOriginalFilename();
+				FileOutputStream output = new FileOutputStream(fileLocation);
+				output.write(imagen.getBytes());
+				output.close();
+				
+				if(ordenInsercion == 1) {
+					videojuego.setImagenCuadrada(nombreCarpeta + "/" + imagen.getOriginalFilename());		
+				} else if(ordenInsercion == 2) {
+					videojuego.setImagenRectangular(nombreCarpeta + "/" + imagen.getOriginalFilename());		
+				} else if(ordenInsercion == 3) {
+					videojuego.setImagen1(nombreCarpeta + "/" + imagen.getOriginalFilename());
+				} else if(ordenInsercion == 4) {
+					videojuego.setImagen2(nombreCarpeta + "/" + imagen.getOriginalFilename());
+				} else if(ordenInsercion == 5) {
+					videojuego.setImagen3(nombreCarpeta + "/" + imagen.getOriginalFilename());
+				} else if(ordenInsercion == 6) {
+					videojuego.setImagen4(nombreCarpeta + "/" + imagen.getOriginalFilename());
+				} else if(ordenInsercion == 7) {
+					videojuego.setImagen5(nombreCarpeta + "/" + imagen.getOriginalFilename());
+				} 				
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
 	}
 
 }

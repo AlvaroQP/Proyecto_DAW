@@ -1,7 +1,9 @@
 package com.jasgaming.pruebas.model.service;
-
 import java.math.BigDecimal;
+
 import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
 
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
 
@@ -22,4 +24,6 @@ public interface VideojuegoEnConsolaService {
 	int insertarVec(VideojuegoEnConsola videojuegoEnConsola);
 	int editarVec(VideojuegoEnConsola videojuegoEnConsola);
 	int eliminarVec(int idVec);
+	void subirImagenCaja(VideojuegoEnConsola videojuegoEnConsola, MultipartFile imagenCaja, String nombreCarpeta);
+	
 }
