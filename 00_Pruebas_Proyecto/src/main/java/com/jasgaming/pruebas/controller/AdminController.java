@@ -300,4 +300,28 @@ public class AdminController {
 		return "redirect:/admin/accesorio";
 	}
 	
+	
+	@GetMapping("/accesorio/eliminar/{idAccesorio}")
+	public String eliminarAccesorio(@PathVariable("idAccesorio") int idAccesorio, Model model) {
+		model.addAttribute("acc", accService.findById(idAccesorio));
+		model.addAttribute("imagen", new File(accService.findById(idAccesorio).getImagenCuadrada()).getPath());
+		return "confirmarEliminarAccesorio";
+	}
+	
+	
+	@GetMapping("/confirmarEliminarAccesorio/{idAccesorio}")
+	public String confirmarEliminarAccesorio(@PathVariable("idAccesorio") int idAccesorio, Model model) {
+		String nombre = accService.findById(idAccesorio).getNombre();
+
+		if(accService.eliminarAccesorio(idAccesorio) == 1) {
+			model.addAttribute("mensaje", nombre + " eliminado correctamente.");
+		} else {
+			model.addAttribute("mensaje", nombre + "no se ha podido eliminar.");
+		}
+		
+		return "forward:/admin/accesorio";
+	}	
+	
+	
+	
 }

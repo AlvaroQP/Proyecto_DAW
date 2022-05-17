@@ -11,6 +11,8 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 
+	<h3 class="alerta_admin_accesorios">${mensaje}</h3>
+
     <table class="admin_tabla tabla_switch">
         <thead>
         	<tr class="tabla_head_1">
@@ -43,9 +45,9 @@
 					</td>	                
 	                <td>${acc.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/accesorio/detalle/${acc.idAccesorio}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/accesorio/editar/${acc.idAccesorio}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/accesorio/eliminar/${acc.idAccesorio}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
@@ -76,9 +78,9 @@
 					</td>	                
 	                <td>${acc.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/accesorio/detalle/${acc.idAccesorio}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/accesorio/editar/${acc.idAccesorio}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/accesorio/eliminar/${acc.idAccesorio}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
@@ -108,9 +110,9 @@
 					</td>	                
 	                <td>${acc.precio} €</td>
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/admin/accesorio/detalle/${acc.idAccesorio}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/accesorio/editar/${acc.idAccesorio}" title="Editar"><img src="/images/iconos/pen-solid.svg" alt="editar"></a>
+	                    <a href="/admin/accesorio/eliminar/${acc.idAccesorio}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>

@@ -1444,7 +1444,8 @@ input.noValido {
 }
 
 .alerta_admin_videojuegos,
-.alerta_admin_consolas {
+.alerta_admin_consolas,
+.alerta_admin_accesorios {
 	margin: 3rem auto;
 	text-align: center;
 	background-color: #f1375a;
