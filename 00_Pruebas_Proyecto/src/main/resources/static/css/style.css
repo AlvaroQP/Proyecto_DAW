@@ -1469,6 +1469,12 @@ input.noValido {
     font-size: 1.4rem;
 }
 
+.carrito_tabla {
+	width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
 .datos_pedido_tabla_2 {
     width: 80%;
     margin: 0 auto 5rem;
@@ -1564,6 +1570,31 @@ input.noValido {
 	background-color: rgb(228, 220, 220);
 }
 
+.contenedor_mario_carrito {
+	margin: 5rem auto 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 14rem;
+	width: 80%;
+	font-size: 3rem;
+	font-weight: 900;
+	background-color: #f1dbd1;
+}
+
+.contenedor_mario_carrito div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+}
+
+.mario_carrito_imagen {
+	width: 14rem;
+}
+
 .carrito_tabla tr th, .carrito_tabla tr td {
     padding: 1.5rem;
 }
@@ -1571,6 +1602,18 @@ input.noValido {
 .carrito_tabla a {
 	font-size: 1.2rem;
 } 
+
+.volver_carrito_vacio {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+.volver_carrito_vacio a {
+	font-size: 2rem;
+}
 
 .contenedor_botones_carrito {
 	margin-top: 3rem;
@@ -1592,7 +1635,7 @@ input.noValido {
 
 .body_pedidos h2 {
 	color: white;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	text-align: center;
 	margin-top: 5rem;
 	width: fit-content;

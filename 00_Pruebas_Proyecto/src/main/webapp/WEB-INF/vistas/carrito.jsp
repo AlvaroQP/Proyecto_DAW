@@ -14,6 +14,13 @@
 
 	<c:if test = "${total != 0}">
 	
+		<div class="contenedor_mario_carrito">
+		<img src="/images/png/mario_carrito.png" alt="imagen carrito" class="mario_carrito_imagen">
+		<div>
+			¡Finaliza tu compra!	
+		</div>
+	</div>
+	
 		<table class="carrito_tabla">
 			<thead>
 				<tr>
@@ -47,12 +54,18 @@
 	</c:if>
 
 	<c:if test = "${total == 0}">
-		<div class="mensaje_carrito_vacio">
-			<h3>El carrito está vacío</h3>
+	
+		<div class="contenedor_mario_carrito">
+			<img src="/images/png/mario_carrito.png" alt="imagen carrito" class="mario_carrito_imagen">
 			<div>
-				<a class="btn btn-primary volver btn-m" href="/">Volver</a>
+				¡Tu carrito está vacío!	
 			</div>
 		</div>
+		
+		<div class="volver_carrito_vacio">
+			<a class="btn btn-primary " href="/">Volver</a>
+		</div>
+
 	</c:if>
 
 	
