@@ -22,18 +22,25 @@
                 </div>
 
 				<sec:authorize access="isAuthenticated()">
-	                <div class="contenedor_compra">
-	                    <h3>¡En stock!</h3>
-	                    <div class="contenedor_precio_videojuego">
-	                        ${vec.precio} €
-	                    </div>
-	                    <a href="/cliente/anadir/videojuego/${vec.idVec}">
-		                    <button type="button" class="btn btn-lg btn-comprar">
-		                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
-		                        Añadir
-		                    </button>
-	                    </a>
-	                </div>
+					<sec:authorize access="hasAuthority('cliente')">
+		                <div class="contenedor_compra">
+		                    <h3>¡En stock!</h3>
+		                    <div class="contenedor_precio_videojuego">
+		                        ${vec.precio} €
+		                    </div>
+		                    <a href="/cliente/anadir/videojuego/${vec.idVec}">
+			                    <button type="button" class="btn btn-lg btn-comprar">
+			                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
+			                        Añadir
+			                    </button>
+		                    </a>
+		                </div>
+		           </sec:authorize>
+		           <sec:authorize access="hasAuthority('admin')">
+		           		<div class="contenedor_compra_vacio">
+		           			<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo" class="">
+		           		</div>	           
+		           </sec:authorize>
 				</sec:authorize>
 				
 				<sec:authorize access="!isAuthenticated()">

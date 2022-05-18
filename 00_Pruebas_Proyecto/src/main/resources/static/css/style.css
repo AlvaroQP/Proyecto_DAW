@@ -393,6 +393,21 @@ body {
     border-top-right-radius: 1rem;
 }
 
+.contenedor_compra_vacio {
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 1rem;
+}
+
+.contenedor_compra_vacio img {
+	width: 100%;
+    opacity: .7;
+    padding: 2.5rem;
+}
+
 .contenedor_videojuego .contenedor_compra {
     grid-area: dos;
 	background-color: var(--color-fondo-blanco);	
