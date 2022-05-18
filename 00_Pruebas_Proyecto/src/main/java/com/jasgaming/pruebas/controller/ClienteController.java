@@ -1,5 +1,4 @@
 package com.jasgaming.pruebas.controller;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -22,13 +21,13 @@ import com.jasgaming.pruebas.model.entities.ProductoEnPedido;
 import com.jasgaming.pruebas.model.entities.Usuario;
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
 import com.jasgaming.pruebas.model.service.AccesorioService;
-import com.jasgaming.pruebas.model.service.ConsolaService;
+
 import com.jasgaming.pruebas.model.service.ModelosConsolaService;
 import com.jasgaming.pruebas.model.service.PedidoService;
-import com.jasgaming.pruebas.model.service.ProductoService;
+
 import com.jasgaming.pruebas.model.service.UsuarioService;
 import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
-import com.jasgaming.pruebas.model.service.VideojuegoService;
+
 
 @Controller
 @RequestMapping("/cliente")
@@ -48,9 +47,6 @@ public class ClienteController {
 		
 	@Autowired
 	private UsuarioService usuService;
-	
-	@Autowired
-	private ProductoService proService;
 	
 	private int contadorIdProducto = 0;
 	
@@ -200,6 +196,13 @@ public class ClienteController {
 		return "forward:/";
 	}
 	
+	
+	
+	@GetMapping("/pedidos")
+	public String verPedidos(Model model, Authentication auth) {
+		model.addAttribute("pedidosCliente", pedService.pedidosCliente(auth.getName()));
+		return "pedidosCliente";
+	}
 	
 }
 

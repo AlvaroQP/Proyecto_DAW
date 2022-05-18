@@ -9,5 +9,6 @@ public interface PedidoService {
 	List<Pedido> findAll();
 	Pedido findById(int idPedido);
 	int altaPedido(Pedido pedido);
+	List<Pedido> pedidosCliente(String username);
 	
 }

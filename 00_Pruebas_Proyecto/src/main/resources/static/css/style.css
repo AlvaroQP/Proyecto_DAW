@@ -1462,20 +1462,31 @@ input.noValido {
     font-size: 1.4rem;
 }
 
-.carrito_tabla {
+.carrito_tabla, 
+.datos_pedido_tabla {
     width: 80%;
     margin: 7rem auto 0;
     font-size: 1.4rem;
 }
 
+.datos_pedido_tabla_2 {
+    width: 80%;
+    margin: 0 auto 5rem;
+    font-size: 1.4rem;
+}
+
 .admin_tabla tr th, .admin_tabla tr td,
-.carrito_tabla tr th, .carrito_tabla tr td {
+.carrito_tabla tr th, .carrito_tabla tr td,
+.datos_pedido_tabla tr th, .datos_pedido_tabla tr td,
+.datos_pedido_tabla_2 tr th, .datos_pedido_tabla_2 tr td {
     border-color: #c9c5c5;
     padding: .5rem;
 }
 
 .admin_tabla thead tr,
-.carrito_tabla thead tr {
+.carrito_tabla thead tr,
+.datos_pedido_tabla thead tr,
+.datos_pedido_tabla_2 thead tr {
     color: white;
 }
 
@@ -1495,7 +1506,9 @@ input.noValido {
 
 .tabla_switch .tabla_head_2,
 .admin_tabla .tabla_head_2,
-.carrito_tabla thead {
+.carrito_tabla thead,
+.datos_pedido_tabla thead,
+.datos_pedido_tabla_2 thead {
 	background-color: rgb(208, 21, 21);
 }
 
@@ -1508,11 +1521,15 @@ input.noValido {
 }
 
 .admin_tabla tbody tr:nth-of-type(odd),
-.carrito_tabla tbody tr:nth-of-type(odd) {
+.carrito_tabla tbody tr:nth-of-type(odd),
+.datos_pedido_tabla tbody tr:nth-of-type(odd),
+.datos_pedido_tabla_2 tbody tr:nth-of-type(odd) {
     background-color: #edebeb;
 }
 .admin_tabla tbody tr:nth-of-type(even),
-.carrito_tabla tbody tr:nth-of-type(even) {
+.carrito_tabla tbody tr:nth-of-type(even),
+.datos_pedido_tabla tbody tr:nth-of-type(even),
+.datos_pedido_tabla_2 tbody tr:nth-of-type(even) {
     background-color: #fdfdfd;
 }
 .admin_tabla tbody tr:hover,
@@ -1547,7 +1564,6 @@ input.noValido {
 	background-color: rgb(228, 220, 220);
 }
 
-
 .carrito_tabla tr th, .carrito_tabla tr td {
     padding: 1.5rem;
 }
@@ -1568,6 +1584,36 @@ input.noValido {
 	margin: 0 1rem;
 	font-size: 2rem;
 }
+
+/* PEDIDOS */
+.body_pedidos {
+	background-color: rgb(228, 220, 220);
+}
+
+.body_pedidos h2 {
+	color: white;
+	font-size: 3.5rem;
+	text-align: center;
+	margin-top: 5rem;
+	width: fit-content;
+	background-color: #ae3728;
+	margin: 5rem auto 0;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.datos_pedido_tabla tr th, .datos_pedido_tabla tr td {
+    padding: 1.5rem;
+}
+
+.datos_pedido_tabla_2 tbody tr td {
+    padding: 1.5rem;
+}
+
+.datos_pedido_tabla_2 thead tr th {
+	padding: .5rem 1.5rem;
+}
+
 
 
 /* BOTONES ALTA (ADMIN) */

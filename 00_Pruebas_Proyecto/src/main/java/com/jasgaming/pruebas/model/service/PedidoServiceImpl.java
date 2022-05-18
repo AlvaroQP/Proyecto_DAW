@@ -37,6 +37,11 @@ public class PedidoServiceImpl implements PedidoService {
 		
 		return filasInsertadas;
 	}
+
+	@Override
+	public List<Pedido> pedidosCliente(String username) {
+		return pedidoRepo.pedidosCliente(username);
+	}
 	
 	
 	
