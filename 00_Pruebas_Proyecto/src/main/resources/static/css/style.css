@@ -1454,18 +1454,28 @@ input.noValido {
 	border-radius: 1rem;
 } 
 
+/* TABLAS ADMIN Y CARRITO */
+
 .admin_tabla {
     width: 80%;
     margin: 5rem auto;
     font-size: 1.4rem;
 }
 
-.admin_tabla tr th, .admin_tabla tr td {
+.carrito_tabla {
+    width: 80%;
+    margin: 7rem auto 0;
+    font-size: 1.4rem;
+}
+
+.admin_tabla tr th, .admin_tabla tr td,
+.carrito_tabla tr th, .carrito_tabla tr td {
     border-color: #c9c5c5;
     padding: .5rem;
 }
 
-.admin_tabla thead tr {
+.admin_tabla thead tr,
+.carrito_tabla thead tr {
     color: white;
 }
 
@@ -1484,7 +1494,8 @@ input.noValido {
 }
 
 .tabla_switch .tabla_head_2,
-.admin_tabla .tabla_head_2 {
+.admin_tabla .tabla_head_2,
+.carrito_tabla thead {
 	background-color: rgb(208, 21, 21);
 }
 
@@ -1496,13 +1507,16 @@ input.noValido {
 	background-color: rgb(25, 42, 137);
 }
 
-.admin_tabla tbody tr:nth-of-type(odd) {
+.admin_tabla tbody tr:nth-of-type(odd),
+.carrito_tabla tbody tr:nth-of-type(odd) {
     background-color: #edebeb;
 }
-.admin_tabla tbody tr:nth-of-type(even) {
+.admin_tabla tbody tr:nth-of-type(even),
+.carrito_tabla tbody tr:nth-of-type(even) {
     background-color: #fdfdfd;
 }
-.admin_tabla tbody tr:hover {
+.admin_tabla tbody tr:hover,
+.carrito_tabla tbody tr:hover {
     background: #f5cfd0;
 }
 .admin_tabla .acciones {
@@ -1526,6 +1540,35 @@ input.noValido {
 	font-size: 3.5rem;
 	color: #c70103;
 }
+
+
+/* CARRITO */
+.body_carrito {
+	background-color: rgb(228, 220, 220);
+}
+
+
+.carrito_tabla tr th, .carrito_tabla tr td {
+    padding: 1.5rem;
+}
+
+.carrito_tabla a {
+	font-size: 1.2rem;
+} 
+
+.contenedor_botones_carrito {
+	margin-top: 3rem;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+} 
+
+.boton_vaciar_carrito, .boton_finalizar_compra {
+	margin: 0 1rem;
+	font-size: 2rem;
+}
+
 
 /* BOTONES ALTA (ADMIN) */
 .boton_alta_videojuego,
@@ -1776,6 +1819,14 @@ input.noValido {
 .contenedor_boton_confirmar_eliminar button {
 	font-size: 2rem;
 }	
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 footer {

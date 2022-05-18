@@ -125,7 +125,7 @@
                      
                      <sec:authorize access="hasAuthority('cliente')">
                      	<div class="div_carrito_nav">
-	                     	<a class="" href="/cliente/carrito"> 
+	                     	<a href="/cliente/verCarrito"> 
                         		<div class="material-symbols-outlined icono_carrito_compra">shopping_cart</div>
                         		<div class="titulo_carrito">Carrito</div> 
 	                        </a>

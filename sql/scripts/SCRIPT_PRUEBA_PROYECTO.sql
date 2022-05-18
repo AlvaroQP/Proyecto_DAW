@@ -121,20 +121,39 @@ CREATE TABLE pedidos (
     FOREIGN KEY(username) REFERENCES usuarios(username)
 );
 
-CREATE TABLE lineas_pedido (
+CREATE TABLE productos (
+    id_producto INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    tipo_producto VARCHAR(20) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(9,2) NOT NULL,
+    imagen_producto VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE producto_en_pedido (
 	num_orden INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     id_pedido INT NOT NULL,
-    id_videojuego INT,
-    id_accesorio INT,
-    id_modelo_consola VARCHAR(20),
-    cantidad INT NOT NULL,
-    precio_venta DECIMAL(9,2) NOT NULL,
+	nombre_producto VARCHAR(100) NOT NULL,
+	tipo_producto VARCHAR(20) NOT NULL,
+    precio DECIMAL(9,2) NOT NULL,
     fecha_alta DATE NOT NULL,
-    FOREIGN KEY(id_pedido) REFERENCES pedidos(id_pedido),
-    FOREIGN KEY(id_videojuego) REFERENCES videojuegos(id_videojuego),
-    FOREIGN KEY(id_accesorio) REFERENCES accesorios(id_accesorio),
-    FOREIGN KEY(id_modelo_consola) REFERENCES modelos_consolas(id_modelo_consola)
+    cantidad INT NOT NULL,
+    FOREIGN KEY(id_pedido) REFERENCES pedidos(id_pedido)
 );
+
+--    CREATE TABLE lineas_pedido (
+--    num_orden INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+--    id_pedido INT NOT NULL,
+--    id_videojuego INT,
+--    id_accesorio INT,
+--    id_modelo_consola VARCHAR(20),
+--    cantidad INT NOT NULL,
+--    precio_venta DECIMAL(9,2) NOT NULL,
+--    fecha_alta DATE NOT NULL,
+--    FOREIGN KEY(id_pedido) REFERENCES pedidos(id_pedido),
+--    FOREIGN KEY(id_videojuego) REFERENCES videojuegos(id_videojuego),
+--    FOREIGN KEY(id_accesorio) REFERENCES accesorios(id_accesorio),
+--    FOREIGN KEY(id_modelo_consola) REFERENCES modelos_consolas(id_modelo_consola)
+-- );
 
 
 -- ------- --
@@ -2038,8 +2057,11 @@ VALUES('admin'),
 INSERT INTO usuarios
 VALUES('alvaroqp', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Álvaro', 'Quiles Pomares', 'C/ Pokémon 10', 'alvquipom@gmail.com', '2022-05-09', '/images/avatares/avatar-mg.png', 'hombre', 'si', 1),
 	  ('sergiog', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Sergio', 'Gomez', 'C/ Halo 14', 'sgom87@gmail.com', '2022-05-10', '/images/avatares/avatar-link.png', 'hombre', 'si', 1),
-      ('jorgeg', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Jorge', 'García', 'C/ Warzone 17', 'warzone@gmail.com', '2022-05-10', '/images/avatares/avatar-joel.png', 'hombre', 'si', 1);
-
+      ('jorgeg', '$2a$10$884DrdQOroRJMKiuN1ulAu8thnVHWfLWKITKokb3ictiKimOTFTb.', 1, 'Jorge', 'García', 'C/ Warzone 17', 'warzone@gmail.com', '2022-05-10', '/images/avatares/avatar-joel.png', 'hombre', 'si', 1),
+	  ('marina', '$2a$10$BQ5U/nxe139LsefcT6uzfefacO9hZCD9oXo8RYAFOvd7uWldcbkG2', 1, 'Marina', 'Blanco', 'C/ Gran Vía 10', 'marina@mail.com', '2022-05-15', '/images/avatares/avatar-lara.png', 'mujer', 'si', 2),
+	  ('noelia', '$2a$10$I7q7M3hZ0kLFF.iveawFsu5RgXf1jgkyXCMB1SVGUE6VSa6XTYBHC', 1, 'Noelia', 'López', 'C/ Gran Vía 20', 'noelia@mail.com', '2022-05-15', '/images/avatares/avatar-zelda.png', 'mujer', 'no', 2),
+      ('carlos', '$2a$10$cc/FdSDfrFnf9dOSQaSyr.wq4i1kc3Z63rGnZK0xT03rYhywrDM0q', 1, 'Carlos', 'Martínez', 'C/ Gran Vía 30', 'carlos@mail.com', '2022-05-15', '/images/avatares/avatar-kratos.png', 'hombre', 'si', 2);
+      
 -- --------------------- --
 -- USUARIO Y PRIVILEGIOS --
 -- --------------------- --

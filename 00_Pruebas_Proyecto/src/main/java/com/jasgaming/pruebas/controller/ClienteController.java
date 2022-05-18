@@ -1,25 +1,33 @@
 package com.jasgaming.pruebas.controller;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.jasgaming.pruebas.model.entities.Usuario;
 import com.jasgaming.pruebas.model.entities.Accesorio;
-import com.jasgaming.pruebas.model.entities.Consola;
+import com.jasgaming.pruebas.model.entities.ModelosConsola;
 import com.jasgaming.pruebas.model.entities.Pedido;
-import com.jasgaming.pruebas.model.entities.Videojuego;
+import com.jasgaming.pruebas.model.entities.Producto;
+import com.jasgaming.pruebas.model.entities.ProductoEnPedido;
+import com.jasgaming.pruebas.model.entities.Usuario;
+import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
 import com.jasgaming.pruebas.model.service.AccesorioService;
 import com.jasgaming.pruebas.model.service.ConsolaService;
+import com.jasgaming.pruebas.model.service.ModelosConsolaService;
+import com.jasgaming.pruebas.model.service.PedidoService;
+import com.jasgaming.pruebas.model.service.ProductoService;
+import com.jasgaming.pruebas.model.service.UsuarioService;
+import com.jasgaming.pruebas.model.service.VideojuegoEnConsolaService;
 import com.jasgaming.pruebas.model.service.VideojuegoService;
 
 @Controller
@@ -27,117 +35,171 @@ import com.jasgaming.pruebas.model.service.VideojuegoService;
 public class ClienteController {
 	
 	@Autowired
-	private AccesorioService accesorioser;
+	private AccesorioService accService;
 	
 	@Autowired
-	private ConsolaService consolaser;
+	private PedidoService pedService;
 	
 	@Autowired
-	private VideojuegoService videojuegoser;
+	private VideojuegoEnConsolaService vecService;
 	
+	@Autowired
+	private ModelosConsolaService mcService;
+		
+	@Autowired
+	private UsuarioService usuService;
+	
+	@Autowired
+	private ProductoService proService;
+	
+	private int contadorIdProducto = 0;
+	
+	@SuppressWarnings("unchecked")
+	@GetMapping("/anadir/videojuego/{idVec}")
+	public String anadirVideojuegoCarrito(@PathVariable("idVec") int idVec, HttpSession session) {
+		
+		VideojuegoEnConsola vec = vecService.findById(idVec);
+		Producto producto = new Producto();
+		producto.setIdProducto(++contadorIdProducto);
+		producto.setTipoProducto("Videojuego");
+		producto.setNombre(vec.getVideojuego().getTitulo());
+		producto.setPrecio(vec.getPrecio());
+		producto.setImagenProducto(vec.getImagenCaja());
+		
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito"); 
+		
+		if(productosCarrito == null) {
+			productosCarrito = new ArrayList<Producto>();
+		}
+		
+		productosCarrito.add(producto);
+		session.setAttribute("productosCarrito", productosCarrito);
+		
+		return "forward:/cliente/verCarrito";
+	}
+	
+	@SuppressWarnings("unchecked")
+	@GetMapping("/anadir/consola/{idModeloConsola}")
+	public String anadirConsolaCarrito(@PathVariable("idModeloConsola") String idModeloConsola, HttpSession session) {
+		
+		ModelosConsola mc = mcService.findById(idModeloConsola);
+		
+		Producto producto = new Producto();
+		producto.setIdProducto(++contadorIdProducto);
+		producto.setTipoProducto("Consola");
+		producto.setNombre(mc.getNombre());
+		producto.setPrecio(mc.getPrecio());
+		producto.setImagenProducto(mc.getImagenCuadrada());
+		
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito"); 
+		
+		if(productosCarrito == null) {
+			productosCarrito = new ArrayList<Producto>();
+		}
+		
+		productosCarrito.add(producto);
+		session.setAttribute("productosCarrito", productosCarrito);
+		
+		return "forward:/cliente/verCarrito";
+	}	
 
+	@SuppressWarnings("unchecked")
+	@GetMapping("/anadir/accesorio/{idAccesorio}")
+	public String anadirConsolaCarrito(@PathVariable("idAccesorio") int idAccesorio, HttpSession session) {
+		
+		Accesorio acc = accService.findById(idAccesorio);
+		
+		Producto producto = new Producto();
+		producto.setIdProducto(++contadorIdProducto);
+		producto.setTipoProducto("Accesorio");
+		producto.setNombre(acc.getNombre());
+		producto.setPrecio(acc.getPrecio());
+		producto.setImagenProducto(acc.getImagenCuadrada());
+		
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito"); 
+		
+		if(productosCarrito == null) {
+			productosCarrito = new ArrayList<Producto>();
+		}
+		
+		productosCarrito.add(producto);
+		session.setAttribute("productosCarrito", productosCarrito);
+		
+		return "forward:/cliente/verCarrito";
+	}	
+		
+	@SuppressWarnings("unchecked")
 	@GetMapping("/verCarrito")
-	public String verCarrito(Model model, HttpSession session) {
-		List<Accesorio> listaAccesorio = (List<Accesorio>) session.getAttribute("listaAccesorio");
-		List<Consola> listaConsola = (List<Consola>) session.getAttribute("listaConsola");
-		List<Videojuego> listaVideojuego = (List<Videojuego>) session.getAttribute("listaVideojuego");
+	public String verCarrito(HttpSession session, Model model) {
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito"); 
 		
-		if(listaAccesorio == null) {
-			listaAccesorio = new ArrayList<Accesorio>();
-			session.setAttribute("listaAccesorio", listaAccesorio);
-	}else {
-			model.addAttribute("listaAccesorio", listaAccesorio);
-
-	}		
-		if(listaConsola == null) {
-			listaConsola = new ArrayList<Consola>();
-			session.setAttribute("listaConsola", listaConsola);
-	}else {
-			model.addAttribute("listaConsola", listaConsola);
-	
-	}
-		if(listaVideojuego == null) {
-			listaVideojuego = new ArrayList<Videojuego>();
-			session.setAttribute("listaVideojuego", listaVideojuego);
-	}else {
-			model.addAttribute("listaVideojuego", listaVideojuego);
-	
-	}
-		return "listaCarrito";
-	
-	}
-
-	
-	@GetMapping("/anadirCarrito/{idAccesorio}")
-	public String anadirCarritoAccesorio(@PathVariable("idAccesorio")int idAccesorio ,Model model, HttpSession session) {
-		List<Accesorio> carrito = (List<Accesorio>) session.getAttribute("lista");
-		Accesorio accesorio = accesorioser.findById(idAccesorio);
-		if (carrito == null) {
-			carrito = new ArrayList<Accesorio>();
-			session.setAttribute("lista", carrito);
+		if(productosCarrito == null) {
+			productosCarrito = new ArrayList<Producto>();
 		}
-		int pos = carrito.indexOf(accesorio);
-		if (pos == -1) {
-			carrito.add(accesorio);
+		
+		BigDecimal total = new BigDecimal(0);
+		
+		for(Producto producto : productosCarrito) {
+			total = total.add(producto.getPrecio());
 		}
+			
+		model.addAttribute("total", total);
+		
+		return "carrito";		
+	}
 
-		session.setAttribute("lista", carrito);
+	
+	@SuppressWarnings("unchecked")
+	@GetMapping("/vaciarCarrito")
+	public String vaciarCarrito(HttpSession session) {
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito"); 
+		productosCarrito.clear();
+		
 		return "forward:/cliente/verCarrito";
-	}
+	}	
 	
-	@GetMapping("/anadirCarrito/{idConsola}")
-	public String anadirCarritoConsola(@PathVariable("idConsola")String idConsola ,Model model, HttpSession session) {
-		List<Consola> carrito = (List<Consola>) session.getAttribute("lista");
-		Consola consola = consolaser.findById(idConsola);
-		if (carrito == null) {
-			carrito = new ArrayList<Consola>();
-			session.setAttribute("lista", carrito);
-		}
-		int pos = carrito.indexOf(consola);
-		if (pos == -1) {
-			carrito.add(consola);
-		}
-
-		session.setAttribute("lista", carrito);
-		return "forward:/cliente/verCarrito";
-	}
 	
-	@GetMapping("/anadirCarrito/{idVideojuego}")
-	public String anadirCarritoVideojuego(@PathVariable("idVideojuego")int idVideojuego ,Model model, HttpSession session) {
-		List<Videojuego> carrito = (List<Videojuego>) session.getAttribute("lista");
-		Videojuego videojuego = videojuegoser.findById(idVideojuego);
-		if (carrito == null) {
-			carrito = new ArrayList<Videojuego>();
-			session.setAttribute("lista", carrito);
-		}
-		int pos = carrito.indexOf(videojuego);
-		if (pos == -1) {
-			carrito.add(videojuego);
-		}
-
-		session.setAttribute("lista", carrito);
-		return "forward:/cliente/verCarrito";
-	}
-	
+	@SuppressWarnings("unchecked")
 	@GetMapping("/comprar")
-	public String comprarLibro(HttpSession session, Model model) {
-		List<Accesorio> listaAccesorio = (List<Accesorio>) session.getAttribute("listaAccesorio");
-		List<Consola> listaConsola = (List<Consola>) session.getAttribute("listaConsola");
-		List<Videojuego> listaVideojuego = (List<Videojuego>) session.getAttribute("listaVideojuego");
+	public String comprar(HttpSession session, Authentication auth) {
 		
-		Usuario usuario = (Usuario) session.getAttribute("usuario");
+		ArrayList<Producto> productosCarrito = (ArrayList<Producto>) session.getAttribute("productosCarrito");
+		Usuario usuario = usuService.findById(auth.getName());
+		
+		Pedido pedido = new Pedido();
+		pedido.setUsuario(usuario);
+		pedido.setFechaAlta(new Date());
+		pedido.setEstado("terminado");
+		pedido.setDireccionEntrega(usuario.getDireccion());
+		
+		ArrayList<ProductoEnPedido> productosEnPedido = new ArrayList<ProductoEnPedido>();
+		
+		// Por cada Producto en la lista de productosCarrito -> generamos un nuevo ProductoEnPedido
+		for(Producto producto : productosCarrito) {
+			ProductoEnPedido pp = new ProductoEnPedido();
+			pp.setPedido(pedido);
+			pp.setNombreProducto(producto.getNombre());
+			pp.setTipoProducto(producto.getTipoProducto());
+			pp.setCantidad(1);
+			pp.setFechaAlta(new Date());
+			pp.setPrecio(producto.getPrecio());
 
-		if (listaAccesorio != null) {
-			Pedido pedido = new Pedido();
-			pedido.setUsername("");
-			pedido.setDireccionEntrega(usuario.getDireccion());
-			pedido.setEstado("Terminado");
-			pedido.setFechaAlta(new Date());
-			//List<LineasPedido> lineas = new ArrayList<LineasPedido>();
-
+			// Añadimos el ProductoEnPedido al ArrayList productosEnPedido
+			productosEnPedido.add(pp);	
 		}
-		return "";
-	}
 
+		// Asignamos los productosEnPedido al pedido creado
+		pedido.setProductosEnPedido(productosEnPedido);
+		
+		// Damos de alta el pedido
+		pedService.altaPedido(pedido);
+		
+		// Una vez insertado, eliminamos los productos de la lista en sesión
+		productosCarrito.clear();
+			
+		return "forward:/";
+	}
+	
+	
 }
 

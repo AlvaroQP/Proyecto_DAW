@@ -12,16 +12,30 @@ import com.jasgaming.pruebas.model.repository.PedidoRepository;
 public class PedidoServiceImpl implements PedidoService {
 
 	@Autowired
-	private PedidoRepository pedidorepo;
+	private PedidoRepository pedidoRepo;
 
 	@Override
 	public List<Pedido> findAll() {
-		return pedidorepo.findAll();
+		return pedidoRepo.findAll();
 	}
 
 	@Override
 	public Pedido findById(int idPedido) {
-		return pedidorepo.findById(idPedido).orElse(null);
+		return pedidoRepo.findById(idPedido).orElse(null);
+	}
+
+	@Override
+	public int altaPedido(Pedido pedido) {
+		int filasInsertadas = 0;
+		
+		try {
+			pedidoRepo.save(pedido);
+			filasInsertadas = 1;
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return filasInsertadas;
 	}
 	
 	

@@ -27,10 +27,12 @@
 	                    <div class="contenedor_precio_videojuego">
 	                        ${vec.precio} €
 	                    </div>
-	                    <button type="button" class="btn btn-lg btn-comprar">
-	                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
-	                        Añadir
-	                    </button>
+	                    <a href="/cliente/anadir/videojuego/${vec.idVec}">
+		                    <button type="button" class="btn btn-lg btn-comprar">
+		                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
+		                        Añadir
+		                    </button>
+	                    </a>
 	                </div>
 				</sec:authorize>
 				

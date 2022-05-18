@@ -8,5 +8,6 @@ public interface PedidoService {
 	
 	List<Pedido> findAll();
 	Pedido findById(int idPedido);
-
+	int altaPedido(Pedido pedido);
+	
 }

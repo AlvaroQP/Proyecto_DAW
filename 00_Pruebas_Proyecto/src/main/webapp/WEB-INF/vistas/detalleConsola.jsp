@@ -26,10 +26,12 @@
                     <div class="contenedor_precio_consola">
                         ${modeloConsola.precio} €
                     </div>
-                    <button type="button" class="btn btn-lg btn-comprar">
-                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
-                        Añadir
-                    </button>
+                    <a href="/cliente/anadir/consola/${modeloConsola.idModeloConsola}">
+	                    <button type="button" class="btn btn-lg btn-comprar">
+	                        <img src="/images/iconos/carrito_compra.png" alt="imagen carrito">
+	                        Añadir
+	                    </button>
+                    </a>
                 </div>
 
                 <div class="contenedor_caja_consola">

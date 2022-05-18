@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Carrito</title>
+</head>
+<body class="body_carrito">
+
+	<jsp:include page="nav.jsp"></jsp:include>
+
+	<c:if test = "${total != 0}">
+	
+		<table class="carrito_tabla">
+			<thead>
+				<tr>
+					<th>Producto</th>
+					<th>Tipo producto</th>
+					<th>Precio</th>
+				</tr>
+			</thead>
+		
+			<tbody>
+				<c:forEach var="producto" items="${productosCarrito}">
+					<tr>
+						<td>${producto.nombre}</td>
+						<td>${producto.tipoProducto}</td>
+						<td>${producto.precio} €</td>
+					</tr>
+				</c:forEach>
+				<tr class="fila_total">
+					<td><strong>TOTAL</strong></td>
+					<td></td>
+					<td><strong>${total} €</strong></td>
+				</tr>
+			</tbody>	
+		</table>
+			
+		<div class="contenedor_botones_carrito">
+			<a class="btn btn-danger boton_vaciar_carrito" href="/cliente/vaciarCarrito">Vaciar carrito</a>
+			<a class="btn btn-primary boton_finalizar_compra" href="/cliente/comprar">Finalizar Compra</a>
+		</div>
+
+	</c:if>
+
+	<c:if test = "${total == 0}">
+		<div class="mensaje_carrito_vacio">
+			<h3>El carrito está vacío</h3>
+			<div>
+				<a class="btn btn-primary volver btn-m" href="/">Volver</a>
+			</div>
+		</div>
+	</c:if>
+
+	
+</body>
+</html>

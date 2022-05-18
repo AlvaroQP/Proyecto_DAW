@@ -1,23 +1,18 @@
 package com.jasgaming.pruebas.model.entities;
-
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+
 
 @Entity
 @Table(name="pedidos")
 public class Pedido implements Serializable {
-
-
 	private static final long serialVersionUID = 1L;
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_pedido")
 	private int idPedido;
 	
@@ -26,17 +21,19 @@ public class Pedido implements Serializable {
 
 	private String estado;
 	
+	@Temporal(TemporalType.DATE)
 	@Column(name="fecha_alta")
 	private Date fechaAlta;
 	
-	private String username;
-	
 	@ManyToOne
-	@JoinColumn(name="id_perfil")
-	private Pedido pedido;
+	@JoinColumn(name="username")
+	private Usuario usuario;
+	
+	@OneToMany(mappedBy="pedido", cascade={CascadeType.PERSIST})
+	private List<ProductoEnPedido> productosEnPedido;
+	
 
 	public Pedido() {
-		super();
 	}
 
 	public int getIdPedido() {
@@ -70,21 +67,21 @@ public class Pedido implements Serializable {
 	public void setFechaAlta(Date fechaAlta) {
 		this.fechaAlta = fechaAlta;
 	}
-
-	public String getUsername() {
-		return username;
+	
+	public Usuario getUsuario() {
+		return this.usuario;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
 	}
 
-	public Pedido getPedido() {
-		return pedido;
+	public List<ProductoEnPedido> getProductosEnPedido() {
+		return productosEnPedido;
 	}
 
-	public void setPedido(Pedido pedido) {
-		this.pedido = pedido;
+	public void setProductosEnPedido(List<ProductoEnPedido> productosEnPedido) {
+		this.productosEnPedido = productosEnPedido;
 	}
 
 	@Override

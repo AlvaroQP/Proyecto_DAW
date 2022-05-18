@@ -77,18 +77,15 @@ public class HomeController {
 	
 	
 	@GetMapping("/perfil")
-	public String verPerfil(Model model, Authentication auth) {
-		// model.addAttribute("usuario", usuarioService.findById(auth.getName()));
+	public String verPerfil() {
 		return "perfil";
 	}
-	
-	
-	
+		
 	// Método para generar contraseñas encriptadas de prueba
 	@GetMapping("/pwd")
 	@ResponseBody
 	public String encriptar() {
-		String encriptado = passwordEncoder.encode("noelia123");
+		String encriptado = passwordEncoder.encode("carlos123");
 		System.out.println(encriptado);
 		return encriptado;
 	}
