@@ -38,7 +38,7 @@
 		           </sec:authorize>
 		           <sec:authorize access="hasAuthority('admin')">
 		           		<div class="contenedor_compra_vacio">
-		           			<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo" class="">
+		           			<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo">
 		           		</div>	           
 		           </sec:authorize>
 				</sec:authorize>

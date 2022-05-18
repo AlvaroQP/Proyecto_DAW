@@ -408,6 +408,23 @@ body {
     padding: 2.5rem;
 }
 
+.contenedor_compra_vacio_accesorio,
+.contenedor_compra_vacio_consola {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	grid-area: cuatro;
+}
+
+.contenedor_compra_vacio_accesorio img,
+.contenedor_compra_vacio_consola img {
+	height: 17rem;
+	opacity: .7;
+}
+
 .contenedor_videojuego .contenedor_compra {
     grid-area: dos;
 	background-color: var(--color-fondo-blanco);	

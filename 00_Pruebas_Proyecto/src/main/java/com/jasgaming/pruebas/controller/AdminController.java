@@ -322,6 +322,63 @@ public class AdminController {
 		return "forward:/admin/accesorio";
 	}	
 	
+	@GetMapping("/videojuego/detalle/{idVec}")
+	public String verDetalle(@PathVariable("idVec") int idVec, Model model) {
+		int idVideojuego = vecService.findById(idVec).getVideojuego().getIdVideojuego();
+		
+		model.addAttribute("vec", vecService.findById(idVec));
+		model.addAttribute("listaVyg", vygService.findGenerosIdVideojuego(idVideojuego));
+		return "detalleVideojuego";
+	}
+	
+	@GetMapping("/consola/detalle/{idModeloConsola}")
+	public String detalleConsola(@PathVariable("idModeloConsola") String idModeloConsola, Model model) {
+		model.addAttribute("modeloConsola", mcService.findById(idModeloConsola));
+		return "detalleConsola";
+	}
+	
+	@GetMapping("/accesorio/detalle/{idAccesorio}")
+	public String detalleAccesorio(@PathVariable("idAccesorio") int idAccesorio, Model model) {
+		model.addAttribute("accesorio", accService.findById(idAccesorio));
+		return "detalleAccesorio";
+	}
+	
+	
+	@GetMapping("/videojuego/editar/{idVec}")
+	public String editarVideojuego(@PathVariable("idVec") int idVec, Model model) {
+		model.addAttribute("idVec", idVec);
+		model.addAttribute("listadoGeneros", genService.findAll());	
+		return "editarVideojuego";
+	}
+	
+	@PostMapping("/videojuego/editar")
+	public String procesarEditarVideojuego(Videojuego videojuego, RedirectAttributes attr,
+										   @RequestParam("idVec") int idVec,
+										   @RequestParam("idConsola") String idConsola,
+										   @RequestParam("precio") BigDecimal precio) {
+		
+		VideojuegoEnConsola videojuegoEnConsola = new VideojuegoEnConsola();
+		videojuegoEnConsola.setIdVec(idVec);
+		videojuegoEnConsola.setPrecio(precio);
+		videojuegoEnConsola.setConsola(conService.findById(idConsola));
+	
+		if(videojuego.getClasificacionEdad().equals("PEGI 3")) {
+			videojuego.setImagenPegi("pegi-3.png");
+		} else if(videojuego.getClasificacionEdad().equals("PEGI 7")) {
+			videojuego.setImagenPegi("pegi-7.png");
+		} else if(videojuego.getClasificacionEdad().equals("PEGI 12")) {
+			videojuego.setImagenPegi("pegi-12.png");
+		} else if(videojuego.getClasificacionEdad().equals("PEGI 16")) {
+			videojuego.setImagenPegi("pegi-16.png");
+		} else if(videojuego.getClasificacionEdad().equals("PEGI 18")) {
+			videojuego.setImagenPegi("pegi-18.png");
+		}
+		
+		videojuegoEnConsola.setVideojuego(videojuego);
+		
+		vecService.editarVec(videojuegoEnConsola);
+		return "redirect:/";
+	}
 	
 	
 }

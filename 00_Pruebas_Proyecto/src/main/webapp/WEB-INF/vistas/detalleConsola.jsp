@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,7 +21,7 @@
                 <div class="contenedor_imagen_consola">
                     <img src="/images/consolas/${modeloConsola.imagenRectangular}" alt="imagen consola">
                 </div>
-
+			<sec:authorize access="hasAuthority('cliente')">
                 <div class="contenedor_compra">
                     <h3>¡En stock!</h3>
                     <div class="contenedor_precio_consola">
@@ -33,6 +34,18 @@
 	                    </button>
                     </a>
                 </div>
+            </sec:authorize>
+			<sec:authorize access="hasAuthority('admin')">
+				<div class="contenedor_compra_vacio_consola">
+					<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo" class="">
+				</div>
+			</sec:authorize>
+			<sec:authorize access="!isAuthenticated()">
+				<div class="contenedor_compra_vacio_consola">
+					<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo" class="">
+				</div>
+			</sec:authorize>
+
 
                 <div class="contenedor_caja_consola">
                     <img src="/images/consolas/${modeloConsola.imagenCuadrada}" alt="caja consola">
