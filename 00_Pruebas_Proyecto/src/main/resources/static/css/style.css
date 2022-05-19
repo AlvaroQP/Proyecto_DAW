@@ -92,7 +92,7 @@ body {
   
 .drop-content a.nav-link {
     float: none;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     text-decoration: none;
     display: block;
     text-align: left;

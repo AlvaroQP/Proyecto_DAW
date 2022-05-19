@@ -25,6 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.jasgaming.pruebas.model.entities.Accesorio;
+import com.jasgaming.pruebas.model.entities.Consola;
 import com.jasgaming.pruebas.model.entities.ModelosConsola;
 import com.jasgaming.pruebas.model.entities.Videojuego;
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
@@ -355,8 +356,7 @@ public class AdminController {
 	
 	@PostMapping("/videojuego/editar")
 	public String procesarEditarVideojuego(Videojuego videojuego, RedirectAttributes attr,
-										   @RequestParam("idVec") int idVec,
-										  
+										   @RequestParam("idVec") int idVec,								  
 										   @RequestParam("precio") BigDecimal precio,
 										   @RequestParam("genero") int[] generoArray) {
 		
@@ -413,11 +413,48 @@ public class AdminController {
 		}
 		
 		videojuegoEnConsola.setVideojuego(videojuego);
-		vidService.editarVideojuego(videojuego);
-		vecService.editarVec(videojuegoEnConsola);
 		
-		return "redirect:/";
+		if(vidService.editarVideojuego(videojuego) == 1
+		   && vecService.editarVec(videojuegoEnConsola) == 1) {
+			attr.addFlashAttribute("mensaje", "Videojuego modificado");
+		} else {
+			attr.addFlashAttribute("mensaje", "Videojuego no modificado");
+		}
+		
+		return "redirect:/admin/videojuego";
 	}
 	
 	
+	
+	@GetMapping("/consola/editar/{idModeloConsola}")
+	public String editarConsola(@PathVariable("idModeloConsola") String idModeloConsola, Model model) {
+		model.addAttribute("idModeloConsola", idModeloConsola);
+		model.addAttribute("nombreConsola", mcService.findById(idModeloConsola).getNombre());
+
+		return "editarConsola";
+	}
+	
+	@PostMapping("/consola/editar")
+	public String procesarEditarConsola(ModelosConsola modelosConsola, RedirectAttributes attr,
+										@RequestParam("idModeloConsola") String idModeloConsola) {
+		
+		ModelosConsola mcAntiguo = mcService.findById(idModeloConsola);		
+		modelosConsola.setIdModeloConsola(idModeloConsola);
+		modelosConsola.setConsola(mcAntiguo.getConsola());
+		
+		// Las imágenes permanecen sin cambiar
+		modelosConsola.setImagenCuadrada(mcAntiguo.getImagenCuadrada());
+		modelosConsola.setImagenRectangular(mcAntiguo.getImagenRectangular());
+		modelosConsola.setImagen1(mcAntiguo.getImagen1());
+		modelosConsola.setImagen2(mcAntiguo.getImagen2());
+		modelosConsola.setImagen3(mcAntiguo.getImagen3());
+		
+		if(mcService.modificarModeloConsola(modelosConsola) == 1) {
+			attr.addFlashAttribute("mensaje", "Consola modificada");
+		} else {
+			attr.addFlashAttribute("mensaje", "Consola no modificada");
+		}
+	
+		return "redirect:/admin/consola";
+	}
 }
