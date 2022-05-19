@@ -161,7 +161,7 @@
 		                		<i class="fa fa-caret-down"></i>
                 			</div>
 	                        <div class="drop-content">
-	                            <a class="nav-link" href="/perfil">
+	                            <a class="nav-link" href="/perfil/${usuario.username}">
 									<span class="material-symbols-outlined icono_contenedor_usuario">account_circle</span>
 		                            Perfil
 	                            </a>

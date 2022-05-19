@@ -25,7 +25,6 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.jasgaming.pruebas.model.entities.Accesorio;
-import com.jasgaming.pruebas.model.entities.Consola;
 import com.jasgaming.pruebas.model.entities.ModelosConsola;
 import com.jasgaming.pruebas.model.entities.Videojuego;
 import com.jasgaming.pruebas.model.entities.VideojuegoEnConsola;
@@ -491,5 +490,29 @@ public class AdminController {
 		
 		return "redirect:/admin/accesorio";
 	}
+	
+	
+	@GetMapping("/eliminar/{usu}")
+	public String eliminarUsuario(@PathVariable("usu") String usu, Model model) {	
+		model.addAttribute("usu", usuService.findById(usu));
+		return "confirmarEliminarUsuario";
+	}
+	
+	@GetMapping("/confirmarEliminarUsuario/{usu}")
+	public String confirmarEliminarUsuario(@PathVariable("usu") String usu, Model model) {
+		
+		if(usuService.eliminarUsuario(usu) == 1) {
+			model.addAttribute("mensaje", "Usuario eliminado");
+		} else {
+			model.addAttribute("mensaje", "Usuario no eliminado");
+		}
+		
+		return "forward:/admin/usuario";
+	}
+	
+	
+	
+	
+	
 	
 }

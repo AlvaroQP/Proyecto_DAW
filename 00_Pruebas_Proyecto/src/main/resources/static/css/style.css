@@ -1483,7 +1483,8 @@ input.noValido {
 
 .alerta_admin_videojuegos,
 .alerta_admin_consolas,
-.alerta_admin_accesorios {
+.alerta_admin_accesorios,
+.alerta_admin_usuarios {
 	margin: 3rem auto;
 	text-align: center;
 	background-color: #f1375a;
@@ -1965,6 +1966,13 @@ border-bottom: 3px solid #be0000;
 	grid-area: dos;
 	height: 22.5rem;
 	width: 22.5rem;
+}
+
+.contenedor_imagen_eliminar_usuario {
+	grid-area: dos;
+	height: 20rem;
+	width: 20rem;
+	padding: 1rem;
 }
 
 .imagen_eliminar_producto {

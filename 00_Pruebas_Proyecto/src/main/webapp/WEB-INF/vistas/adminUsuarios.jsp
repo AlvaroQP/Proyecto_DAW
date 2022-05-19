@@ -11,6 +11,8 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 
+	<h3 class="alerta_admin_usuarios">${mensaje}</h3>
+
     <table class="admin_tabla tabla_usuarios">
         <thead>
         	<tr class="tabla_head_1">
@@ -34,7 +36,7 @@
 						<img src="${usu.avatarUsuario}" alt="Avatar usuario" class="tabla_admin_imagen_juego">
 					</td>	                
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/perfil/${usu.username}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
@@ -64,8 +66,8 @@
 						<img src="${usu.avatarUsuario}" alt="Avatar usuario" class="tabla_admin_imagen_juego">
 					</td>	                
 	                <td class="acciones">
-	                    <a href="#" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
-	                    <a href="#" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
+	                    <a href="/perfil/${usu.username}" title="Detalle"><img src="/images/iconos/eye-solid.svg" alt="detalle"></a>
+	                    <a href="/admin/eliminar/${usu.username}" title="Eliminar"><img src="/images/iconos/trash-solid.svg" alt="eliminar"></a>
 	                </td>
 	            </tr>
 			</c:forEach>
