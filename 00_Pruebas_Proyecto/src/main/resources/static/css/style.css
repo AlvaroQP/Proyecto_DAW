@@ -61,11 +61,11 @@ body {
 }
  
 .drop-menu .dropbtn { 
-    min-width: 14rem;
+    width: 16.5rem;
     border: none;
     outline: none;
     color: var(--color-principal-blanco);
-    padding: 1.6rem 1.3rem;
+    padding: 1.6rem 0;
     background-color: inherit;
     font-family: inherit;
 }
@@ -85,7 +85,7 @@ body {
     display: none;
     position: absolute;
     background-color: var(--color-principal-blanco);
-    min-width: 13.5rem;
+    width: 16.5rem;
     box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -149,12 +149,16 @@ body {
 .contenedor_info_usuario {
 	padding: .2rem .7rem;
 	margin-right: .5rem;
-	min-width: 14rem;
+	width: 16rem;
 	color: white;
 }
 
 .contenedor_info_usuario:hover {
 	cursor: pointer;
+}
+
+.contenedor_usuario .drop-content {
+	width: 16rem;
 }
 
 .contenedor_usuario .drop-content a {
