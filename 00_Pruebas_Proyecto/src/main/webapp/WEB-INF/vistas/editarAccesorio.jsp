@@ -5,17 +5,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Editar ${nombreConsola}</title>
+<title>Editar ${nombreAccesorio}</title>
 </head>
 <body>
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	
-	<form action="/admin/consola/editar" method="POST" class="form_alta_consola">
-		<h2>Editar ${nombreConsola}</h2>
-
+	<form action="/admin/accesorio/editar" method="POST" class="form_alta_accesorio">
+		<h2>Editar ${nombreAccesorio}</h2>
 		<div>
-			<h4><label for="nombre">Nombre consola</label></h4>		
+			<h4><label for="nombre">Nombre accesorio</label></h4>		
 			<input type="text" id="nombre" name="nombre" required>		
 		</div>	
 		<div>
@@ -35,24 +34,21 @@
 			<input type="text" id="peso" name="peso" placeholder="3.5kg" required>		
 		</div>
 		<div>
-			<h4><label for="memoriaConsola">Memoria</label></h4>		
-			<input type="text" id="memoriaConsola" name="memoriaConsola" placeholder="500 GB" required>		
+			<h4><label for="conectividad">Conectividad</label></h4>		
+			<input type="text" id="conectividad" name="conectividad" placeholder="USB/HDMI" required>		
 		</div>						
 		<div>
 			<h4><label for="precio">Precio</label></h4>
 			<input type="number" id="precio" name="precio" step=".01" placeholder="299.99" required>		
 		</div>		
 
-		<input type="hidden" name="idModeloConsola" value="${idModeloConsola}">	
+		<input type="hidden" name="idAccesorio" value="${idAccesorio}">	
 		
 		<div class="contenedor_sub_res_alta_vid">
-			<input type="reset" value="Borrar campos" class="reset_alta_consola">	
-			<input type="submit" value="Alta" class="submit_alta_consola">			
+			<input type="reset" value="Borrar campos" class="reset_alta_accesorio">
+			<input type="submit" value="Alta" class="submit_alta_accesorio">	
 		</div>					
-	
 	</form>
-	
-	
 	
 	<jsp:include page="footer.jsp"></jsp:include>
 

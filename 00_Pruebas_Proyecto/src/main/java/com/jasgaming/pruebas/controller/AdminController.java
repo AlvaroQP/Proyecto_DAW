@@ -457,4 +457,39 @@ public class AdminController {
 	
 		return "redirect:/admin/consola";
 	}
+	
+	
+	
+	@GetMapping("/accesorio/editar/{idAccesorio}")
+	public String editarAccesorio(@PathVariable("idAccesorio") int idAccesorio, Model model) {
+		model.addAttribute("idAccesorio", idAccesorio);
+		model.addAttribute("nombreAccesorio", accService.findById(idAccesorio).getNombre());
+
+		return "editarAccesorio";
+	}
+	
+	@PostMapping("/accesorio/editar")
+	public String procesarEditarAccesorio(Accesorio accesorio, RedirectAttributes attr,
+										  @RequestParam("idAccesorio") int idAccesorio) {
+		
+		Accesorio accAntiguo = accService.findById(idAccesorio);
+		accesorio.setIdAccesorio(idAccesorio);
+		accesorio.setConsola(accAntiguo.getConsola());
+		
+		// Las imágenes permanecen sin cambiar
+		accesorio.setImagenCuadrada(accAntiguo.getImagenCuadrada());
+		accesorio.setImagenRectangular(accAntiguo.getImagenRectangular());
+		accesorio.setImagen1(accAntiguo.getImagen1());
+		accesorio.setImagen2(accAntiguo.getImagen2());		
+		accesorio.setImagen3(accAntiguo.getImagen3());
+		
+		if(accService.modificarAccesorio(accesorio) == 1) {
+			attr.addFlashAttribute("mensaje", "Accesorio modificado");
+		} else {
+			attr.addFlashAttribute("mensaje", "Accesorio no modificado");
+		}
+		
+		return "redirect:/admin/accesorio";
+	}
+	
 }
