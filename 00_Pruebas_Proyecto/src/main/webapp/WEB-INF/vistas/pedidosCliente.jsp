@@ -12,55 +12,63 @@
 
 	<jsp:include page="nav.jsp"></jsp:include>
 	
-	<h2>Pedidos realizados</h2>
-
-	<c:forEach var="pedido" items="${pedidosCliente}">
-		<table class="datos_pedido_tabla">
-			<thead>
-				<tr>
-					<th>ID pedido</th>
-					<th>Dirección Entrega</th>
-					<th>Fecha alta</th>
-					<th>Estado</th>
-					<th>Cliente</th>
-				</tr>
-			</thead>
+	<section class="seccion_pedidos">
 	
-			<tbody>
-				<tr>
-					<td>${pedido.idPedido}</td>
-					<td>${pedido.direccionEntrega}</td>
-					<td><fmt:formatDate pattern = "dd-MM-yyyy" value = "${pedido.fechaAlta}"/></td>
-					<td>${pedido.estado}</td>
-					<td>${pedido.usuario.nombre} ${pedido.usuario.apellidos}</td>
-				</tr>
-			</tbody>	
-		</table>
+		<div class="titulo_pedidos">
+			<div>
+				<img src="/images/png/luigi_regalo.png" alt="luigi" class="luigi_regalo">
+				<img src="/images/png/mario_regalo.png" alt="mario" class="mario_regalo">
+			</div>
+			<h2>Mis pedidos</h2>
+		</div>
+	
+	
+		<c:forEach var="pedido" items="${pedidosCliente}">
+			<table class="datos_pedido_tabla">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Dirección</th>
+						<th>Fecha alta</th>
+						<th>Estado</th>
+						<th>Cliente</th>
+					</tr>
+				</thead>
 		
-		<table class="datos_pedido_tabla_2">
-			<thead>
-				<tr>
-					<th>Producto</th>
-					<th>Tipo producto</th>
-					<th>Precio</th>
-				</tr>
-			</thead>
-	
-			<tbody>
-			<c:forEach var="pp" items="${pedido.productosEnPedido}">
-				<tr>
-					<td>${pp.nombreProducto}</td>
-					<td>${pp.tipoProducto}</td>
-					<td>${pp.precio} €</td>
-				</tr>
-			</c:forEach>
-			</tbody>
+				<tbody>
+					<tr>
+						<td>${pedido.idPedido}</td>
+						<td>${pedido.direccionEntrega}</td>
+						<td><fmt:formatDate pattern = "dd-MM-yyyy" value = "${pedido.fechaAlta}"/></td>
+						<td>${pedido.estado}</td>
+						<td>${pedido.usuario.nombre} ${pedido.usuario.apellidos}</td>
+					</tr>
+				</tbody>	
+			</table>
+			
+			<table class="datos_pedido_tabla_2">
+				<thead>
+					<tr>
+						<th>Producto</th>
+						<th>Tipo</th>
+						<th>Precio</th>
+					</tr>
+				</thead>
 		
-		</table>
-		<hr>
-	</c:forEach>
+				<tbody>
+				<c:forEach var="pp" items="${pedido.productosEnPedido}">
+					<tr>
+						<td>${pp.nombreProducto}</td>
+						<td>${pp.tipoProducto}</td>
+						<td>${pp.precio} €</td>
+					</tr>
+				</c:forEach>
+				</tbody>
+			
+			</table>
+		</c:forEach>
 	
-	
+	</section>
 	<jsp:include page="footer.jsp"></jsp:include>
 
 </body>

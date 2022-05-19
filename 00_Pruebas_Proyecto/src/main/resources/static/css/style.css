@@ -1494,24 +1494,21 @@ input.noValido {
     font-size: 1.4rem;
 }
 
-.carrito_tabla, 
-.datos_pedido_tabla {
+.carrito_tabla {
     width: 80%;
-    margin: 7rem auto 0;
+    margin: 10rem auto 0;
     font-size: 1.4rem;
 }
 
-.carrito_tabla {
-	width: 80%;
-    margin: 0 auto;
+.datos_pedido_tabla,
+.datos_pedido_tabla_2 {
+    width: 100%;
     font-size: 1.4rem;
 }
 
 .datos_pedido_tabla_2 {
-    width: 80%;
-    margin: 0 auto 5rem;
-    font-size: 1.4rem;
-}
+	margin-bottom: 5rem;
+} 
 
 .admin_tabla tr th, .admin_tabla tr td,
 .carrito_tabla tr th, .carrito_tabla tr td,
@@ -1602,17 +1599,32 @@ input.noValido {
 	background-color: rgb(228, 220, 220);
 }
 
+.seccion_carrito {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #e4bdbd;
+	border-radius: 1rem;
+	padding: 0 5rem 5rem;
+	
+}
+
 .contenedor_mario_carrito {
-	margin: 5rem auto 0;
+	margin: 5rem auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	height: 14rem;
-	width: 80%;
-	font-size: 3rem;
+	padding-top: 2rem;
+}
+
+.contenedor_mario_carrito h2 {
+	color: #be0000;
+	margin-top: 1rem;
+	font-size: 2.5rem;
 	font-weight: 900;
-	background-color: #f1dbd1;
+	text-align: center;
+	width: 100%;
 }
 
 .contenedor_mario_carrito div {
@@ -1636,15 +1648,23 @@ input.noValido {
 } 
 
 .volver_carrito_vacio {
-	margin-top: 3rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	font-size: 2rem;
 }
 
 .volver_carrito_vacio a {
+	margin-top: 5rem;
 	font-size: 2rem;
+	background-color: #d60606;
+	border: none;
+	color: white;
+	border-radius: 1rem;
+}
+
+.volver_carrito_vacio a:hover {
+	color: white;
+	background-color: var(--color-rojo-hover);	
 }
 
 .contenedor_botones_carrito {
@@ -1656,7 +1676,7 @@ input.noValido {
 } 
 
 .boton_vaciar_carrito, .boton_finalizar_compra {
-	margin: 0 1rem;
+	margin: 0 3rem;
 	font-size: 2rem;
 }
 
@@ -1665,16 +1685,52 @@ input.noValido {
 	background-color: rgb(228, 220, 220);
 }
 
-.body_pedidos h2 {
-	color: white;
-	font-size: 3rem;
-	text-align: center;
-	margin-top: 5rem;
-	width: fit-content;
-	background-color: #ae3728;
-	margin: 5rem auto 0;
-	padding: 1rem;
+.seccion_pedidos {
+	margin: 0 auto;
+	width: 80%;
+	background-color: #e4bdbd;
 	border-radius: 1rem;
+	padding: 0 5rem 5rem;
+}
+
+.titulo_pedidos {
+	margin: 5rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3rem;
+}
+
+.body_pedidos h2 {
+	/* color: white;
+	font-size: 2.3rem;
+	text-align: center;
+	width: 20rem;
+	background-color: #be0000;
+	margin: .5rem auto 0;
+	padding: 1rem;
+	border-radius: 1rem; */
+	
+
+	color: #be0000;
+font-size: 2.3rem;
+font-weight: 600;
+text-align: center;
+width: 20rem;
+margin-top: 1rem;
+padding: 1rem;
+
+border-top: 3px solid #be0000;
+border-bottom: 3px solid #be0000;
+	
+	
+
+}
+
+.luigi_regalo,
+.mario_regalo {
+	height: 15rem;
 }
 
 .datos_pedido_tabla tr th, .datos_pedido_tabla tr td {
@@ -1746,7 +1802,7 @@ input.noValido {
 .form_alta_videojuego h2,
 .form_alta_consola h2,
 .form_alta_accesorio h2 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 900;
 	margin-bottom: 5rem;
 	color: #a80000;

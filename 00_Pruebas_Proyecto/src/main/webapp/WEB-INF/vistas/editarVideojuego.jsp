@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Editar Videojuego</title>
+<title>Editar ${videojuego}</title>
 <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="body_form_alta_videojuego">
@@ -13,7 +13,7 @@
 	<jsp:include page="nav.jsp"></jsp:include>
 
 	<form action="/admin/videojuego/editar" method="POST" class="form_alta_videojuego">
-	 	<h2>Editar Videojuego</h2>
+	 	<h2>Editar ${videojuego}</h2>
 
 		<img src="/images/png/gow.png" class="imagen_form_alta_vj_1">
 
@@ -90,8 +90,8 @@
 		
 							
 		<div class="contenedor_sub_res_alta_vid">
-			<input type="submit" value="Alta" class="submit_alta_videojuego">
-			<input type="reset" value="Borrar campos" class="reset_alta_videojuego">	
+			<input type="reset" value="Borrar campos" class="reset_alta_videojuego">
+			<input type="submit" value="Alta" class="submit_alta_videojuego">	
 		</div>
 					
 		<input type="hidden" name="idVec" value="${idVec}">			

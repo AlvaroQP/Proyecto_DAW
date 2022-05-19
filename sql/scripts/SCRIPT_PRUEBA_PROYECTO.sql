@@ -140,21 +140,6 @@ CREATE TABLE producto_en_pedido (
     FOREIGN KEY(id_pedido) REFERENCES pedidos(id_pedido)
 );
 
---    CREATE TABLE lineas_pedido (
---    num_orden INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
---    id_pedido INT NOT NULL,
---    id_videojuego INT,
---    id_accesorio INT,
---    id_modelo_consola VARCHAR(20),
---    cantidad INT NOT NULL,
---    precio_venta DECIMAL(9,2) NOT NULL,
---    fecha_alta DATE NOT NULL,
---    FOREIGN KEY(id_pedido) REFERENCES pedidos(id_pedido),
---    FOREIGN KEY(id_videojuego) REFERENCES videojuegos(id_videojuego),
---    FOREIGN KEY(id_accesorio) REFERENCES accesorios(id_accesorio),
---    FOREIGN KEY(id_modelo_consola) REFERENCES modelos_consolas(id_modelo_consola)
--- );
-
 
 -- ------- --
 -- INSERTS --

@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -347,6 +348,7 @@ public class AdminController {
 	@GetMapping("/videojuego/editar/{idVec}")
 	public String editarVideojuego(@PathVariable("idVec") int idVec, Model model) {
 		model.addAttribute("idVec", idVec);
+		model.addAttribute("videojuego", vecService.findById(idVec).getVideojuego().getTitulo());
 		model.addAttribute("listadoGeneros", genService.findAll());	
 		return "editarVideojuego";
 	}
@@ -355,13 +357,30 @@ public class AdminController {
 	public String procesarEditarVideojuego(Videojuego videojuego, RedirectAttributes attr,
 										   @RequestParam("idVec") int idVec,
 										   @RequestParam("idConsola") String idConsola,
-										   @RequestParam("precio") BigDecimal precio) {
+										   @RequestParam("precio") BigDecimal precio,
+										   @RequestParam("genero") int[] generoArray) {
+		
+		VideojuegoEnConsola vecAntiguo = vecService.findById(idVec);
+		Videojuego vidAntiguo = vecAntiguo.getVideojuego();
+
 		
 		VideojuegoEnConsola videojuegoEnConsola = new VideojuegoEnConsola();
 		videojuegoEnConsola.setIdVec(idVec);
 		videojuegoEnConsola.setPrecio(precio);
 		videojuegoEnConsola.setConsola(conService.findById(idConsola));
-	
+		
+		videojuego.setIdVideojuego(vidAntiguo.getIdVideojuego());
+		
+		// Las imágenes permanecen las que estaban
+		videojuegoEnConsola.setImagenCaja(vecAntiguo.getImagenCaja());
+		videojuego.setImagenCuadrada(vecAntiguo.getVideojuego().getImagenCuadrada());
+		videojuego.setImagenRectangular(vecAntiguo.getVideojuego().getImagenRectangular());		
+		videojuego.setImagen1(vecAntiguo.getVideojuego().getImagen1());		
+		videojuego.setImagen2(vecAntiguo.getVideojuego().getImagen2());	
+		videojuego.setImagen3(vecAntiguo.getVideojuego().getImagen3());	
+		videojuego.setImagen4(vecAntiguo.getVideojuego().getImagen4());	
+		videojuego.setImagen5(vecAntiguo.getVideojuego().getImagen5());	
+		
 		if(videojuego.getClasificacionEdad().equals("PEGI 3")) {
 			videojuego.setImagenPegi("pegi-3.png");
 		} else if(videojuego.getClasificacionEdad().equals("PEGI 7")) {
@@ -374,9 +393,29 @@ public class AdminController {
 			videojuego.setImagenPegi("pegi-18.png");
 		}
 		
-		videojuegoEnConsola.setVideojuego(videojuego);
+		// Necesitamos borrar los antiguos videojuegoygenero antes de crear los nuevos
+		// Recorremos la lista de todos los videojuegoYGenero (vyg)
+		// Si el vyg tiene un videojuego cuyo id coincide con el del videojuego que estamos editando => lo eliminamos
+		List<VideojuegoYGenero> listaVyg = vygService.findAll();
+		for(VideojuegoYGenero vyg : listaVyg) {
+			if(vyg.getVideojuego().getIdVideojuego() == videojuego.getIdVideojuego()) {
+				vygService.eliminarVideojuegoYGenero(vyg.getIdVyg());		
+			}
+		}
+			
+		// Necesitamos recorrer el array de géneros recibido por RequestParam
+		// Por cada género, se crea un nuevo videojuegoygenero
+		for(int genero : generoArray) {
+			VideojuegoYGenero vyg = new VideojuegoYGenero();
+			vyg.setGenero(genService.findById(genero));
+			vyg.setVideojuego(videojuego);
+			vygService.editarVideojuegoYGenero(vyg);
+		}
 		
+		videojuegoEnConsola.setVideojuego(videojuego);
+		vidService.editarVideojuego(videojuego);
 		vecService.editarVec(videojuegoEnConsola);
+		
 		return "redirect:/";
 	}
 	
