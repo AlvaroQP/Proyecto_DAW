@@ -25,12 +25,14 @@
 			<h4><label for="estudio">Estudio</label></h4>			
 			<input type="text" id="estudio" name="estudio" required>		
 		</div>
+		<!--
 		<h4><label for="consola">Consola</label></h4> 
 		<select id="consola" name="idConsola">
 			<option value="switch">Nintendo Switch</option>
 			<option value="ps5">PlayStation 5</option>
 			<option value="xbox_s_xs">Xbox Series X/S</option>							
-		</select>		
+		</select>
+		-->		
 		<div>
 			<h4><label for="fechaLanzamiento">Fecha lanzamiento</label></h4>			
 			<input type="date" id="fechaLanzamiento" name="fechaLanzamiento" required>	

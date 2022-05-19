@@ -356,7 +356,7 @@ public class AdminController {
 	@PostMapping("/videojuego/editar")
 	public String procesarEditarVideojuego(Videojuego videojuego, RedirectAttributes attr,
 										   @RequestParam("idVec") int idVec,
-										   @RequestParam("idConsola") String idConsola,
+										  
 										   @RequestParam("precio") BigDecimal precio,
 										   @RequestParam("genero") int[] generoArray) {
 		
@@ -367,7 +367,7 @@ public class AdminController {
 		VideojuegoEnConsola videojuegoEnConsola = new VideojuegoEnConsola();
 		videojuegoEnConsola.setIdVec(idVec);
 		videojuegoEnConsola.setPrecio(precio);
-		videojuegoEnConsola.setConsola(conService.findById(idConsola));
+		videojuegoEnConsola.setConsola(vecAntiguo.getConsola());
 		
 		videojuego.setIdVideojuego(vidAntiguo.getIdVideojuego());
 		

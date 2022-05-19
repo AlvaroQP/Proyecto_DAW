@@ -106,6 +106,7 @@ body {
 	height: 2.5rem;
 	width: 2.4rem;
 	margin-right: .2rem;
+	margin-left: .8rem;
 }
 
 .contenedor_usuario {
@@ -223,6 +224,7 @@ body {
 .icono_nav_admin {
 	height: 2.4rem;
 	margin-right: .5rem;
+	margin-left: .8rem;
 } 
 
 
