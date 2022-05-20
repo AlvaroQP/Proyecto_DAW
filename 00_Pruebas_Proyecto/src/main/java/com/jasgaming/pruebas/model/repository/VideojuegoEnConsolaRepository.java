@@ -39,3 +39,5 @@ public interface VideojuegoEnConsolaRepository extends JpaRepository<VideojuegoE
 	@Query("select v from VideojuegoEnConsola v where v.videojuego.novedad = 's'")
 	public List<VideojuegoEnConsola> findNovedades();
 }
+
+

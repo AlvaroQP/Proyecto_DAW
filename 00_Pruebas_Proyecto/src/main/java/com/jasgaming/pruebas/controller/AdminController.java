@@ -507,7 +507,7 @@ public class AdminController {
 			model.addAttribute("mensaje", "Usuario no eliminado");
 		}
 		
-		return "forward:/admin/usuario";
+		return "forward:/admin/cliente";
 	}
 	
 	

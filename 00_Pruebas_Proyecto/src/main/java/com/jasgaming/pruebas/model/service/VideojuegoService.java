@@ -15,3 +15,4 @@ public interface VideojuegoService {
 	void subirImagen(Videojuego videojuego, MultipartFile imagen, String nombreCarpeta, int ordenInsercion);
 	
 }
+
