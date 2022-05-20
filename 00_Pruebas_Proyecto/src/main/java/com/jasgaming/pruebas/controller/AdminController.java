@@ -504,7 +504,7 @@ public class AdminController {
 		if(usuService.eliminarUsuario(usu) == 1) {
 			model.addAttribute("mensaje", "Usuario eliminado");
 		} else {
-			model.addAttribute("mensaje", "Usuario no eliminado");
+			model.addAttribute("mensaje", "Usuario no eliminado: pedidos pendientes");
 		}
 		
 		return "forward:/admin/cliente";

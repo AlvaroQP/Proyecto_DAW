@@ -8,7 +8,6 @@
 <title>Accesorios PS5</title>
 </head>
 <body class="body_juegos_ps">
-
 	<jsp:include page="nav.jsp"></jsp:include>
 	
 		<header>
@@ -41,10 +40,8 @@
 	        	</div> 	
   			</c:forEach>
        </div>
-
-
-
 	<jsp:include page="footer.jsp"></jsp:include> 
 
 </body>
 </html>
+

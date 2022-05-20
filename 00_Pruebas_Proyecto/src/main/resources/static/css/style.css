@@ -644,8 +644,8 @@ body {
     position: absolute;
     top: 40%;
     width: auto;
-    user-select: none;           /* Para que al pulsar el usuario sobre la flecha, ésta no quede seleccionada */
-    -webkit-user-select: none;   /* Igual, adaptado a diversos navegadores */
+    user-select: none;           											/* Para que al pulsar el usuario sobre la flecha, ésta no quede seleccionada */
+    -webkit-user-select: none;  											 /* Igual, adaptado a diversos navegadores */
     padding: 2rem;
     margin-top: -5rem;
     color: white;
@@ -672,8 +672,6 @@ body {
     color: lightgrey;
 }
 
-
-  
 .contenedor_imagenes_mini {
     display: flex;
     flex-direction: row;

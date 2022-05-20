@@ -14,9 +14,6 @@
             
             <div class="enlaces_footer">
                 <div>
-                    <a href="#">Quiénes somos</a>
-                </div>
-                <div>
                     <a href="#">Contacto</a>
                 </div>
                 <div>
