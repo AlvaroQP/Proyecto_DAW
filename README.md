@@ -1,6 +1,7 @@
 # Proyecto_DAW
 ![image](https://user-images.githubusercontent.com/67335888/169277721-aa359371-7c01-4876-b130-1120df6be0bb.png)
 
+NOTA: se considera que el proyecto estaría finalizado como proyecto final de grado; pero el objetivo sería continuar trabajando en la aplicación tras su entrega y defensa. Por todo ello, se alude al hecho de que el proyecto estaría en fase "beta" en un entorno de trabajo real, y por este motivo el nombre de la aplicación de Spring Boot permanece como <b>"00_Pruebas_Proyecto"</b>.
 
 Componentes:
 
