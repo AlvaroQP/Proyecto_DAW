@@ -69,11 +69,19 @@ public class HomeController {
 		}
 		
 		if(usuarioService.insertarUsuario(usuario) == 1) {
-			attr.addFlashAttribute("mensaje", "Usuario dado de alta");
+			attr.addFlashAttribute("usu", usuario);
+			return "redirect:/mostrarRegistroCompleto";
 		} else {
 			attr.addFlashAttribute("mensaje", "Usuario no dado de alta");
+			return "redirect:/";
 		}		
-		return "redirect:/";
+		
+	}
+	
+
+	@GetMapping("/mostrarRegistroCompleto")
+	public String mostrarRegistroCompleto(Model model) {
+		return "registroCompleto";
 	}
 	
 	

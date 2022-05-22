@@ -41,10 +41,11 @@
 				</div>
 			</sec:authorize>
 			<sec:authorize access="!isAuthenticated()">
-				<div class="contenedor_compra_vacio_accesorio">
-					<img src="/images/logos/jas_gaming/jas_gaming_logo.png" alt="logo" class="">
-				</div>
-			</sec:authorize>
+                <div class="contenedor_compra">
+					<p><a href="/registro">Regístrate</a> o <a href="/login">loguéate</a> para realizar tu compra.</p>
+					<p>¡Gracias!</p>
+                </div>
+			</sec:authorize>	
 
 			
                 <div class="contenedor_caja_accesorio">

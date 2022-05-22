@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.csrf().disable()
 		.authorizeRequests()
 		.antMatchers("/css/**", "/js/**", "/images/**").permitAll()
-		.antMatchers("/", "/registro", "/login", "/logout", "/videojuego/**", "/consola/**", "/accesorio/**").permitAll()
+		.antMatchers("/", "/registro", "/login", "/logout", "/mostrarRegistroCompleto", "/videojuego/**", "/consola/**", "/accesorio/**").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().defaultSuccessUrl("/")
 		.and().logout().invalidateHttpSession(true).logoutSuccessUrl("/").clearAuthentication(true);
