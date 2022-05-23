@@ -193,9 +193,15 @@ public class ClienteController {
 		// Una vez insertado, eliminamos los productos de la lista en sesión
 		productosCarrito.clear();
 			
-		return "forward:/";
+		return "forward:/cliente/mensajeCompra";
 	}
 	
+	@GetMapping("/mensajeCompra")
+	public String mostrarMensajeCompra(Authentication auth, Model model) {
+		model.addAttribute("fecha", new Date());
+		
+		return "compraRealizada";
+	}
 	
 	
 	@GetMapping("/pedidos")

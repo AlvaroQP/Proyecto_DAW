@@ -2086,6 +2086,59 @@ border-bottom: 3px solid #be0000;
 }
 
 
+/* MENSAJE COMPRA REALIZADA	*/
+.body_compra_realizada {
+	background-color: #e4c3c3;	
+}
+
+.contenedor_compra_realizada {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10rem auto;
+	background-color: #F4B1AC;
+	max-width: 60rem;
+	padding: 2rem;
+	border-radius: 2rem;
+	box-shadow: 3px 3px 10px 3px #a65c5c;
+}
+
+.contenedor_compra_realizada h2 {
+	color: #8b0001;
+	font-weight: 800;
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+} 
+
+.contenedor_compra_realizada p {
+	font-size: 1.6rem;
+	text-align: center;
+} 
+
+.imagen_reparto {
+	width: 12rem;
+	margin: 1.5rem 0 3rem;
+}
+
+.boton_compra_realizada {
+	font-size: 2rem;
+	border: none;
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+	background-color: var(--color-principal-rojo);
+	color: white;
+	font-weight: 900;
+	margin-top: 3rem;	
+}
+
+.boton_compra_realizada:hover {
+	background-color: var(--color-rojo-hover);
+}
+
+
+
+
 /* FOOTER */
 footer {
     display: flex;
@@ -2105,12 +2158,13 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-    margin-left: 15rem;
     font-size: 1.6rem;
+    background-color: #4747478c;
+	width: 30rem;
 }
 
 .footer_1 img {
-    width: 15rem;
+    width: 12rem;
     border-radius: 50%;
     border: 3px solid white;
 }
@@ -2132,6 +2186,11 @@ footer {
     border-bottom: .2px solid white;
 }
 
+.enlaces_footer span {
+	transform: translateY(.5rem);
+	margin-right: .2rem;
+}
+
 .copyright {
     font-size: 1.4rem;
 }
@@ -2146,16 +2205,9 @@ footer {
     z-index: 1;
 }
 
-@media only screen and (max-width: 75rem) {
-    .footer_1 {
-        margin-left: 7rem;
-    }
-}
+
 
 @media only screen and (max-width: 65rem) {
-    .footer_1 {
-        margin-left: 10rem;
-    }
     .footer_2 {
         display: none;
     }
